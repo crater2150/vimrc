@@ -6,6 +6,11 @@ set cindent
 set shiftwidth=4
 set expandtab 
 set foldmethod=marker
+set shellcmdflag=-c
+set shell=/bin/zsh\ +f
+set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
+    \.class
+
 colo rdark-terminal
 
 set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
@@ -59,34 +64,10 @@ nmap <silent> <Insert> :TlistToggle<CR>
 " taglist}}}
 
 "Git {{{
+nmap <Leader>gu         :GitPush<CR>
 
-"set statusline=%#ErrorMsg#%{GitBranchInfoString()}%#StatusLine#
-nmap <F2>   :GitAdd<cr>
-imap <F2>   :GitAdd<cr>
-vmap <F2>   :GitAdd<cr>
-nmap <F3>   :GitCommit<cr>
-imap <F3>   :GitCommit<cr>
-vmap <F3>   :GitCommit<cr>
-nmap <F4>   :GitDiff<cr>
-imap <F4>   :GitDiff<cr>
-vmap <F4>   :GitDiff<cr>
-func GitGrepWord()
-    normal! "zyiw
-    call GitGrep('-w -e ', getreg('z'))
-endf
-nmap <C-x>G :call GitGrepWord()<CR>
-
-func GitGrep(...)
-  let save = &grepprg
-  set grepprg=git\ grep\ -n\ $*
-  let s = 'grep'
-  for i in a:000
-    let s = s . ' ' . i
-  endfor
-  exe s
-  let &grepprg = save
-endfun
-command -nargs=? G call GitGrep(<f-args>)
+nmap <Leader>gvc        :!git svn dcommit<CR>
+nmap <Leader>gvf        :!git svn fetch<CR>
 " Git }}}
 
 " Java {{{

@@ -38,7 +38,7 @@ hi String term=NONE cterm=NONE ctermbg=bg ctermfg=203
 hi Function term=NONE cterm=NONE ctermbg=bg ctermfg=215
 hi SpecialKey term=bold cterm=NONE ctermbg=bg ctermfg=196
 hi NonText term=bold cterm=NONE ctermbg=233 ctermfg=236
-hi MatchParen term=reverse cterm=NONE ctermbg=215 ctermfg=23
+hi MatchParen term=reverse cterm=NONE ctermbg=bg ctermfg=160
 hi Comment term=bold cterm=NONE ctermbg=bg ctermfg=245
 hi Constant term=underline cterm=NONE ctermbg=bg ctermfg=113
 hi Special term=bold cterm=NONE ctermbg=bg ctermfg=248

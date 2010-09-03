@@ -148,7 +148,7 @@ function! GitCommit(args)
     let git_output = s:SystemGit('commit ' . args)
     let $EDITOR = editor_save
 
-    execute printf('%s %sCOMMIT_EDITMSG', g:git_command_edit, git_dir)
+    execute printf('%s %s/COMMIT_EDITMSG', g:git_command_edit, git_dir)
     setlocal filetype=git-status bufhidden=wipe
     augroup GitCommit
         autocmd BufWritePre  <buffer> g/^#\|^\s*$/d | setlocal fileencoding=utf-8
