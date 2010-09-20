@@ -57,7 +57,7 @@ hi PmenuSbar term=NONE cterm=NONE ctermbg=238 ctermfg=238
 hi PmenuThumb term=NONE cterm=NONE ctermbg=102 ctermfg=102
 
 
-hi StatusLine term=reverse,bold cterm=bold ctermbg=236 ctermfg=248:
+hi StatusLine term=reverse,bold cterm=bold ctermbg=236 ctermfg=69
 hi StatusLineNC term=reverse cterm=NONE ctermbg=233 ctermfg=242
 hi VertSplit term=reverse cterm=NONE ctermbg=102 ctermfg=59
 hi Directory term=bold cterm=NONE ctermbg=bg ctermfg=231

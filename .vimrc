@@ -28,6 +28,13 @@ map <C-M-Up>        <C-w><Up>
 map <C-M-Down>      <C-w><Down>
 map <S-Tab>         <C-w><C-w>
 
+imap <silent><C-E> <Esc>v`^me<Esc>gi<C-o>:call Ender()<CR>
+function Ender()
+  let endchar = nr2char(getchar())
+  execute "normal \<End>a".endchar
+  normal `e
+endfunction
+
 
 nnoremap <space> za
 
