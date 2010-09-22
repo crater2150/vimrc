@@ -45,26 +45,38 @@ vmap <M-Up>       dd<Up><Up>p
 map <M-Down>      ddp
 imap <M-Down>     <Esc>ddpi
 
-map <C-c>	:noh<CR>
 
 map <F1>	:mksession! Session.vim<CR>:wqall<CR>
-map <F12>	:tabnew<CR>
 map <F9>	:make<CR>
 map <F8>	:make test<CR>
 map ;w		i<Home>#<ESC><Down>
 map ;n		:tabnew<cr>
 
+map <C-Tab> <C-w><C-w>
+imap <C-Tab> <esc><C-w><C-w>
 
-command RC edit ~/.vimrc
+
+command RC tabedit ~/.vimrc
 command SRC source ~/.vimrc
 
 nmap <silent> <Del> :NERDTreeToggle<CR>
 
-" taglist {{{
+" tags and taglist {{{
+
+map <silent> <Leader>t   :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . &>/dev/null<CR>:echo "tagsfile generated"<cr>
+
+set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/boost
+
+let OmniCpp_NamespaceSearch = 2
+let OmniCpp_DefaultNamespaces = ["std"]
+let OmniCpp_MayCompleteDot=0
+let OmniCpp_MayCompleteArrow=0
 
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Process_File_Always=1
 let Tlist_Use_Right_Window=1
+let Tlist_Display_Prototype=1
 
 nmap <silent> <Insert> :TlistToggle<CR>
 
