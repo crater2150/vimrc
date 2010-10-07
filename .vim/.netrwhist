@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/code/uni/jpp/grading/s219883/TuringMachine/TuringMachine/code/src/finiteStateMachine'
+let g:netrw_dirhist_2='/code/uni/jpp/grading/s213829/TuringMachine/TuringMachine/code/src/finiteStateMachine/mealy'
+let g:netrw_dirhist_3='/etc/zsh/aliases'

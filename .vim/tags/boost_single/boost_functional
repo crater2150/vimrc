@@ -1,0 +1,311 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+boost	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/detail/hash_float.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/detail/limits.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/extensions.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/hash.hpp	/^namespace boost$/;"	n
+boost	/usr/include/boost/functional/hash/hash_fwd.hpp	/^namespace boost$/;"	n
+boost::hash	/usr/include/boost/functional/hash/extensions.hpp	/^    template <class T, unsigned int n> struct hash<T[n]>$/;"	s	namespace:boost	inherits:std::unary_function
+boost::hash	/usr/include/boost/functional/hash/extensions.hpp	/^    template <class T> struct hash$/;"	s	namespace:boost	inherits:std::unary_function
+boost::hash	/usr/include/boost/functional/hash/hash.hpp	/^    struct hash<T*>$/;"	s	namespace:boost	inherits:std::unary_function
+boost::hash::operator ()	/usr/include/boost/functional/hash/extensions.hpp	/^        std::size_t operator()(const T* val) const$/;"	f	struct:boost::hash	access:public	signature:(const T* val) const
+boost::hash::operator ()	/usr/include/boost/functional/hash/extensions.hpp	/^        std::size_t operator()(T const& val) const$/;"	f	struct:boost::hash	access:public	signature:(T const& val) const
+boost::hash::operator ()	/usr/include/boost/functional/hash/hash.hpp	/^        std::size_t operator()(T* v) const$/;"	f	struct:boost::hash	access:public	signature:(T* v) const
+boost::hash_combine	/usr/include/boost/functional/hash/hash.hpp	/^    inline void hash_combine(std::size_t& seed, T& v)$/;"	f	namespace:boost	signature:(std::size_t& seed, T& v)
+boost::hash_combine	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> void hash_combine(std::size_t& seed, T const& v);$/;"	p	namespace:boost	signature:(std::size_t& seed, T const& v)
+boost::hash_combine	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> void hash_combine(std::size_t& seed, T& v);$/;"	p	namespace:boost	signature:(std::size_t& seed, T& v)
+boost::hash_detail	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    namespace hash_detail {$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/detail/hash_float.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/detail/limits.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/extensions.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail	/usr/include/boost/functional/hash/hash.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+boost::hash_detail::call_frexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <typename Float> struct call_frexp$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::call_frexp::float_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef double float_type;$/;"	t	struct:boost::hash_detail::call_frexp	access:public
+boost::hash_detail::call_frexp::operator ()	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline double operator()(double a, int* b) const$/;"	f	struct:boost::hash_detail::call_frexp	access:public	signature:(double a, int* b) const
+boost::hash_detail::call_hash	/usr/include/boost/functional/hash/extensions.hpp	/^        struct call_hash$/;"	s	namespace:boost::hash_detail	inherits:call_hash_impl::BOOST_NESTED_TEMPLATEinner
+boost::hash_detail::call_hash_impl	/usr/include/boost/functional/hash/extensions.hpp	/^        struct call_hash_impl$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::call_hash_impl	/usr/include/boost/functional/hash/extensions.hpp	/^        struct call_hash_impl<true>$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::call_hash_impl::inner	/usr/include/boost/functional/hash/extensions.hpp	/^            struct inner$/;"	s	struct:boost::hash_detail::call_hash_impl	access:public
+boost::hash_detail::call_hash_impl::inner::call	/usr/include/boost/functional/hash/extensions.hpp	/^                static std::size_t call(Array const& v)$/;"	f	struct:boost::hash_detail::call_hash_impl::inner	access:public	signature:(Array const& v)
+boost::hash_detail::call_hash_impl::inner::call	/usr/include/boost/functional/hash/extensions.hpp	/^                static std::size_t call(T const& v)$/;"	f	struct:boost::hash_detail::call_hash_impl::inner	access:public	signature:(T const& v)
+boost::hash_detail::call_ldexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <typename Float> struct call_ldexp$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::call_ldexp::float_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef double float_type;$/;"	t	struct:boost::hash_detail::call_ldexp	access:public
+boost::hash_detail::call_ldexp::operator ()	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline double operator()(double a, int b) const$/;"	f	struct:boost::hash_detail::call_ldexp	access:public	signature:(double a, int b) const
+boost::hash_detail::float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^        inline std::size_t float_hash_impl(T v)$/;"	f	namespace:boost::hash_detail	signature:(T v)
+boost::hash_detail::float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline std::size_t float_hash_impl(double v)$/;"	f	namespace:boost::hash_detail	signature:(double v)
+boost::hash_detail::float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline std::size_t float_hash_impl(float v)$/;"	f	namespace:boost::hash_detail	signature:(float v)
+boost::hash_detail::float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline std::size_t float_hash_impl(long double v)$/;"	f	namespace:boost::hash_detail	signature:(long double v)
+boost::hash_detail::float_hash_impl2	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^        inline std::size_t float_hash_impl2(T v)$/;"	f	namespace:boost::hash_detail	signature:(T v)
+boost::hash_detail::float_hash_value	/usr/include/boost/functional/hash/detail/hash_float.hpp	/^        inline std::size_t float_hash_value(T v)$/;"	f	namespace:boost::hash_detail	signature:(T v)
+boost::hash_detail::float_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <typename T> is<T> float_type(T);$/;"	p	namespace:boost::hash_detail	signature:(T)
+boost::hash_detail::hash_float_combine	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^        inline void hash_float_combine(std::size_t& seed, std::size_t value)$/;"	f	namespace:boost::hash_detail	signature:(std::size_t& seed, std::size_t value)
+boost::hash_detail::hash_float_combine	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline void hash_float_combine(std::size_t& seed, std::size_t value)$/;"	f	namespace:boost::hash_detail	signature:(std::size_t& seed, std::size_t value)
+boost::hash_detail::hash_value_signed	/usr/include/boost/functional/hash/hash.hpp	/^        inline std::size_t hash_value_signed(T val)$/;"	f	namespace:boost::hash_detail	signature:(T val)
+boost::hash_detail::hash_value_unsigned	/usr/include/boost/functional/hash/hash.hpp	/^        inline std::size_t hash_value_unsigned(T val)$/;"	f	namespace:boost::hash_detail	signature:(T val)
+boost::hash_detail::is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<boost::hash_detail::not_found> { char x[40]; };$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<double> { char x[20]; };$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<float> { char x[10]; };$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<long double> { char x[30]; };$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::is::x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<boost::hash_detail::not_found> { char x[40]; };$/;"	m	struct:boost::hash_detail::is	access:public
+boost::hash_detail::is::x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<double> { char x[20]; };$/;"	m	struct:boost::hash_detail::is	access:public
+boost::hash_detail::is::x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<float> { char x[10]; };$/;"	m	struct:boost::hash_detail::is	access:public
+boost::hash_detail::is::x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<long double> { char x[30]; };$/;"	m	struct:boost::hash_detail::is	access:public
+boost::hash_detail::limits	/usr/include/boost/functional/hash/detail/limits.hpp	/^        struct limits : std::numeric_limits<T> {};$/;"	s	namespace:boost::hash_detail	inherits:std::numeric_limits
+boost::hash_detail::limits	/usr/include/boost/functional/hash/detail/limits.hpp	/^        struct limits<long double>$/;"	s	namespace:boost::hash_detail	inherits:std::numeric_limits
+boost::hash_detail::limits::BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, digits = LDBL_MANT_DIG);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, digits = LDBL_MANT_DIG)
+boost::hash_detail::limits::BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, max_exponent = LDBL_MAX_EXP);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, max_exponent = LDBL_MAX_EXP)
+boost::hash_detail::limits::BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, min_exponent = LDBL_MIN_EXP);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, min_exponent = LDBL_MIN_EXP)
+boost::hash_detail::limits::BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, radix = FLT_RADIX);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, radix = FLT_RADIX)
+boost::hash_detail::limits::epsilon	/usr/include/boost/functional/hash/detail/limits.hpp	/^            static long double epsilon() {$/;"	f	struct:boost::hash_detail::limits	access:public	signature:()
+boost::hash_detail::limits::max	/usr/include/boost/functional/hash/detail/limits.hpp	/^            static long double (max)() {$/;"	f	struct:boost::hash_detail::limits	access:public	signature:()
+boost::hash_detail::limits::min	/usr/include/boost/functional/hash/detail/limits.hpp	/^            static long double (min)() {$/;"	f	struct:boost::hash_detail::limits	access:public	signature:()
+boost::hash_detail::not_found	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct not_found {$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::not_found::operator float	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline operator float() const { return 0; }$/;"	f	struct:boost::hash_detail::not_found	access:public	signature:() const
+boost::hash_detail::not_found::operator long double	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline operator long double() const { return 0; }$/;"	f	struct:boost::hash_detail::not_found	access:public	signature:() const
+boost::hash_detail::select_hash_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type : select_hash_type_impl<$/;"	s	namespace:boost::hash_detail	inherits:select_hash_type_impl
+boost::hash_detail::select_hash_type_impl	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type_impl {$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::select_hash_type_impl	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type_impl<float, float> {$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::select_hash_type_impl	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type_impl<long double, long double> {$/;"	s	namespace:boost::hash_detail
+boost::hash_detail::select_hash_type_impl::type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef double type;$/;"	t	struct:boost::hash_detail::select_hash_type_impl	access:public
+boost::hash_detail::select_hash_type_impl::type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef float type;$/;"	t	struct:boost::hash_detail::select_hash_type_impl	access:public
+boost::hash_detail::select_hash_type_impl::type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef long double type;$/;"	t	struct:boost::hash_detail::select_hash_type_impl	access:public
+boost::hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_range(It first, It last)$/;"	f	namespace:boost	signature:(It first, It last)
+boost::hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_range(T* first, T* last)$/;"	f	namespace:boost	signature:(T* first, T* last)
+boost::hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline void hash_range(std::size_t& seed, It first, It last)$/;"	f	namespace:boost	signature:(std::size_t& seed, It first, It last)
+boost::hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline void hash_range(std::size_t& seed, T* first, T* last)$/;"	f	namespace:boost	signature:(std::size_t& seed, T* first, T* last)
+boost::hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class It> std::size_t hash_range(It, It);$/;"	p	namespace:boost	signature:(It, It)
+boost::hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class It> void hash_range(std::size_t&, It, It);$/;"	p	namespace:boost	signature:(std::size_t&, It, It)
+boost::hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> inline std::size_t hash_range(T*, T*);$/;"	p	namespace:boost	signature:(T*, T*)
+boost::hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> inline void hash_range(std::size_t&, T*, T*);$/;"	p	namespace:boost	signature:(std::size_t&, T*, T*)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::complex<T> const& v)$/;"	f	namespace:boost	signature:(std::complex<T> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::complex<T> const&);$/;"	p	namespace:boost	signature:(std::complex<T> const&)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::deque<T, A> const& v)$/;"	f	namespace:boost	signature:(std::deque<T, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::deque<T, A> const& v);$/;"	p	namespace:boost	signature:(std::deque<T, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::list<T, A> const& v)$/;"	f	namespace:boost	signature:(std::list<T, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::list<T, A> const& v);$/;"	p	namespace:boost	signature:(std::list<T, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::map<K, T, C, A> const& v)$/;"	f	namespace:boost	signature:(std::map<K, T, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::map<K, T, C, A> const& v);$/;"	p	namespace:boost	signature:(std::map<K, T, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multimap<K, T, C, A> const& v)$/;"	f	namespace:boost	signature:(std::multimap<K, T, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multimap<K, T, C, A> const& v);$/;"	p	namespace:boost	signature:(std::multimap<K, T, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multiset<K, C, A> const& v)$/;"	f	namespace:boost	signature:(std::multiset<K, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multiset<K, C, A> const& v);$/;"	p	namespace:boost	signature:(std::multiset<K, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::pair<A, B> const& v)$/;"	f	namespace:boost	signature:(std::pair<A, B> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::pair<A, B> const&);$/;"	p	namespace:boost	signature:(std::pair<A, B> const&)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::set<K, C, A> const& v)$/;"	f	namespace:boost	signature:(std::set<K, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::set<K, C, A> const& v);$/;"	p	namespace:boost	signature:(std::set<K, C, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::vector<T, A> const& v)$/;"	f	namespace:boost	signature:(std::vector<T, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::vector<T, A> const&);$/;"	p	namespace:boost	signature:(std::vector<T, A> const&)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value($/;"	f	namespace:boost	signature:( std::basic_string<Ch, std::BOOST_HASH_CHAR_TRAITS<Ch>, A> const& v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(bool v)$/;"	f	namespace:boost	signature:(bool v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(boost::long_long_type v)$/;"	f	namespace:boost	signature:(boost::long_long_type v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(boost::ulong_long_type v)$/;"	f	namespace:boost	signature:(boost::ulong_long_type v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(char v)$/;"	f	namespace:boost	signature:(char v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(double v)$/;"	f	namespace:boost	signature:(double v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(float v)$/;"	f	namespace:boost	signature:(float v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(int v)$/;"	f	namespace:boost	signature:(int v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(long double v)$/;"	f	namespace:boost	signature:(long double v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(long v)$/;"	f	namespace:boost	signature:(long v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(short v)$/;"	f	namespace:boost	signature:(short v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(signed char v)$/;"	f	namespace:boost	signature:(signed char v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned char v)$/;"	f	namespace:boost	signature:(unsigned char v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned int v)$/;"	f	namespace:boost	signature:(unsigned int v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned long v)$/;"	f	namespace:boost	signature:(unsigned long v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned short v)$/;"	f	namespace:boost	signature:(unsigned short v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(wchar_t v)$/;"	f	namespace:boost	signature:(wchar_t v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value($/;"	p	namespace:boost	signature:( std::basic_string<Ch, std::BOOST_HASH_CHAR_TRAITS<Ch>, A> const&)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(bool);$/;"	p	namespace:boost	signature:(bool)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(boost::long_long_type);$/;"	p	namespace:boost	signature:(boost::long_long_type)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(boost::ulong_long_type);$/;"	p	namespace:boost	signature:(boost::ulong_long_type)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(char);$/;"	p	namespace:boost	signature:(char)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(double v);$/;"	p	namespace:boost	signature:(double v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(float v);$/;"	p	namespace:boost	signature:(float v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(int);$/;"	p	namespace:boost	signature:(int)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(long double v);$/;"	p	namespace:boost	signature:(long double v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(long);$/;"	p	namespace:boost	signature:(long)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(short);$/;"	p	namespace:boost	signature:(short)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(signed char);$/;"	p	namespace:boost	signature:(signed char)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned char);$/;"	p	namespace:boost	signature:(unsigned char)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned int);$/;"	p	namespace:boost	signature:(unsigned int)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned long);$/;"	p	namespace:boost	signature:(unsigned long)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned short);$/;"	p	namespace:boost	signature:(unsigned short)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(wchar_t);$/;"	p	namespace:boost	signature:(wchar_t)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    template <class T> std::size_t hash_value(T* const& v)$/;"	f	namespace:boost	signature:(T* const& v)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    template <class T> std::size_t hash_value(T* const&);$/;"	p	namespace:boost	signature:(T* const&)
+boost::hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    template <class T> std::size_t hash_value(T*);$/;"	p	namespace:boost	signature:(T*)
+boost::T	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(const T (&x)[N]);$/;"	m	namespace:boost
+boost::T	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(T (&x)[N]);$/;"	m	namespace:boost
+BOOST_FUNCTIONAL_DETAIL_CONTAINER_FWD_HPP	/usr/include/boost/functional/detail/container_fwd.hpp	11;"	d
+BOOST_FUNCTIONAL_HASH_DETAIL_FLOAT_FUNCTIONS_HPP	/usr/include/boost/functional/hash/detail/float_functions.hpp	7;"	d
+BOOST_FUNCTIONAL_HASH_DETAIL_HASH_FLOAT_GENERIC_HEADER	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	9;"	d
+BOOST_FUNCTIONAL_HASH_DETAIL_HASH_FLOAT_HEADER	/usr/include/boost/functional/hash/detail/hash_float.hpp	7;"	d
+BOOST_FUNCTIONAL_HASH_DETAIL_HASH_FLOAT_X86_HEADER	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	13;"	d
+BOOST_FUNCTIONAL_HASH_DETAIL_LIMITS_HEADER	/usr/include/boost/functional/hash/detail/limits.hpp	10;"	d
+BOOST_FUNCTIONAL_HASH_EXTENSIONS_HPP	/usr/include/boost/functional/hash/extensions.hpp	14;"	d
+BOOST_FUNCTIONAL_HASH_FWD_HPP	/usr/include/boost/functional/hash/hash_fwd.hpp	11;"	d
+BOOST_FUNCTIONAL_HASH_HASH_HPP	/usr/include/boost/functional/hash/hash.hpp	11;"	d
+BOOST_HASH_CALL_FLOAT_FUNC	/usr/include/boost/functional/hash/detail/float_functions.hpp	105;"	d
+BOOST_HASH_CALL_FLOAT_FUNC	/usr/include/boost/functional/hash/detail/float_functions.hpp	210;"	d
+BOOST_HASH_CALL_FLOAT_MACRO	/usr/include/boost/functional/hash/detail/float_functions.hpp	171;"	d
+BOOST_HASH_CALL_FLOAT_MACRO	/usr/include/boost/functional/hash/detail/float_functions.hpp	209;"	d
+BOOST_HASH_CHAR_TRAITS	/usr/include/boost/functional/hash/hash.hpp	25;"	d
+BOOST_HASH_CHAR_TRAITS	/usr/include/boost/functional/hash/hash.hpp	27;"	d
+BOOST_HASH_CHAR_TRAITS	/usr/include/boost/functional/hash/hash.hpp	484;"	d
+boost_hash_detect_float_functions	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^namespace boost_hash_detect_float_functions {$/;"	n
+boost_hash_detect_float_functions::frexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    template <class Float> boost::hash_detail::not_found frexp(Float, int*);    $/;"	p	namespace:boost_hash_detect_float_functions	signature:(Float, int*)
+boost_hash_detect_float_functions::ldexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    template <class Float> boost::hash_detail::not_found ldexp(Float, int);$/;"	p	namespace:boost_hash_detect_float_functions	signature:(Float, int)
+BOOST_HASH_SPECIALIZE	/usr/include/boost/functional/hash/hash.hpp	329;"	d
+BOOST_HASH_SPECIALIZE	/usr/include/boost/functional/hash/hash.hpp	349;"	d
+BOOST_HASH_SPECIALIZE	/usr/include/boost/functional/hash/hash.hpp	416;"	d
+BOOST_HASH_SPECIALIZE_REF	/usr/include/boost/functional/hash/hash.hpp	339;"	d
+BOOST_HASH_SPECIALIZE_REF	/usr/include/boost/functional/hash/hash.hpp	368;"	d
+BOOST_HASH_SPECIALIZE_REF	/usr/include/boost/functional/hash/hash.hpp	417;"	d
+BOOST_HASH_USE_FPCLASSIFY	/usr/include/boost/functional/hash/detail/hash_float.hpp	37;"	d
+BOOST_HASH_USE_FPCLASSIFY	/usr/include/boost/functional/hash/detail/hash_float.hpp	43;"	d
+BOOST_HASH_USE_FPCLASSIFY	/usr/include/boost/functional/hash/detail/hash_float.hpp	45;"	d
+BOOST_HASH_USE_FPCLASSIFY	/usr/include/boost/functional/hash/detail/hash_float.hpp	50;"	d
+BOOST_HASH_USE_FPCLASSIFY	/usr/include/boost/functional/hash/detail/hash_float.hpp	99;"	d
+BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, digits = LDBL_MANT_DIG);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, digits = LDBL_MANT_DIG)
+BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, max_exponent = LDBL_MAX_EXP);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, max_exponent = LDBL_MAX_EXP)
+BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, min_exponent = LDBL_MIN_EXP);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, min_exponent = LDBL_MIN_EXP)
+BOOST_STATIC_CONSTANT	/usr/include/boost/functional/hash/detail/limits.hpp	/^            BOOST_STATIC_CONSTANT(int, radix = FLT_RADIX);$/;"	p	struct:boost::hash_detail::limits	access:public	signature:(int, radix = FLT_RADIX)
+call	/usr/include/boost/functional/hash/extensions.hpp	/^                static std::size_t call(Array const& v)$/;"	f	struct:boost::hash_detail::call_hash_impl::inner	access:public	signature:(Array const& v)
+call	/usr/include/boost/functional/hash/extensions.hpp	/^                static std::size_t call(T const& v)$/;"	f	struct:boost::hash_detail::call_hash_impl::inner	access:public	signature:(T const& v)
+call_frexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <typename Float> struct call_frexp$/;"	s	namespace:boost::hash_detail
+call_hash	/usr/include/boost/functional/hash/extensions.hpp	/^        struct call_hash$/;"	s	namespace:boost::hash_detail	inherits:call_hash_impl::BOOST_NESTED_TEMPLATEinner
+call_hash_impl	/usr/include/boost/functional/hash/extensions.hpp	/^        struct call_hash_impl$/;"	s	namespace:boost::hash_detail
+call_hash_impl	/usr/include/boost/functional/hash/extensions.hpp	/^        struct call_hash_impl<true>$/;"	s	namespace:boost::hash_detail
+call_ldexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <typename Float> struct call_ldexp$/;"	s	namespace:boost::hash_detail
+epsilon	/usr/include/boost/functional/hash/detail/limits.hpp	/^            static long double epsilon() {$/;"	f	struct:boost::hash_detail::limits	access:public	signature:()
+float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^        inline std::size_t float_hash_impl(T v)$/;"	f	namespace:boost::hash_detail	signature:(T v)
+float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline std::size_t float_hash_impl(double v)$/;"	f	namespace:boost::hash_detail	signature:(double v)
+float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline std::size_t float_hash_impl(float v)$/;"	f	namespace:boost::hash_detail	signature:(float v)
+float_hash_impl	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline std::size_t float_hash_impl(long double v)$/;"	f	namespace:boost::hash_detail	signature:(long double v)
+float_hash_impl2	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^        inline std::size_t float_hash_impl2(T v)$/;"	f	namespace:boost::hash_detail	signature:(T v)
+float_hash_value	/usr/include/boost/functional/hash/detail/hash_float.hpp	/^        inline std::size_t float_hash_value(T v)$/;"	f	namespace:boost::hash_detail	signature:(T v)
+float_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef double float_type;$/;"	t	struct:boost::hash_detail::call_frexp	access:public
+float_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef double float_type;$/;"	t	struct:boost::hash_detail::call_ldexp	access:public
+float_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <typename T> is<T> float_type(T);$/;"	p	namespace:boost::hash_detail	signature:(T)
+frexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    template <class Float> boost::hash_detail::not_found frexp(Float, int*);    $/;"	p	namespace:boost_hash_detect_float_functions	signature:(Float, int*)
+hash	/usr/include/boost/functional/hash/extensions.hpp	/^    template <class T, unsigned int n> struct hash<T[n]>$/;"	s	namespace:boost	inherits:std::unary_function
+hash	/usr/include/boost/functional/hash/extensions.hpp	/^    template <class T> struct hash$/;"	s	namespace:boost	inherits:std::unary_function
+hash	/usr/include/boost/functional/hash/hash.hpp	/^    struct hash<T*>$/;"	s	namespace:boost	inherits:std::unary_function
+hash_combine	/usr/include/boost/functional/hash/hash.hpp	/^    inline void hash_combine(std::size_t& seed, T& v)$/;"	f	namespace:boost	signature:(std::size_t& seed, T& v)
+hash_combine	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> void hash_combine(std::size_t& seed, T const& v);$/;"	p	namespace:boost	signature:(std::size_t& seed, T const& v)
+hash_combine	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> void hash_combine(std::size_t& seed, T& v);$/;"	p	namespace:boost	signature:(std::size_t& seed, T& v)
+hash_detail	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    namespace hash_detail {$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/detail/hash_float.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/detail/limits.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/extensions.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_detail	/usr/include/boost/functional/hash/hash.hpp	/^    namespace hash_detail$/;"	n	namespace:boost
+hash_float_combine	/usr/include/boost/functional/hash/detail/hash_float_generic.hpp	/^        inline void hash_float_combine(std::size_t& seed, std::size_t value)$/;"	f	namespace:boost::hash_detail	signature:(std::size_t& seed, std::size_t value)
+hash_float_combine	/usr/include/boost/functional/hash/detail/hash_float_x86.hpp	/^        inline void hash_float_combine(std::size_t& seed, std::size_t value)$/;"	f	namespace:boost::hash_detail	signature:(std::size_t& seed, std::size_t value)
+hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_range(It first, It last)$/;"	f	namespace:boost	signature:(It first, It last)
+hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_range(T* first, T* last)$/;"	f	namespace:boost	signature:(T* first, T* last)
+hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline void hash_range(std::size_t& seed, It first, It last)$/;"	f	namespace:boost	signature:(std::size_t& seed, It first, It last)
+hash_range	/usr/include/boost/functional/hash/hash.hpp	/^    inline void hash_range(std::size_t& seed, T* first, T* last)$/;"	f	namespace:boost	signature:(std::size_t& seed, T* first, T* last)
+hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class It> std::size_t hash_range(It, It);$/;"	p	namespace:boost	signature:(It, It)
+hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class It> void hash_range(std::size_t&, It, It);$/;"	p	namespace:boost	signature:(std::size_t&, It, It)
+hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> inline std::size_t hash_range(T*, T*);$/;"	p	namespace:boost	signature:(T*, T*)
+hash_range	/usr/include/boost/functional/hash/hash_fwd.hpp	/^    template <class T> inline void hash_range(std::size_t&, T*, T*);$/;"	p	namespace:boost	signature:(std::size_t&, T*, T*)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::complex<T> const& v)$/;"	f	namespace:boost	signature:(std::complex<T> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::complex<T> const&);$/;"	p	namespace:boost	signature:(std::complex<T> const&)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::deque<T, A> const& v)$/;"	f	namespace:boost	signature:(std::deque<T, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::deque<T, A> const& v);$/;"	p	namespace:boost	signature:(std::deque<T, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::list<T, A> const& v)$/;"	f	namespace:boost	signature:(std::list<T, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::list<T, A> const& v);$/;"	p	namespace:boost	signature:(std::list<T, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::map<K, T, C, A> const& v)$/;"	f	namespace:boost	signature:(std::map<K, T, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::map<K, T, C, A> const& v);$/;"	p	namespace:boost	signature:(std::map<K, T, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multimap<K, T, C, A> const& v)$/;"	f	namespace:boost	signature:(std::multimap<K, T, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multimap<K, T, C, A> const& v);$/;"	p	namespace:boost	signature:(std::multimap<K, T, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multiset<K, C, A> const& v)$/;"	f	namespace:boost	signature:(std::multiset<K, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::multiset<K, C, A> const& v);$/;"	p	namespace:boost	signature:(std::multiset<K, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::pair<A, B> const& v)$/;"	f	namespace:boost	signature:(std::pair<A, B> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::pair<A, B> const&);$/;"	p	namespace:boost	signature:(std::pair<A, B> const&)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::set<K, C, A> const& v)$/;"	f	namespace:boost	signature:(std::set<K, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::set<K, C, A> const& v);$/;"	p	namespace:boost	signature:(std::set<K, C, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::vector<T, A> const& v)$/;"	f	namespace:boost	signature:(std::vector<T, A> const& v)
+hash_value	/usr/include/boost/functional/hash/extensions.hpp	/^    std::size_t hash_value(std::vector<T, A> const&);$/;"	p	namespace:boost	signature:(std::vector<T, A> const&)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value($/;"	f	namespace:boost	signature:( std::basic_string<Ch, std::BOOST_HASH_CHAR_TRAITS<Ch>, A> const& v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(bool v)$/;"	f	namespace:boost	signature:(bool v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(boost::long_long_type v)$/;"	f	namespace:boost	signature:(boost::long_long_type v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(boost::ulong_long_type v)$/;"	f	namespace:boost	signature:(boost::ulong_long_type v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(char v)$/;"	f	namespace:boost	signature:(char v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(double v)$/;"	f	namespace:boost	signature:(double v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(float v)$/;"	f	namespace:boost	signature:(float v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(int v)$/;"	f	namespace:boost	signature:(int v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(long double v)$/;"	f	namespace:boost	signature:(long double v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(long v)$/;"	f	namespace:boost	signature:(long v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(short v)$/;"	f	namespace:boost	signature:(short v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(signed char v)$/;"	f	namespace:boost	signature:(signed char v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned char v)$/;"	f	namespace:boost	signature:(unsigned char v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned int v)$/;"	f	namespace:boost	signature:(unsigned int v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned long v)$/;"	f	namespace:boost	signature:(unsigned long v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(unsigned short v)$/;"	f	namespace:boost	signature:(unsigned short v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    inline std::size_t hash_value(wchar_t v)$/;"	f	namespace:boost	signature:(wchar_t v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value($/;"	p	namespace:boost	signature:( std::basic_string<Ch, std::BOOST_HASH_CHAR_TRAITS<Ch>, A> const&)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(bool);$/;"	p	namespace:boost	signature:(bool)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(boost::long_long_type);$/;"	p	namespace:boost	signature:(boost::long_long_type)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(boost::ulong_long_type);$/;"	p	namespace:boost	signature:(boost::ulong_long_type)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(char);$/;"	p	namespace:boost	signature:(char)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(double v);$/;"	p	namespace:boost	signature:(double v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(float v);$/;"	p	namespace:boost	signature:(float v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(int);$/;"	p	namespace:boost	signature:(int)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(long double v);$/;"	p	namespace:boost	signature:(long double v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(long);$/;"	p	namespace:boost	signature:(long)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(short);$/;"	p	namespace:boost	signature:(short)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(signed char);$/;"	p	namespace:boost	signature:(signed char)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned char);$/;"	p	namespace:boost	signature:(unsigned char)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned int);$/;"	p	namespace:boost	signature:(unsigned int)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned long);$/;"	p	namespace:boost	signature:(unsigned long)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(unsigned short);$/;"	p	namespace:boost	signature:(unsigned short)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(wchar_t);$/;"	p	namespace:boost	signature:(wchar_t)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    template <class T> std::size_t hash_value(T* const& v)$/;"	f	namespace:boost	signature:(T* const& v)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    template <class T> std::size_t hash_value(T* const&);$/;"	p	namespace:boost	signature:(T* const&)
+hash_value	/usr/include/boost/functional/hash/hash.hpp	/^    template <class T> std::size_t hash_value(T*);$/;"	p	namespace:boost	signature:(T*)
+hash_value_signed	/usr/include/boost/functional/hash/hash.hpp	/^        inline std::size_t hash_value_signed(T val)$/;"	f	namespace:boost::hash_detail	signature:(T val)
+hash_value_unsigned	/usr/include/boost/functional/hash/hash.hpp	/^        inline std::size_t hash_value_unsigned(T val)$/;"	f	namespace:boost::hash_detail	signature:(T val)
+inner	/usr/include/boost/functional/hash/extensions.hpp	/^            struct inner$/;"	s	struct:boost::hash_detail::call_hash_impl	access:public
+is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<boost::hash_detail::not_found> { char x[40]; };$/;"	s	namespace:boost::hash_detail
+is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<double> { char x[20]; };$/;"	s	namespace:boost::hash_detail
+is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<float> { char x[10]; };$/;"	s	namespace:boost::hash_detail
+is	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<long double> { char x[30]; };$/;"	s	namespace:boost::hash_detail
+ldexp	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^    template <class Float> boost::hash_detail::not_found ldexp(Float, int);$/;"	p	namespace:boost_hash_detect_float_functions	signature:(Float, int)
+limits	/usr/include/boost/functional/hash/detail/limits.hpp	/^        struct limits : std::numeric_limits<T> {};$/;"	s	namespace:boost::hash_detail	inherits:std::numeric_limits
+limits	/usr/include/boost/functional/hash/detail/limits.hpp	/^        struct limits<long double>$/;"	s	namespace:boost::hash_detail	inherits:std::numeric_limits
+max	/usr/include/boost/functional/hash/detail/limits.hpp	/^            static long double (max)() {$/;"	f	struct:boost::hash_detail::limits	access:public	signature:()
+min	/usr/include/boost/functional/hash/detail/limits.hpp	/^            static long double (min)() {$/;"	f	struct:boost::hash_detail::limits	access:public	signature:()
+not_found	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct not_found {$/;"	s	namespace:boost::hash_detail
+operator ()	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline double operator()(double a, int b) const$/;"	f	struct:boost::hash_detail::call_ldexp	access:public	signature:(double a, int b) const
+operator ()	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline double operator()(double a, int* b) const$/;"	f	struct:boost::hash_detail::call_frexp	access:public	signature:(double a, int* b) const
+operator ()	/usr/include/boost/functional/hash/extensions.hpp	/^        std::size_t operator()(const T* val) const$/;"	f	struct:boost::hash	access:public	signature:(const T* val) const
+operator ()	/usr/include/boost/functional/hash/extensions.hpp	/^        std::size_t operator()(T const& val) const$/;"	f	struct:boost::hash	access:public	signature:(T const& val) const
+operator ()	/usr/include/boost/functional/hash/hash.hpp	/^        std::size_t operator()(T* v) const$/;"	f	struct:boost::hash	access:public	signature:(T* v) const
+operator float	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline operator float() const { return 0; }$/;"	f	struct:boost::hash_detail::not_found	access:public	signature:() const
+operator long double	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            inline operator long double() const { return 0; }$/;"	f	struct:boost::hash_detail::not_found	access:public	signature:() const
+select_hash_type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type : select_hash_type_impl<$/;"	s	namespace:boost::hash_detail	inherits:select_hash_type_impl
+select_hash_type_impl	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type_impl {$/;"	s	namespace:boost::hash_detail
+select_hash_type_impl	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type_impl<float, float> {$/;"	s	namespace:boost::hash_detail
+select_hash_type_impl	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        struct select_hash_type_impl<long double, long double> {$/;"	s	namespace:boost::hash_detail
+T	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(const T (&x)[N]);$/;"	m	namespace:boost
+T	/usr/include/boost/functional/hash/hash.hpp	/^    std::size_t hash_value(T (&x)[N]);$/;"	m	namespace:boost
+type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef double type;$/;"	t	struct:boost::hash_detail::select_hash_type_impl	access:public
+type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef float type;$/;"	t	struct:boost::hash_detail::select_hash_type_impl	access:public
+type	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^            typedef long double type;$/;"	t	struct:boost::hash_detail::select_hash_type_impl	access:public
+x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<boost::hash_detail::not_found> { char x[40]; };$/;"	m	struct:boost::hash_detail::is	access:public
+x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<double> { char x[20]; };$/;"	m	struct:boost::hash_detail::is	access:public
+x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<float> { char x[10]; };$/;"	m	struct:boost::hash_detail::is	access:public
+x	/usr/include/boost/functional/hash/detail/float_functions.hpp	/^        template <> struct is<long double> { char x[30]; };$/;"	m	struct:boost::hash_detail::is	access:public
