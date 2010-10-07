@@ -136,4 +136,5 @@ hi vimFold term=NONE cterm=NONE ctermbg=bg ctermfg=fg
 hi nearLineEnd term=NONE cterm=NONE ctermbg=17 ctermfg=fg
 hi atLineEnd term=NONE cterm=NONE ctermbg=52 ctermfg=fg
 
-hi User1 term=NONE cterm=Bold ctermbg=234 ctermfg=245
+hi User1 term=NONE cterm=NONE ctermbg=234 ctermfg=245
+hi User2 term=NONE cterm=Bold ctermbg=237 ctermfg=33
