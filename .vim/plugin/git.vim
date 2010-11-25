@@ -132,6 +132,13 @@ function! GitAdd(expr)
     call GitDoCommand('add ' . file)
 endfunction
 
+" Add file to index.
+function! GitAddPatch(expr)
+    let file = s:Expand(strlen(a:expr) ? a:expr : '%')
+
+    call SystemGit('add --patch' . file)
+endfunction
+
 " Commit.
 function! GitCommit(args)
     let git_dir = <SID>GetGitDir()
@@ -342,6 +349,7 @@ command! -nargs=1 -complete=customlist,ListGitCommits GitCheckout call GitChecko
 command! -nargs=* -complete=customlist,ListGitCommits GitDiff     call GitDiff(<q-args>)
 command!          GitStatus           call GitStatus()
 command! -nargs=? GitAdd              call GitAdd(<q-args>)
+command! -nargs=? GitAddPatch         call GitAdd(<q-args>)
 command! -nargs=* GitLog              call GitLog(<q-args>)
 command! -nargs=* GitCommit           call GitCommit(<q-args>)
 command! -nargs=1 GitCatFile          call GitCatFile(<q-args>)
