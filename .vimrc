@@ -110,6 +110,7 @@ vmap <M-Up>       dd<Up><Up>p
 map <M-Down>      ddp
 imap <M-Down>     <Esc>ddpi
 
+map <C-L>         :noh<cr>:redraw!<cr>
 
 map <F1>	:mksession! Session.vim<CR>:wqall<CR>
 map <F9>	:make<CR>

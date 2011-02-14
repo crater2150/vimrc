@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_cnt =3
 let g:netrw_dirhist_1='/code/projects/aha2/trunk/templates_c'
 let g:netrw_dirhist_2='/var/tmp/portage/dev-lang/gnat-gcc-4.3.4/temp/logging'
+let g:netrw_dirhist_3='/usr/portage/packages'
