@@ -66,6 +66,11 @@ endif
 
 "}}}
 
+
+let c_hi_identifiers = 'all'
+let c_hi_libs = ['*']
+
+
 au BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
 au BufWinEnter * let w:m1=matchadd('nearLineEnd', '\%<81v.\%>78v', -1)
 au BufWinEnter * let w:m2=matchadd('atLineEnd', '\%>80v.\+', -1)
