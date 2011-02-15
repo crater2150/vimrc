@@ -1,0 +1,1078 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	/usr/include/boost/pending/relaxed_heap.hpp	/^  std::vector<group*> A;$/;"	m	class:boost::relaxed_heap	access:private
+active_sibling_transform	/usr/include/boost/pending/relaxed_heap.hpp	/^  void active_sibling_transform(group* a, group* s)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a, group* s)
+add_tree_to_new_roots	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void add_tree_to_new_roots(size_type v, $/;"	f	class:boost::fibonacci_heap	access:public	signature:(size_type v, LinkIter new_roots, int& h)
+AList	/usr/include/boost/pending/property.hpp	/^    typedef typename detail::build_property_tag_value_alist<PropertyList>::type AList;$/;"	t	struct:boost::property_value	access:public
+AListFirst	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename TagValueAList::first_type AListFirst;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+argument_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef K argument_type;$/;"	t	class:boost::indirect_pmap	access:public
+AssociativeContainer	/usr/include/boost/pending/container_traits.hpp	422;"	d
+AssociativeContainer	/usr/include/boost/pending/container_traits.hpp	45;"	d
+associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct associative_container_tag : virtual public forward_container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:forward_container_tag
+back	/usr/include/boost/pending/queue.hpp	/^  const_reference back() const { return c.back(); }$/;"	f	class:boost::queue	access:public	signature:() const
+back	/usr/include/boost/pending/queue.hpp	/^  reference back() { return c.back(); }$/;"	f	class:boost::queue	access:public	signature:()
+back_insertion_sequence_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct back_insertion_sequence_tag : virtual public sequence_tag { };$/;"	s	namespace:boost::graph_detail	inherits:sequence_tag
+begin	/usr/include/boost/pending/integer_range.hpp	/^    iterator begin() const { return iterator(m_start); }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+bidirectional_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void bidirectional_iterator_test(Iterator i, T v1, T v2)$/;"	f	namespace:boost	signature:(Iterator i, T v1, T v2)
+bind_	/usr/include/boost/pending/detail/property.hpp	/^      struct bind_ {$/;"	s	struct:boost::detail::end_extract	access:public
+bind_	/usr/include/boost/pending/detail/property.hpp	/^      struct bind_ {$/;"	s	struct:boost::detail::recursive_extract	access:public
+boost	/usr/include/boost/pending/bucket_sorter.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/container_traits.hpp	/^namespace boost { namespace graph_detail {$/;"	n
+boost	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/detail/int_iterator.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/detail/property.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/disjoint_sets.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/fenced_priority_queue.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/fibonacci_heap.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/indirect_cmp.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/integer_log2.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/integer_range.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/iterator_tests.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/lowest_bit.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/mutable_heap.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/mutable_queue.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/property.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/property_serialize.hpp	/^namespace boost { namespace mpi {$/;"	n
+boost	/usr/include/boost/pending/property_serialize.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/queue.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/relaxed_heap.hpp	/^namespace boost {$/;"	n
+boost	/usr/include/boost/pending/stringtok.hpp	/^namespace boost {$/;"	n
+boost::bidirectional_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void bidirectional_iterator_test(Iterator i, T v1, T v2)$/;"	f	namespace:boost	signature:(Iterator i, T v1, T v2)
+boost::bucket_sorter	/usr/include/boost/pending/bucket_sorter.hpp	/^  class bucket_sorter {$/;"	c	namespace:boost
+boost::bucket_sorter::bucket	/usr/include/boost/pending/bucket_sorter.hpp	/^    Bucket bucket;$/;"	m	class:boost::bucket_sorter	access:protected
+boost::bucket_sorter::bucket_sorter	/usr/include/boost/pending/bucket_sorter.hpp	/^    bucket_sorter(size_type _length, bucket_type _max_bucket, $/;"	f	class:boost::bucket_sorter	access:public	signature:(size_type _length, bucket_type _max_bucket, const Bucket& _bucket = Bucket(), const ValueIndexMap& _id = ValueIndexMap())
+boost::bucket_sorter::bucket_type	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef BucketType bucket_type;$/;"	t	class:boost::bucket_sorter	access:public
+boost::bucket_sorter::head	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<size_type>   head;$/;"	m	class:boost::bucket_sorter	access:protected
+boost::bucket_sorter::id	/usr/include/boost/pending/bucket_sorter.hpp	/^    ValueIndexMap id;$/;"	m	class:boost::bucket_sorter	access:protected
+boost::bucket_sorter::id_to_value	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<value_type>  id_to_value;$/;"	m	class:boost::bucket_sorter	access:protected
+boost::bucket_sorter::IndexValueMap	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef typename std::vector<value_type>::iterator IndexValueMap;$/;"	t	class:boost::bucket_sorter	access:public
+boost::bucket_sorter::invalid_value	/usr/include/boost/pending/bucket_sorter.hpp	/^    static size_type invalid_value() {$/;"	f	class:boost::bucket_sorter	access:public	signature:()
+boost::bucket_sorter::Iter	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef typename std::vector<size_type>::iterator Iter;$/;"	t	class:boost::bucket_sorter	access:public
+boost::bucket_sorter::next	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<size_type>   next;$/;"	m	class:boost::bucket_sorter	access:protected
+boost::bucket_sorter::operator []	/usr/include/boost/pending/bucket_sorter.hpp	/^    stack operator[](const bucket_type& i) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const bucket_type& i)
+boost::bucket_sorter::prev	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<size_type>   prev;$/;"	m	class:boost::bucket_sorter	access:protected
+boost::bucket_sorter::push	/usr/include/boost/pending/bucket_sorter.hpp	/^    void push(const value_type& x) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const value_type& x)
+boost::bucket_sorter::remove	/usr/include/boost/pending/bucket_sorter.hpp	/^    void remove(const value_type& x) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const value_type& x)
+boost::bucket_sorter::size_type	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef typename std::vector<value_type>::size_type size_type;$/;"	t	class:boost::bucket_sorter	access:public
+boost::bucket_sorter::stack	/usr/include/boost/pending/bucket_sorter.hpp	/^    class stack {$/;"	c	class:boost::bucket_sorter	access:public
+boost::bucket_sorter::stack::bucket_id	/usr/include/boost/pending/bucket_sorter.hpp	/^      bucket_type bucket_id;$/;"	m	class:boost::bucket_sorter::stack	access:private
+boost::bucket_sorter::stack::empty	/usr/include/boost/pending/bucket_sorter.hpp	/^      bool empty() const { return head[bucket_id] == invalid_value(); }$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:() const
+boost::bucket_sorter::stack::head	/usr/include/boost/pending/bucket_sorter.hpp	/^      Iter head;$/;"	m	class:boost::bucket_sorter::stack	access:private
+boost::bucket_sorter::stack::id	/usr/include/boost/pending/bucket_sorter.hpp	/^      ValueIndexMap id;$/;"	m	class:boost::bucket_sorter::stack	access:private
+boost::bucket_sorter::stack::next	/usr/include/boost/pending/bucket_sorter.hpp	/^      Iter next;$/;"	m	class:boost::bucket_sorter::stack	access:private
+boost::bucket_sorter::stack::pop	/usr/include/boost/pending/bucket_sorter.hpp	/^      void pop() {$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:()
+boost::bucket_sorter::stack::prev	/usr/include/boost/pending/bucket_sorter.hpp	/^      Iter prev;$/;"	m	class:boost::bucket_sorter::stack	access:private
+boost::bucket_sorter::stack::push	/usr/include/boost/pending/bucket_sorter.hpp	/^      void push(const value_type& x) {$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:(const value_type& x)
+boost::bucket_sorter::stack::stack	/usr/include/boost/pending/bucket_sorter.hpp	/^      stack(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v)$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v)
+boost::bucket_sorter::stack::stack	/usr/include/boost/pending/bucket_sorter.hpp	/^      stack(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v,$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v, const ValueIndexMap& _id)
+boost::bucket_sorter::stack::top	/usr/include/boost/pending/bucket_sorter.hpp	/^      const value_type& top() const { return value[ head[bucket_id] ]; }$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:() const
+boost::bucket_sorter::stack::top	/usr/include/boost/pending/bucket_sorter.hpp	/^      value_type& top() { return value[ head[bucket_id] ]; }$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:()
+boost::bucket_sorter::stack::value	/usr/include/boost/pending/bucket_sorter.hpp	/^      IndexValueMap value;$/;"	m	class:boost::bucket_sorter::stack	access:private
+boost::bucket_sorter::update	/usr/include/boost/pending/bucket_sorter.hpp	/^    void update(const value_type& x) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const value_type& x)
+boost::bucket_sorter::value_type	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef ValueType value_type;$/;"	t	class:boost::bucket_sorter	access:public
+boost::const_nonconst_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void const_nonconst_iterator_test(Iterator i, ConstIterator j)$/;"	f	namespace:boost	signature:(Iterator i, ConstIterator j)
+boost::detail	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^namespace detail {$/;"	n	namespace:boost
+boost::detail	/usr/include/boost/pending/detail/property.hpp	/^  namespace detail {$/;"	n	namespace:boost
+boost::detail	/usr/include/boost/pending/integer_log2.hpp	/^ namespace detail {$/;"	n	namespace:boost
+boost::detail	/usr/include/boost/pending/property.hpp	/^ namespace detail {$/;"	n	namespace:boost
+boost::detail::build_property_tag_value_alist	/usr/include/boost/pending/detail/property.hpp	/^    struct build_property_tag_value_alist$/;"	s	namespace:boost::detail
+boost::detail::build_property_tag_value_alist	/usr/include/boost/pending/detail/property.hpp	/^    struct build_property_tag_value_alist<no_property>$/;"	s	namespace:boost::detail
+boost::detail::build_property_tag_value_alist::Next	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename build_property_tag_value_alist<NextProperty>::type Next;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+boost::detail::build_property_tag_value_alist::NextProperty	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename PropertyList::next_type NextProperty;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+boost::detail::build_property_tag_value_alist::Tag	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename PropertyList::tag_type Tag;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+boost::detail::build_property_tag_value_alist::type	/usr/include/boost/pending/detail/property.hpp	/^      typedef no_property type;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+boost::detail::build_property_tag_value_alist::type	/usr/include/boost/pending/detail/property.hpp	/^      typedef std::pair< std::pair<Tag,Value>, Next> type;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+boost::detail::build_property_tag_value_alist::Value	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename PropertyList::value_type Value;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+boost::detail::end_extract	/usr/include/boost/pending/detail/property.hpp	/^    struct end_extract {$/;"	s	namespace:boost::detail
+boost::detail::end_extract::bind_	/usr/include/boost/pending/detail/property.hpp	/^      struct bind_ {$/;"	s	struct:boost::detail::end_extract	access:public
+boost::detail::end_extract::bind_::type	/usr/include/boost/pending/detail/property.hpp	/^        typedef error_property_not_found type;$/;"	t	struct:boost::detail::end_extract::bind_	access:public
+boost::detail::error_property_not_found	/usr/include/boost/pending/detail/property.hpp	/^    struct error_property_not_found { };$/;"	s	namespace:boost::detail
+boost::detail::ev_selector	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector { typedef recursive_extract type; };$/;"	s	namespace:boost::detail
+boost::detail::ev_selector	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector<no_property> { typedef end_extract type; };$/;"	s	namespace:boost::detail
+boost::detail::ev_selector::type	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector { typedef recursive_extract type; };$/;"	t	struct:boost::detail::ev_selector	access:public
+boost::detail::ev_selector::type	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector<no_property> { typedef end_extract type; };$/;"	t	struct:boost::detail::ev_selector	access:public
+boost::detail::extract_value	/usr/include/boost/pending/detail/property.hpp	/^    struct extract_value {$/;"	s	namespace:boost::detail
+boost::detail::extract_value	/usr/include/boost/pending/detail/property.hpp	/^    struct extract_value< std::pair<std::pair<Tag,Value>,Rest>, Tag> {$/;"	s	namespace:boost::detail
+boost::detail::extract_value	/usr/include/boost/pending/detail/property.hpp	/^    struct extract_value< std::pair<std::pair<Tag1,Value>,Rest>, Tag2> {$/;"	s	namespace:boost::detail
+boost::detail::extract_value::type	/usr/include/boost/pending/detail/property.hpp	/^      typedef error_property_not_found type;$/;"	t	struct:boost::detail::extract_value	access:public
+boost::detail::extract_value::type	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename extract_value<Rest,Tag2>::type type;$/;"	t	struct:boost::detail::extract_value	access:public
+boost::detail::extract_value::type	/usr/include/boost/pending/detail/property.hpp	/^      typedef Value type;$/;"	t	struct:boost::detail::extract_value	access:public
+boost::detail::find_representative_with_full_compression	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^find_representative_with_full_compression(ParentPA parent, Vertex v)$/;"	f	namespace:boost::detail	signature:(ParentPA parent, Vertex v)
+boost::detail::find_representative_with_path_halving	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^find_representative_with_path_halving(ParentPA p, Vertex v)$/;"	f	namespace:boost::detail	signature:(ParentPA p, Vertex v)
+boost::detail::integer_log2_impl	/usr/include/boost/pending/integer_log2.hpp	/^  int integer_log2_impl(T x, int n) {$/;"	f	namespace:boost::detail	signature:(T x, int n)
+boost::detail::is_no_property	/usr/include/boost/pending/property.hpp	/^    struct is_no_property$/;"	s	namespace:boost::detail	inherits:mpl::bool_
+boost::detail::link_sets	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^link_sets(ParentPA p, RankPA rank, Vertex i, Vertex j,$/;"	f	namespace:boost::detail	signature:(ParentPA p, RankPA rank, Vertex i, Vertex j, ComponentRepresentative comp_rep)
+boost::detail::max_pow2_less	/usr/include/boost/pending/integer_log2.hpp	/^  struct max_pow2_less {$/;"	s	namespace:boost::detail
+boost::detail::max_pow2_less::c	/usr/include/boost/pending/integer_log2.hpp	/^      enum { c = 2*n < p };$/;"	e	enum:boost::detail::max_pow2_less::__anon3
+boost::detail::max_pow2_less::n	/usr/include/boost/pending/integer_log2.hpp	/^     const int n = detail::max_pow2_less<$/;"	e	enum:boost::detail::max_pow2_less::__anon3
+boost::detail::normalize_node	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^normalize_node(ParentPA p, Vertex i)$/;"	f	namespace:boost::detail	signature:(ParentPA p, Vertex i)
+boost::detail::property_value_dispatch	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_dispatch {$/;"	s	namespace:boost::detail
+boost::detail::property_value_dispatch	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_dispatch<0> {$/;"	s	namespace:boost::detail
+boost::detail::property_value_dispatch::const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      const_get_value(const PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(const PropertyList& p, T* t, Tag tag)
+boost::detail::property_value_dispatch::const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static const T& const_get_value(const PropertyTag& p, T*, Tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(const PropertyTag& p, T*, Tag)
+boost::detail::property_value_dispatch::get_value	/usr/include/boost/pending/detail/property.hpp	/^      get_value(PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(PropertyList& p, T* t, Tag tag)
+boost::detail::property_value_dispatch::get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static T& get_value(PropertyTag& p, T*, Tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(PropertyTag& p, T*, Tag)
+boost::detail::property_value_end	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_end {$/;"	s	namespace:boost::detail
+boost::detail::property_value_end	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_end<no_property> {$/;"	s	namespace:boost::detail
+boost::detail::property_value_end::const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      const_get_value(const no_property&, T*, Tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(const no_property&, T*, Tag)
+boost::detail::property_value_end::const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static const T& const_get_value(const PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(const PropertyList& p, T* t, Tag tag)
+boost::detail::property_value_end::get_value	/usr/include/boost/pending/detail/property.hpp	/^      get_value(no_property&, T*, Tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(no_property&, T*, Tag)
+boost::detail::property_value_end::get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static T& get_value(PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(PropertyList& p, T* t, Tag tag)
+boost::detail::property_value_end::result	/usr/include/boost/pending/detail/property.hpp	/^      template <class T> struct result { $/;"	s	struct:boost::detail::property_value_end	access:public
+boost::detail::property_value_end::result	/usr/include/boost/pending/detail/property.hpp	/^      template <class T> struct result { typedef T type; };$/;"	s	struct:boost::detail::property_value_end	access:public
+boost::detail::property_value_end::result::type	/usr/include/boost/pending/detail/property.hpp	/^        typedef detail::error_property_not_found type; $/;"	t	struct:boost::detail::property_value_end::result	access:public
+boost::detail::property_value_end::result::type	/usr/include/boost/pending/detail/property.hpp	/^      template <class T> struct result { typedef T type; };$/;"	t	struct:boost::detail::property_value_end::result	access:public
+boost::detail::recursive_extract	/usr/include/boost/pending/detail/property.hpp	/^    struct recursive_extract {$/;"	s	namespace:boost::detail
+boost::detail::recursive_extract::bind_	/usr/include/boost/pending/detail/property.hpp	/^      struct bind_ {$/;"	s	struct:boost::detail::recursive_extract	access:public
+boost::detail::recursive_extract::bind_::AListFirst	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename TagValueAList::first_type AListFirst;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+boost::detail::recursive_extract::bind_::Extractor	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename ev_selector<Next>::type Extractor;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+boost::detail::recursive_extract::bind_::match	/usr/include/boost/pending/detail/property.hpp	/^        enum { match = same_property<Tag1,Tag2>::value };$/;"	e	enum:boost::detail::recursive_extract::bind_::__anon2
+boost::detail::recursive_extract::bind_::Next	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename TagValueAList::second_type Next;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+boost::detail::recursive_extract::bind_::Tag2	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename AListFirst::first_type Tag2;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+boost::detail::recursive_extract::bind_::type	/usr/include/boost/pending/detail/property.hpp	/^        >::type type;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+boost::detail::recursive_extract::bind_::Value	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename AListFirst::second_type Value;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+boost::detail::retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list$/;"	s	namespace:boost::detail
+boost::detail::retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list<FinalTag, no_property>$/;"	s	namespace:boost::detail
+boost::detail::retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list<FinalTag, property<FinalTag, FinalType> >$/;"	s	namespace:boost::detail
+boost::detail::retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list<FinalTag, property<Tag, T, Base> >$/;"	s	namespace:boost::detail
+boost::detail::retag_property_list::next	/usr/include/boost/pending/property.hpp	/^        typedef retag_property_list<FinalTag, Base> next;$/;"	t	struct:boost::detail::retag_property_list	access:private
+boost::detail::retag_property_list::retagged	/usr/include/boost/pending/property.hpp	/^        typedef FinalType retagged;$/;"	t	struct:boost::detail::retag_property_list	access:public
+boost::detail::retag_property_list::retagged	/usr/include/boost/pending/property.hpp	/^        typedef no_property retagged;$/;"	t	struct:boost::detail::retag_property_list	access:public
+boost::detail::retag_property_list::retagged	/usr/include/boost/pending/property.hpp	/^        typedef typename next::retagged retagged;$/;"	t	struct:boost::detail::retag_property_list	access:public
+boost::detail::retag_property_list::type	/usr/include/boost/pending/property.hpp	/^        typedef no_property type;$/;"	t	struct:boost::detail::retag_property_list	access:public
+boost::detail::retag_property_list::type	/usr/include/boost/pending/property.hpp	/^        typedef property<FinalTag, FinalType> type;$/;"	t	struct:boost::detail::retag_property_list	access:public
+boost::detail::retag_property_list::type	/usr/include/boost/pending/property.hpp	/^        typedef property<Tag, T, typename next::type> type;$/;"	t	struct:boost::detail::retag_property_list	access:public
+boost::detail::same_property	/usr/include/boost/pending/detail/property.hpp	/^    struct same_property {$/;"	s	namespace:boost::detail
+boost::detail::same_property::value	/usr/include/boost/pending/detail/property.hpp	/^      enum { value = is_same<PropertyTag1,PropertyTag2>::value };$/;"	e	enum:boost::detail::same_property::__anon1
+boost::disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^  class disjoint_sets {$/;"	c	namespace:boost
+boost::disjoint_sets::compress_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void compress_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets	access:public	signature:(ElementIterator first, ElementIterator last)
+boost::disjoint_sets::count_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline std::size_t count_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets	access:public	signature:(ElementIterator first, ElementIterator last)
+boost::disjoint_sets::disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline disjoint_sets() {}$/;"	f	class:boost::disjoint_sets	access:private	signature:()
+boost::disjoint_sets::disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline disjoint_sets(const self& c) $/;"	f	class:boost::disjoint_sets	access:public	signature:(const self& c)
+boost::disjoint_sets::disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline disjoint_sets(RankPA r, ParentPA p) $/;"	f	class:boost::disjoint_sets	access:public	signature:(RankPA r, ParentPA p)
+boost::disjoint_sets::find_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline Element find_set(Element x)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x)
+boost::disjoint_sets::link	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void link(Element x, Element y)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x, Element y)
+boost::disjoint_sets::make_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void make_set(Element x)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x)
+boost::disjoint_sets::normalize_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void normalize_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets	access:public	signature:(ElementIterator first, ElementIterator last)
+boost::disjoint_sets::parent	/usr/include/boost/pending/disjoint_sets.hpp	/^    ParentPA parent;$/;"	m	class:boost::disjoint_sets	access:protected
+boost::disjoint_sets::rank	/usr/include/boost/pending/disjoint_sets.hpp	/^    RankPA rank;$/;"	m	class:boost::disjoint_sets	access:protected
+boost::disjoint_sets::rep	/usr/include/boost/pending/disjoint_sets.hpp	/^    FindCompress rep;$/;"	m	class:boost::disjoint_sets	access:protected
+boost::disjoint_sets::self	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef disjoint_sets self;$/;"	t	class:boost::disjoint_sets	access:private
+boost::disjoint_sets::union_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void union_set(Element x, Element y)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x, Element y)
+boost::disjoint_sets_with_storage	/usr/include/boost/pending/disjoint_sets.hpp	/^  class disjoint_sets_with_storage$/;"	c	namespace:boost
+boost::disjoint_sets_with_storage::compress_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void compress_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(ElementIterator first, ElementIterator last)
+boost::disjoint_sets_with_storage::count_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline std::size_t count_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(ElementIterator first, ElementIterator last)
+boost::disjoint_sets_with_storage::disjoint_sets_with_storage	/usr/include/boost/pending/disjoint_sets.hpp	/^    disjoint_sets_with_storage(size_type n = 0,$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(size_type n = 0, ID id_ = ID(), InverseID inv = InverseID())
+boost::disjoint_sets_with_storage::extend_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    extend_sets(Element x, Element y)$/;"	f	class:boost::disjoint_sets_with_storage	access:protected	signature:(Element x, Element y)
+boost::disjoint_sets_with_storage::find_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline Element find_set(Element x) {$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x)
+boost::disjoint_sets_with_storage::id	/usr/include/boost/pending/disjoint_sets.hpp	/^    ID id;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+boost::disjoint_sets_with_storage::id_to_vertex	/usr/include/boost/pending/disjoint_sets.hpp	/^    InverseID id_to_vertex;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+boost::disjoint_sets_with_storage::Index	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef typename property_traits<ID>::value_type Index;$/;"	t	class:boost::disjoint_sets_with_storage	access:private
+boost::disjoint_sets_with_storage::link	/usr/include/boost/pending/disjoint_sets.hpp	/^    link(Element x, Element y)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x, Element y)
+boost::disjoint_sets_with_storage::make_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    make_set(Element x) {$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x)
+boost::disjoint_sets_with_storage::normalize_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void normalize_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(ElementIterator first, ElementIterator last)
+boost::disjoint_sets_with_storage::parent	/usr/include/boost/pending/disjoint_sets.hpp	/^    ParentContainer parent;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+boost::disjoint_sets_with_storage::ParentContainer	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef std::vector<Index> ParentContainer;$/;"	t	class:boost::disjoint_sets_with_storage	access:private
+boost::disjoint_sets_with_storage::parents	/usr/include/boost/pending/disjoint_sets.hpp	/^    const ParentContainer& parents() { return parent; }$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:()
+boost::disjoint_sets_with_storage::rank	/usr/include/boost/pending/disjoint_sets.hpp	/^    RankContainer rank;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+boost::disjoint_sets_with_storage::RankContainer	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef std::vector<unsigned char> RankContainer;$/;"	t	class:boost::disjoint_sets_with_storage	access:private
+boost::disjoint_sets_with_storage::rep	/usr/include/boost/pending/disjoint_sets.hpp	/^    FindCompress rep;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+boost::disjoint_sets_with_storage::size_type	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef typename ParentContainer::size_type size_type;$/;"	t	class:boost::disjoint_sets_with_storage	access:public
+boost::disjoint_sets_with_storage::union_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    union_set(Element x, Element y) {$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x, Element y)
+boost::down_heap	/usr/include/boost/pending/mutable_heap.hpp	/^  inline TreeNode down_heap(TreeNode x, const Compare& comp, ExternalData& edata) {$/;"	f	namespace:boost	signature:(TreeNode x, const Compare& comp, ExternalData& edata)
+boost::dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^struct dummyT { $/;"	s	namespace:boost
+boost::dummyT::dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^  dummyT() { }$/;"	f	struct:boost::dummyT	access:public	signature:()
+boost::dummyT::dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^  dummyT(detail::dummy_constructor) { }$/;"	f	struct:boost::dummyT	access:public	signature:(detail::dummy_constructor)
+boost::dummyT::dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^  dummyT(int x) : m_x(x) { }$/;"	f	struct:boost::dummyT	access:public	signature:(int x)
+boost::dummyT::foo	/usr/include/boost/pending/iterator_tests.hpp	/^  int foo() const { return m_x; } $/;"	f	struct:boost::dummyT	access:public	signature:() const
+boost::dummyT::m_x	/usr/include/boost/pending/iterator_tests.hpp	/^  int m_x;$/;"	m	struct:boost::dummyT	access:public
+boost::dummyT::operator ==	/usr/include/boost/pending/iterator_tests.hpp	/^  bool operator==(const dummyT& d) const { return m_x == d.m_x; }$/;"	f	struct:boost::dummyT	access:public	signature:(const dummyT& d) const
+boost::fenced_priority_queue	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  class fenced_priority_queue {$/;"	c	namespace:boost
+boost::fenced_priority_queue::empty	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    bool empty(void) const;$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void) const
+boost::fenced_priority_queue::empty	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  empty(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+boost::fenced_priority_queue::fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void fence(void) const;$/;"	p	class:boost::fenced_priority_queue	access:private	signature:(void) const
+boost::fenced_priority_queue::fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void fence(void);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void)
+boost::fenced_priority_queue::fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  fence(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+boost::fenced_priority_queue::fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  fence(void) {$/;"	f	class:boost::fenced_priority_queue	signature:(void)
+boost::fenced_priority_queue::fenced_priority_queue	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    fenced_priority_queue(const Compare _comp = Compare() ) $/;"	f	class:boost::fenced_priority_queue	access:public	signature:(const Compare _comp = Compare() )
+boost::fenced_priority_queue::pop	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void pop(void);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void)
+boost::fenced_priority_queue::pop	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  pop(void) {$/;"	f	class:boost::fenced_priority_queue	signature:(void)
+boost::fenced_priority_queue::PQ	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    mutable std::priority_queue<T, std::vector<T>, Compare> PQ;$/;"	m	class:boost::fenced_priority_queue	access:private
+boost::fenced_priority_queue::push	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void push(const T& data);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(const T& data)
+boost::fenced_priority_queue::push	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  push(const T &t) {$/;"	f	class:boost::fenced_priority_queue	signature:(const T &t)
+boost::fenced_priority_queue::Q	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    mutable Buffer Q;$/;"	m	class:boost::fenced_priority_queue	access:private
+boost::fenced_priority_queue::size	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    size_type size(void) const;$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void) const
+boost::fenced_priority_queue::size	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  size(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+boost::fenced_priority_queue::size_type	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    typedef typename Buffer::size_type size_type;$/;"	t	class:boost::fenced_priority_queue	access:public
+boost::fenced_priority_queue::top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    const T& top(void) const;$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void) const
+boost::fenced_priority_queue::top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    T& top(void);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void)
+boost::fenced_priority_queue::top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  top(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+boost::fenced_priority_queue::top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  top(void) {$/;"	f	class:boost::fenced_priority_queue	signature:(void)
+boost::fenced_priority_queue::value_type	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    typedef T value_type;$/;"	t	class:boost::fenced_priority_queue	access:public
+boost::fibonacci_heap	/usr/include/boost/pending/fibonacci_heap.hpp	/^class fibonacci_heap$/;"	c	namespace:boost
+boost::fibonacci_heap::add_tree_to_new_roots	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void add_tree_to_new_roots(size_type v, $/;"	f	class:boost::fibonacci_heap	access:public	signature:(size_type v, LinkIter new_roots, int& h)
+boost::fibonacci_heap::empty	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline bool empty() const { return _n == 0; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:() const
+boost::fibonacci_heap::fibonacci_heap	/usr/include/boost/pending/fibonacci_heap.hpp	/^  fibonacci_heap(size_type n, $/;"	f	class:boost::fibonacci_heap	access:public	signature:(size_type n, const Compare& cmp, const ID& id = identity_property_map())
+boost::fibonacci_heap::insert_into_forest	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void insert_into_forest(size_type v, const T& d) {$/;"	f	class:boost::fibonacci_heap	access:protected	signature:(size_type v, const T& d)
+boost::fibonacci_heap::LinkIter	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef typename LinkVec::iterator LinkIter;$/;"	t	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::LinkVec	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef std::vector<size_type> LinkVec;$/;"	t	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::make_child	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void make_child(size_type u, size_type v, size_type r) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(size_type u, size_type v, size_type r)
+boost::fibonacci_heap::new_roots	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec new_roots;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::nil	/usr/include/boost/pending/fibonacci_heap.hpp	/^  size_type nil() const { return _left.size(); }$/;"	f	class:boost::fibonacci_heap	access:protected	signature:() const
+boost::fibonacci_heap::pop	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void pop() {$/;"	f	class:boost::fibonacci_heap	access:public	signature:()
+boost::fibonacci_heap::print	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void print(std::ostream& os) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(std::ostream& os)
+boost::fibonacci_heap::print_recur	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void print_recur(size_type x, std::ostream& os) {$/;"	f	class:boost::fibonacci_heap	access:protected	signature:(size_type x, std::ostream& os)
+boost::fibonacci_heap::push	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void push(const T& d) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(const T& d)
+boost::fibonacci_heap::rebuild_root_list	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void rebuild_root_list(LinkIter new_roots, int& h)$/;"	f	class:boost::fibonacci_heap	access:public	signature:(LinkIter new_roots, int& h)
+boost::fibonacci_heap::remove_from_family	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void remove_from_family(size_type v, size_type p) {$/;"	f	class:boost::fibonacci_heap	access:protected	signature:(size_type v, size_type p)
+boost::fibonacci_heap::self	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef fibonacci_heap self;$/;"	t	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::size	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline size_type size() const { return _n; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:() const
+boost::fibonacci_heap::size_type	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef typename boost::property_traits<ID>::value_type size_type;$/;"	t	class:boost::fibonacci_heap	access:private
+boost::fibonacci_heap::top	/usr/include/boost/pending/fibonacci_heap.hpp	/^  const T& top() const { return _key[_root]; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:() const
+boost::fibonacci_heap::top	/usr/include/boost/pending/fibonacci_heap.hpp	/^  T& top() { return _key[_root]; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:()
+boost::fibonacci_heap::update	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void update(const T& d) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(const T& d)
+boost::fibonacci_heap::value_type	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef T value_type;$/;"	t	class:boost::fibonacci_heap	access:private
+boost::fibonacci_heap::_child	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _child;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_compare	/usr/include/boost/pending/fibonacci_heap.hpp	/^  Compare _compare;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_degree	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _degree;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_id	/usr/include/boost/pending/fibonacci_heap.hpp	/^  ID _id;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_key	/usr/include/boost/pending/fibonacci_heap.hpp	/^  std::vector<T> _key;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_left	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _left, _right, _p;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_mark	/usr/include/boost/pending/fibonacci_heap.hpp	/^  std::vector<bool> _mark;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_n	/usr/include/boost/pending/fibonacci_heap.hpp	/^  size_type _n, _root;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_p	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _left, _right, _p;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_right	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _left, _right, _p;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::fibonacci_heap::_root	/usr/include/boost/pending/fibonacci_heap.hpp	/^  size_type _n, _root;$/;"	m	class:boost::fibonacci_heap	access:protected
+boost::find_with_full_path_compression	/usr/include/boost/pending/disjoint_sets.hpp	/^  struct find_with_full_path_compression {$/;"	s	namespace:boost
+boost::find_with_full_path_compression::operator ()	/usr/include/boost/pending/disjoint_sets.hpp	/^    Vertex operator()(ParentPA p, Vertex v){$/;"	f	struct:boost::find_with_full_path_compression	access:public	signature:(ParentPA p, Vertex v)
+boost::find_with_path_halving	/usr/include/boost/pending/disjoint_sets.hpp	/^  struct find_with_path_halving {$/;"	s	namespace:boost
+boost::find_with_path_halving::operator ()	/usr/include/boost/pending/disjoint_sets.hpp	/^    Vertex operator()(ParentPA p, Vertex v) { $/;"	f	struct:boost::find_with_path_halving	access:public	signature:(ParentPA p, Vertex v)
+boost::forward_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void forward_iterator_test(Iterator i, T v1, T v2) $/;"	f	namespace:boost	signature:(Iterator i, T v1, T v2)
+boost::get_property_value	/usr/include/boost/pending/property.hpp	/^  get_property_value(const no_property& p, Tag2) {$/;"	f	namespace:boost	signature:(const no_property& p, Tag2)
+boost::get_property_value	/usr/include/boost/pending/property.hpp	/^  get_property_value(const property<Tag1,T1,Base>& p, Tag2 tag2) {$/;"	f	namespace:boost	signature:(const property<Tag1,T1,Base>& p, Tag2 tag2)
+boost::get_property_value	/usr/include/boost/pending/property.hpp	/^  get_property_value(property<Tag1,T1,Base>& p, Tag2 tag2) {$/;"	f	namespace:boost	signature:(property<Tag1,T1,Base>& p, Tag2 tag2)
+boost::graph_detail	/usr/include/boost/pending/container_traits.hpp	/^namespace boost { namespace graph_detail {$/;"	n	namespace:boost
+boost::graph_detail::associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct associative_container_tag : virtual public forward_container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:forward_container_tag
+boost::graph_detail::back_insertion_sequence_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct back_insertion_sequence_tag : virtual public sequence_tag { };$/;"	s	namespace:boost::graph_detail	inherits:sequence_tag
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  front_insertion_sequence_tag container_category($/;"	f	namespace:boost::graph_detail	signature:( const BOOST_STD_EXTENSION_NAMESPACE::slist<T,Alloc>& )
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  list_tag container_category(const std::list<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::list<T,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  map_tag container_category(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  map_tag container_category(const std::map<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::map<Key,T,Cmp,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  multimap_tag container_category(const std::multimap<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multimap<Key,T,Cmp,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  multiset_tag container_category(const std::multiset<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multiset<Key,Cmp,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  set_tag container_category(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  set_tag container_category(const std::set<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::set<Key,Cmp,Alloc>&)
+boost::graph_detail::container_category	/usr/include/boost/pending/container_traits.hpp	/^  vector_tag container_category(const std::vector<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::vector<T,Alloc>&)
+boost::graph_detail::container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct container_tag { };$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::list<T,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::map<Key,T,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::multimap<Key,T,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::multiset<Key,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::set<Key,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::vector<T,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits<BOOST_STD_EXTENSION_NAMESPACE::slist<T,Alloc> > {$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef front_insertion_sequence_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef list_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef map_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef multimap_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef multiset_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef set_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef typename Container::category category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::category	/usr/include/boost/pending/container_traits.hpp	/^    typedef vector_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef stable_tag iterator_stability; \/\/ is this right?$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef stable_tag iterator_stability;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef typename Container::iterator_stability iterator_stability;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::container_traits::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef unstable_tag iterator_stability;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+boost::graph_detail::erase	/usr/include/boost/pending/container_traits.hpp	/^  void erase(Container& c, const T& x)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& x)
+boost::graph_detail::erase_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_dispatch(AssociativeContainer& c, const T& x, $/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, const T& x, associative_container_tag)
+boost::graph_detail::erase_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_dispatch(Sequence& c, const T& x, $/;"	f	namespace:boost::graph_detail	signature:(Sequence& c, const T& x, sequence_tag)
+boost::graph_detail::erase_if	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if(Container& c, Predicate p)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, Predicate p)
+boost::graph_detail::erase_if_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if_dispatch(AssociativeContainer& c, Predicate p,$/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, Predicate p, associative_container_tag, stable_tag)
+boost::graph_detail::erase_if_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if_dispatch(AssociativeContainer& c, Predicate p,$/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, Predicate p, associative_container_tag, unstable_tag)
+boost::graph_detail::erase_if_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if_dispatch(Sequence& c, Predicate p,$/;"	f	namespace:boost::graph_detail	signature:(Sequence& c, Predicate p, sequence_tag, IteratorStability)
+boost::graph_detail::forward_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct forward_container_tag : virtual public container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:container_tag
+boost::graph_detail::front_insertion_sequence_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct front_insertion_sequence_tag : virtual public sequence_tag { };$/;"	s	namespace:boost::graph_detail	inherits:sequence_tag
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability($/;"	f	namespace:boost::graph_detail	signature:( const BOOST_STD_EXTENSION_NAMESPACE::slist<T,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::list<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::list<T,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::map<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::map<Key,T,Cmp,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::multimap<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multimap<Key,T,Cmp,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::multiset<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multiset<Key,Cmp,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::set<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::set<Key,Cmp,Alloc>&)
+boost::graph_detail::iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  unstable_tag iterator_stability(const std::vector<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::vector<T,Alloc>&)
+boost::graph_detail::list_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct list_tag :$/;"	s	namespace:boost::graph_detail	inherits:reversible_container_tag,back_insertion_sequence_tag
+boost::graph_detail::map_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct map_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,pair_associative_container_tag,unique_associative_container_tag
+boost::graph_detail::multimap_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct multimap_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,pair_associative_container_tag,multiple_associative_container_tag
+boost::graph_detail::multiple_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct multiple_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+boost::graph_detail::multiset_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct multiset_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,simple_associative_container_tag,multiple_associative_container_tag
+boost::graph_detail::pair_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct pair_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+boost::graph_detail::push	/usr/include/boost/pending/container_traits.hpp	/^  push(Container& c, const T& v)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& v)
+boost::graph_detail::push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(AssociativeContainer& c, const T& v, $/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, const T& v, unique_associative_container_tag)
+boost::graph_detail::push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(AssociativeContainer& c, const T& v,$/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, const T& v, multiple_associative_container_tag)
+boost::graph_detail::push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(Container& c, const T& v, back_insertion_sequence_tag)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& v, back_insertion_sequence_tag)
+boost::graph_detail::push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(Container& c, const T& v, front_insertion_sequence_tag)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& v, front_insertion_sequence_tag)
+boost::graph_detail::random_access_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct random_access_container_tag$/;"	s	namespace:boost::graph_detail	inherits:reversible_container_tag
+boost::graph_detail::require_stable	/usr/include/boost/pending/container_traits.hpp	/^  inline void require_stable(stable_tag) { }$/;"	f	namespace:boost::graph_detail	signature:(stable_tag)
+boost::graph_detail::reversible_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct reversible_container_tag : virtual public forward_container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:forward_container_tag
+boost::graph_detail::sequence_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct sequence_tag : virtual public forward_container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:forward_container_tag
+boost::graph_detail::set_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct set_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,simple_associative_container_tag,unique_associative_container_tag
+boost::graph_detail::simple_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct simple_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+boost::graph_detail::sorted_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct sorted_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag,reversible_container_tag
+boost::graph_detail::stable_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct stable_tag { };$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::unique_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct unique_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+boost::graph_detail::unstable_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct unstable_tag { };$/;"	s	namespace:boost::graph_detail
+boost::graph_detail::vector_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct vector_tag :$/;"	s	namespace:boost::graph_detail	inherits:random_access_container_tag,back_insertion_sequence_tag
+boost::has_property	/usr/include/boost/pending/property.hpp	/^  struct has_property : boost::mpl::true_ {};$/;"	s	namespace:boost	inherits:boost::mpl::true_
+boost::has_property	/usr/include/boost/pending/property.hpp	/^  struct has_property<no_property> : boost::mpl::false_ {};$/;"	s	namespace:boost	inherits:boost::mpl::false_
+boost::indirect_cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^  class indirect_cmp {$/;"	c	namespace:boost
+boost::indirect_cmp::cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^    Compare cmp;$/;"	m	class:boost::indirect_cmp	access:protected
+boost::indirect_cmp::d	/usr/include/boost/pending/indirect_cmp.hpp	/^    ReadablePropertyMap d;$/;"	m	class:boost::indirect_cmp	access:protected
+boost::indirect_cmp::first_argument_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef K first_argument_type;$/;"	t	class:boost::indirect_cmp	access:public
+boost::indirect_cmp::indirect_cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^    inline indirect_cmp(const ReadablePropertyMap& df, const Compare& c = Compare())$/;"	f	class:boost::indirect_cmp	access:public	signature:(const ReadablePropertyMap& df, const Compare& c = Compare())
+boost::indirect_cmp::K	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::key_type K;$/;"	t	class:boost::indirect_cmp	access:public
+boost::indirect_cmp::operator ()	/usr/include/boost/pending/indirect_cmp.hpp	/^    operator()(const A& u, const B& v) const {$/;"	f	class:boost::indirect_cmp	access:public	signature:(const A& u, const B& v) const
+boost::indirect_cmp::result_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef T result_type;$/;"	t	class:boost::indirect_cmp	access:public
+boost::indirect_cmp::second_argument_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef K second_argument_type;$/;"	t	class:boost::indirect_cmp	access:public
+boost::indirect_cmp::T	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::value_type T;$/;"	t	class:boost::indirect_cmp	access:public
+boost::indirect_pmap	/usr/include/boost/pending/indirect_cmp.hpp	/^  class indirect_pmap {$/;"	c	namespace:boost
+boost::indirect_pmap::argument_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef K argument_type;$/;"	t	class:boost::indirect_pmap	access:public
+boost::indirect_pmap::d	/usr/include/boost/pending/indirect_cmp.hpp	/^    ReadablePropertyMap d;$/;"	m	class:boost::indirect_pmap	access:protected
+boost::indirect_pmap::indirect_pmap	/usr/include/boost/pending/indirect_cmp.hpp	/^    inline indirect_pmap(const ReadablePropertyMap& df)$/;"	f	class:boost::indirect_pmap	access:public	signature:(const ReadablePropertyMap& df)
+boost::indirect_pmap::K	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::key_type K;$/;"	t	class:boost::indirect_pmap	access:public
+boost::indirect_pmap::operator ()	/usr/include/boost/pending/indirect_cmp.hpp	/^    inline bool operator()(const K& u) const {$/;"	f	class:boost::indirect_pmap	access:public	signature:(const K& u) const
+boost::indirect_pmap::result_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef T result_type;$/;"	t	class:boost::indirect_pmap	access:public
+boost::indirect_pmap::T	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::value_type T;$/;"	t	class:boost::indirect_pmap	access:public
+boost::input_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void input_iterator_test(Iterator i, T v1, T v2) $/;"	f	namespace:boost	signature:(Iterator i, T v1, T v2)
+boost::integer_range	/usr/include/boost/pending/integer_range.hpp	/^struct integer_range {$/;"	s	namespace:boost
+boost::integer_range::begin	/usr/include/boost/pending/integer_range.hpp	/^    iterator begin() const { return iterator(m_start); }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+boost::integer_range::const_iterator	/usr/include/boost/pending/integer_range.hpp	/^    typedef iterator const_iterator;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::const_pointer	/usr/include/boost/pending/integer_range.hpp	/^    typedef const IntegerType* const_pointer;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::const_reference	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType const_reference;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::difference_type	/usr/include/boost/pending/integer_range.hpp	/^    typedef std::ptrdiff_t difference_type;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::empty	/usr/include/boost/pending/integer_range.hpp	/^    bool empty() const { return m_finish == m_start; }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+boost::integer_range::end	/usr/include/boost/pending/integer_range.hpp	/^    iterator end() const { return iterator(m_finish); }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+boost::integer_range::integer_range	/usr/include/boost/pending/integer_range.hpp	/^    integer_range(IntegerType start, IntegerType finish)$/;"	f	struct:boost::integer_range	access:public	signature:(IntegerType start, IntegerType finish)
+boost::integer_range::iterator	/usr/include/boost/pending/integer_range.hpp	/^    typedef counting_iterator<IntegerType> iterator;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::m_finish	/usr/include/boost/pending/integer_range.hpp	/^    IntegerType m_start, m_finish;$/;"	m	struct:boost::integer_range	access:protected
+boost::integer_range::m_start	/usr/include/boost/pending/integer_range.hpp	/^    IntegerType m_start, m_finish;$/;"	m	struct:boost::integer_range	access:protected
+boost::integer_range::pointer	/usr/include/boost/pending/integer_range.hpp	/^    typedef const IntegerType* pointer;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::reference	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType reference;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::size	/usr/include/boost/pending/integer_range.hpp	/^    size_type size() const { return m_finish - m_start; }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+boost::integer_range::size_type	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType size_type;$/;"	t	struct:boost::integer_range	access:public
+boost::integer_range::swap	/usr/include/boost/pending/integer_range.hpp	/^    void swap(integer_range& x) {$/;"	f	struct:boost::integer_range	access:public	signature:(integer_range& x)
+boost::integer_range::value_type	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType value_type;$/;"	t	struct:boost::integer_range	access:public
+boost::int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^class int_iterator$/;"	c	namespace:boost
+boost::int_iterator::difference_type	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef std::ptrdiff_t difference_type;$/;"	t	class:boost::int_iterator	access:public
+boost::int_iterator::int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline int_iterator() : _i(0) { }$/;"	f	class:boost::int_iterator	access:public	signature:()
+boost::int_iterator::int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline int_iterator(const self& x) : _i(x._i) { }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x)
+boost::int_iterator::int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline int_iterator(IntT i) : _i(i) { }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT i)
+boost::int_iterator::iterator_category	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef std::random_access_iterator_tag iterator_category;$/;"	t	class:boost::int_iterator	access:public
+boost::int_iterator::operator !=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator!=(const self& x) const { return _i != x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator *	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline IntT operator*() { return _i; }$/;"	f	class:boost::int_iterator	access:public	signature:()
+boost::int_iterator::operator +	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self operator+(IntT n) { self t = *this; t += n; return t; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+boost::int_iterator::operator ++	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self operator++(int) { self t = *this; ++_i; return t; }$/;"	f	class:boost::int_iterator	access:public	signature:(int)
+boost::int_iterator::operator ++	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator++() { ++_i; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:()
+boost::int_iterator::operator +=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator+=(IntT n) { _i += n; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+boost::int_iterator::operator -	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline IntT operator-(const self& x) const { return _i - x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator --	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self operator--(int) { self t = *this; --_i; return t; }$/;"	f	class:boost::int_iterator	access:public	signature:(int)
+boost::int_iterator::operator --	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator--() { --_i; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:()
+boost::int_iterator::operator -=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator-=(IntT n) { _i -= n; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+boost::int_iterator::operator <	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator<(const self& x) const { return _i < x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator <=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator<=(const self& x) const { return _i <= x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator =	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator=(const self& x) { _i = x._i; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x)
+boost::int_iterator::operator ==	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator==(const self& x) const { return _i == x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator >	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator>(const self& x) const { return _i > x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator >=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator>=(const self& x) const { return _i >= x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+boost::int_iterator::operator []	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline IntT operator[](IntT n) { return _i + n; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+boost::int_iterator::pointer	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef IntT* pointer;$/;"	t	class:boost::int_iterator	access:public
+boost::int_iterator::reference	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef IntT& reference;$/;"	t	class:boost::int_iterator	access:public
+boost::int_iterator::self	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef int_iterator self;$/;"	t	class:boost::int_iterator	access:private
+boost::int_iterator::value_type	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef IntT value_type;$/;"	t	class:boost::int_iterator	access:public
+boost::int_iterator::_i	/usr/include/boost/pending/detail/int_iterator.hpp	/^  IntT _i;$/;"	m	class:boost::int_iterator	access:protected
+boost::lowest_bit	/usr/include/boost/pending/lowest_bit.hpp	/^    int lowest_bit(T x) {$/;"	f	namespace:boost	signature:(T x)
+boost::lvalue_test	/usr/include/boost/pending/iterator_tests.hpp	/^template <> struct lvalue_test<true> {$/;"	s	namespace:boost
+boost::lvalue_test	/usr/include/boost/pending/iterator_tests.hpp	/^template <bool is_pointer> struct lvalue_test$/;"	s	namespace:boost
+boost::lvalue_test::check	/usr/include/boost/pending/iterator_tests.hpp	/^    template <class Iterator> static void check(Iterator)$/;"	f	struct:boost::lvalue_test	access:public	signature:(Iterator)
+boost::lvalue_test::check	/usr/include/boost/pending/iterator_tests.hpp	/^    template <class T> static void check(T) {}$/;"	f	struct:boost::lvalue_test	access:public	signature:(T)
+boost::make_indirect_cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^  make_indirect_cmp(const Compare& cmp, ReadablePropertyMap pmap) {$/;"	f	namespace:boost	signature:(const Compare& cmp, ReadablePropertyMap pmap)
+boost::make_indirect_pmap	/usr/include/boost/pending/indirect_cmp.hpp	/^  make_indirect_pmap(ReadablePropertyMap pmap) {$/;"	f	namespace:boost	signature:(ReadablePropertyMap pmap)
+boost::make_integer_range	/usr/include/boost/pending/integer_range.hpp	/^make_integer_range(IntegerType first, IntegerType last)$/;"	f	namespace:boost	signature:(IntegerType first, IntegerType last)
+boost::mpi	/usr/include/boost/pending/property_serialize.hpp	/^  namespace mpi {$/;"	n	namespace:boost
+boost::mpi	/usr/include/boost/pending/property_serialize.hpp	/^namespace boost { namespace mpi {$/;"	n	namespace:boost
+boost::mpi::is_mpi_datatype	/usr/include/boost/pending/property_serialize.hpp	/^    struct is_mpi_datatype<boost::no_property> : mpl::true_ { };$/;"	s	namespace:boost::mpi	inherits:mpl::true_
+boost::mpi::is_mpi_datatype	/usr/include/boost/pending/property_serialize.hpp	/^    struct is_mpi_datatype<property<Tag, T, Base> >$/;"	s	namespace:boost::mpi	inherits:mpl::and_
+boost::mutable_queue	/usr/include/boost/pending/mutable_queue.hpp	/^  class mutable_queue {$/;"	c	namespace:boost
+boost::mutable_queue::c	/usr/include/boost/pending/mutable_queue.hpp	/^    RandomAccessContainer c;$/;"	m	class:boost::mutable_queue	access:protected
+boost::mutable_queue::clear	/usr/include/boost/pending/mutable_queue.hpp	/^    void clear() { c.clear(); }$/;"	f	class:boost::mutable_queue	access:public	signature:()
+boost::mutable_queue::comp	/usr/include/boost/pending/mutable_queue.hpp	/^    Compare comp;$/;"	m	class:boost::mutable_queue	access:protected
+boost::mutable_queue::Compare	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef  adstl::compare_array_node<RandomAccessContainer,Comp> Compare;$/;"	t	class:boost::mutable_queue	access:protected
+boost::mutable_queue::empty	/usr/include/boost/pending/mutable_queue.hpp	/^    bool empty() const { return c.empty(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+boost::mutable_queue::front	/usr/include/boost/pending/mutable_queue.hpp	/^    const value_type& front() const { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+boost::mutable_queue::front	/usr/include/boost/pending/mutable_queue.hpp	/^    value_type& front() { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:()
+boost::mutable_queue::id	/usr/include/boost/pending/mutable_queue.hpp	/^    ID id;$/;"	m	class:boost::mutable_queue	access:protected
+boost::mutable_queue::id_generator	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef ID id_generator;$/;"	t	class:boost::mutable_queue	access:public
+boost::mutable_queue::IndexArray	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef std::vector<size_type> IndexArray;$/;"	t	class:boost::mutable_queue	access:protected
+boost::mutable_queue::index_array	/usr/include/boost/pending/mutable_queue.hpp	/^    IndexArray index_array;$/;"	m	class:boost::mutable_queue	access:protected
+boost::mutable_queue::iterator	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef typename RandomAccessContainer::iterator iterator;$/;"	t	class:boost::mutable_queue	access:protected
+boost::mutable_queue::mutable_queue	/usr/include/boost/pending/mutable_queue.hpp	/^    mutable_queue(ForwardIterator first, ForwardIterator last, $/;"	f	class:boost::mutable_queue	access:public	signature:(ForwardIterator first, ForwardIterator last, const Comp& x, const ID& _id)
+boost::mutable_queue::mutable_queue	/usr/include/boost/pending/mutable_queue.hpp	/^    mutable_queue(size_type n, const Comp& x, const ID& _id) $/;"	f	class:boost::mutable_queue	access:public	signature:(size_type n, const Comp& x, const ID& _id)
+boost::mutable_queue::Node	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef  adstl::array_binary_tree_node<iterator, ID> Node;$/;"	t	class:boost::mutable_queue	access:protected
+boost::mutable_queue::Node	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef  adstl::array_binary_tree_node<iterator, value_type, ID> Node;$/;"	t	class:boost::mutable_queue	access:protected
+boost::mutable_queue::pop	/usr/include/boost/pending/mutable_queue.hpp	/^    void pop() {$/;"	f	class:boost::mutable_queue	access:public	signature:()
+boost::mutable_queue::push	/usr/include/boost/pending/mutable_queue.hpp	/^    void push(const IndexedType& x) {$/;"	f	class:boost::mutable_queue	access:public	signature:(const IndexedType& x)
+boost::mutable_queue::size	/usr/include/boost/pending/mutable_queue.hpp	/^    size_type size() const { return c.size(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+boost::mutable_queue::size_type	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef typename RandomAccessContainer::size_type size_type;$/;"	t	class:boost::mutable_queue	access:public
+boost::mutable_queue::top	/usr/include/boost/pending/mutable_queue.hpp	/^    const value_type& top() const { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+boost::mutable_queue::top	/usr/include/boost/pending/mutable_queue.hpp	/^    value_type& top() { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:()
+boost::mutable_queue::update	/usr/include/boost/pending/mutable_queue.hpp	/^    void update(const IndexedType& x) {$/;"	f	class:boost::mutable_queue	access:public	signature:(const IndexedType& x)
+boost::mutable_queue::value_compare	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef Compare value_compare;$/;"	t	class:boost::mutable_queue	access:public
+boost::mutable_queue::value_type	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef IndexedType value_type;$/;"	t	class:boost::mutable_queue	access:public
+boost::mutable_trivial_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void mutable_trivial_iterator_test(const Iterator i, const Iterator j, T val)$/;"	f	namespace:boost	signature:(const Iterator i, const Iterator j, T val)
+boost::no_property	/usr/include/boost/pending/property.hpp	/^  struct no_property {$/;"	s	namespace:boost
+boost::no_property::kind	/usr/include/boost/pending/property.hpp	/^    typedef void kind;$/;"	t	struct:boost::no_property	access:public
+boost::no_property::next_type	/usr/include/boost/pending/property.hpp	/^    typedef no_property next_type;$/;"	t	struct:boost::no_property	access:public
+boost::no_property::num	/usr/include/boost/pending/property.hpp	/^    enum { num = 0 };$/;"	e	enum:boost::no_property::__anon4
+boost::no_property::tag_type	/usr/include/boost/pending/property.hpp	/^    typedef no_property tag_type;$/;"	t	struct:boost::no_property	access:public
+boost::no_property::value_type	/usr/include/boost/pending/property.hpp	/^    typedef no_property value_type;$/;"	t	struct:boost::no_property	access:public
+boost::operator !=	/usr/include/boost/pending/queue.hpp	/^operator!=(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+boost::operator +	/usr/include/boost/pending/detail/int_iterator.hpp	/^operator+(IntT n, int_iterator<IntT> t) { t += n; return t; }$/;"	f	namespace:boost	signature:(IntT n, int_iterator<IntT> t)
+boost::operator <	/usr/include/boost/pending/queue.hpp	/^inline bool operator<(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&);$/;"	p	namespace:boost	signature:(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)
+boost::operator <	/usr/include/boost/pending/queue.hpp	/^operator<(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+boost::operator <=	/usr/include/boost/pending/queue.hpp	/^operator<=(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+boost::operator ==	/usr/include/boost/pending/queue.hpp	/^inline bool operator==(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&);$/;"	p	namespace:boost	signature:(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)
+boost::operator ==	/usr/include/boost/pending/queue.hpp	/^operator==(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+boost::operator >	/usr/include/boost/pending/queue.hpp	/^operator>(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+boost::operator >=	/usr/include/boost/pending/queue.hpp	/^operator>=(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+boost::property	/usr/include/boost/pending/property.hpp	/^  struct property : public Base {$/;"	s	namespace:boost	inherits:Base
+boost::property::m_value	/usr/include/boost/pending/property.hpp	/^    T m_value;$/;"	m	struct:boost::property	access:public
+boost::property::next_type	/usr/include/boost/pending/property.hpp	/^    typedef Base next_type;$/;"	t	struct:boost::property	access:public
+boost::property::property	/usr/include/boost/pending/property.hpp	/^    property() : m_value() { }$/;"	f	struct:boost::property	access:public	signature:()
+boost::property::property	/usr/include/boost/pending/property.hpp	/^    property() { }$/;"	f	struct:boost::property	access:public	signature:()
+boost::property::property	/usr/include/boost/pending/property.hpp	/^    property(const T& v) : m_value(v) { }$/;"	f	struct:boost::property	access:public	signature:(const T& v)
+boost::property::property	/usr/include/boost/pending/property.hpp	/^    property(const T& v, const Base& b) : Base(b), m_value(v) { }$/;"	f	struct:boost::property	access:public	signature:(const T& v, const Base& b)
+boost::property::tag_type	/usr/include/boost/pending/property.hpp	/^    typedef Tag tag_type;$/;"	t	struct:boost::property	access:public
+boost::property::value_type	/usr/include/boost/pending/property.hpp	/^    typedef T value_type;$/;"	t	struct:boost::property	access:public
+boost::property_kind	/usr/include/boost/pending/property.hpp	/^  struct property_kind {$/;"	s	namespace:boost
+boost::property_kind::type	/usr/include/boost/pending/property.hpp	/^    typedef typename PropertyTag::kind type;$/;"	t	struct:boost::property_kind	access:public
+boost::property_value	/usr/include/boost/pending/property.hpp	/^  struct property_value {$/;"	s	namespace:boost
+boost::property_value::AList	/usr/include/boost/pending/property.hpp	/^    typedef typename detail::build_property_tag_value_alist<PropertyList>::type AList;$/;"	t	struct:boost::property_value	access:public
+boost::property_value::type	/usr/include/boost/pending/property.hpp	/^    typedef typename detail::extract_value<AList,Tag>::type type;$/;"	t	struct:boost::property_value	access:public
+boost::queue	/usr/include/boost/pending/queue.hpp	/^class queue {$/;"	c	namespace:boost
+boost::queue::back	/usr/include/boost/pending/queue.hpp	/^  const_reference back() const { return c.back(); }$/;"	f	class:boost::queue	access:public	signature:() const
+boost::queue::back	/usr/include/boost/pending/queue.hpp	/^  reference back() { return c.back(); }$/;"	f	class:boost::queue	access:public	signature:()
+boost::queue::c	/usr/include/boost/pending/queue.hpp	/^  _Sequence c;$/;"	m	class:boost::queue	access:protected
+boost::queue::const_reference	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::const_reference const_reference;$/;"	t	class:boost::queue	access:public
+boost::queue::container_type	/usr/include/boost/pending/queue.hpp	/^  typedef          _Sequence                  container_type;$/;"	t	class:boost::queue	access:public
+boost::queue::empty	/usr/include/boost/pending/queue.hpp	/^  bool empty() const { return c.empty(); }$/;"	f	class:boost::queue	access:public	signature:() const
+boost::queue::front	/usr/include/boost/pending/queue.hpp	/^  const_reference front() const { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:() const
+boost::queue::front	/usr/include/boost/pending/queue.hpp	/^  reference front() { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:()
+boost::queue::operator <	/usr/include/boost/pending/queue.hpp	/^  friend bool operator< (const queue<_Tp1, _Seq1>&,$/;"	p	class:boost::queue	access:friend	signature:(const queue<_Tp1, _Seq1>&, const queue<_Tp1, _Seq1>&)
+boost::queue::operator ==	/usr/include/boost/pending/queue.hpp	/^  friend bool operator== (const queue<_Tp1, _Seq1>&,$/;"	p	class:boost::queue	access:friend	signature:(const queue<_Tp1, _Seq1>&, const queue<_Tp1, _Seq1>&)
+boost::queue::pop	/usr/include/boost/pending/queue.hpp	/^  void pop() { c.pop_front(); }$/;"	f	class:boost::queue	access:public	signature:()
+boost::queue::push	/usr/include/boost/pending/queue.hpp	/^  void push(const value_type& __x) { c.push_back(__x); }$/;"	f	class:boost::queue	access:public	signature:(const value_type& __x)
+boost::queue::queue	/usr/include/boost/pending/queue.hpp	/^  explicit queue(const _Sequence& __c) : c(__c) {}$/;"	f	class:boost::queue	access:public	signature:(const _Sequence& __c)
+boost::queue::queue	/usr/include/boost/pending/queue.hpp	/^  queue() : c() {}$/;"	f	class:boost::queue	access:public	signature:()
+boost::queue::reference	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::reference       reference;$/;"	t	class:boost::queue	access:public
+boost::queue::size	/usr/include/boost/pending/queue.hpp	/^  size_type size() const { return c.size(); }$/;"	f	class:boost::queue	access:public	signature:() const
+boost::queue::size_type	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::size_type       size_type;$/;"	t	class:boost::queue	access:public
+boost::queue::swap	/usr/include/boost/pending/queue.hpp	/^  void swap(queue& other)$/;"	f	class:boost::queue	access:public	signature:(queue& other)
+boost::queue::top	/usr/include/boost/pending/queue.hpp	/^  const_reference top() const { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:() const
+boost::queue::top	/usr/include/boost/pending/queue.hpp	/^  reference top() { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:()
+boost::queue::value_type	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::value_type      value_type;$/;"	t	class:boost::queue	access:public
+boost::random_access_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void random_access_iterator_test(Iterator i, int N, TrueVals vals)$/;"	f	namespace:boost	signature:(Iterator i, int N, TrueVals vals)
+boost::relaxed_heap	/usr/include/boost/pending/relaxed_heap.hpp	/^class relaxed_heap$/;"	c	namespace:boost
+boost::relaxed_heap::A	/usr/include/boost/pending/relaxed_heap.hpp	/^  std::vector<group*> A;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::active_sibling_transform	/usr/include/boost/pending/relaxed_heap.hpp	/^  void active_sibling_transform(group* a, group* s)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a, group* s)
+boost::relaxed_heap::build_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  build_tree(group& parent, size_type idx, size_type r, size_type max_rank)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group& parent, size_type idx, size_type r, size_type max_rank)
+boost::relaxed_heap::clean	/usr/include/boost/pending/relaxed_heap.hpp	/^  void clean(group* q)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* q)
+boost::relaxed_heap::combine	/usr/include/boost/pending/relaxed_heap.hpp	/^  group* combine(group* a1, group* a2)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a1, group* a2)
+boost::relaxed_heap::compare	/usr/include/boost/pending/relaxed_heap.hpp	/^  Compare compare;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::contains	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool contains(const value_type& x) const { return groups[get(id, x)]; }$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x) const
+boost::relaxed_heap::do_compare	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool do_compare(group* x, group* y) const$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* x, group* y) const
+boost::relaxed_heap::do_swap	/usr/include/boost/pending/relaxed_heap.hpp	/^  static void do_swap(group*& x, group*& y)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group*& x, group*& y)
+boost::relaxed_heap::dump_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  void dump_tree() { dump_tree(std::cout); }$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+boost::relaxed_heap::dump_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  void dump_tree(std::ostream& out) { dump_tree(out, &root); }$/;"	f	class:boost::relaxed_heap	access:public	signature:(std::ostream& out)
+boost::relaxed_heap::dump_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  void dump_tree(std::ostream& out, group* p, bool in_progress = false)$/;"	f	class:boost::relaxed_heap	access:public	signature:(std::ostream& out, group* p, bool in_progress = false)
+boost::relaxed_heap::empty	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool empty() const$/;"	f	class:boost::relaxed_heap	access:public	signature:() const
+boost::relaxed_heap::find_smallest	/usr/include/boost/pending/relaxed_heap.hpp	/^  void find_smallest() const$/;"	f	class:boost::relaxed_heap	access:private	signature:() const
+boost::relaxed_heap::good_sibling_transform	/usr/include/boost/pending/relaxed_heap.hpp	/^  void good_sibling_transform(group* a, group* s)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a, group* s)
+boost::relaxed_heap::group	/usr/include/boost/pending/relaxed_heap.hpp	/^  struct group {$/;"	s	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::group::children	/usr/include/boost/pending/relaxed_heap.hpp	/^    group**               children;$/;"	m	struct:boost::relaxed_heap::group	access:public
+boost::relaxed_heap::group::group	/usr/include/boost/pending/relaxed_heap.hpp	/^    explicit group(group_key_kind kind = largest_key)$/;"	f	struct:boost::relaxed_heap::group	access:public	signature:(group_key_kind kind = largest_key)
+boost::relaxed_heap::group::kind	/usr/include/boost/pending/relaxed_heap.hpp	/^    group_key_kind        kind;$/;"	m	struct:boost::relaxed_heap::group	access:public
+boost::relaxed_heap::group::parent	/usr/include/boost/pending/relaxed_heap.hpp	/^    group*                parent;$/;"	m	struct:boost::relaxed_heap::group	access:public
+boost::relaxed_heap::group::rank	/usr/include/boost/pending/relaxed_heap.hpp	/^    rank_type            rank;$/;"	m	struct:boost::relaxed_heap::group	access:public
+boost::relaxed_heap::group::value	/usr/include/boost/pending/relaxed_heap.hpp	/^    ::boost::optional<value_type> value;$/;"	m	struct:boost::relaxed_heap::group	access:public
+boost::relaxed_heap::groups	/usr/include/boost/pending/relaxed_heap.hpp	/^  std::vector< ::boost::optional<value_type> > groups;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::group_key_kind	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	g	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::id	/usr/include/boost/pending/relaxed_heap.hpp	/^  ID id;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::index_to_group	/usr/include/boost/pending/relaxed_heap.hpp	/^  std::vector<group> index_to_group;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::largest_key	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	e	enum:boost::relaxed_heap::group_key_kind
+boost::relaxed_heap::log_base_2	/usr/include/boost/pending/relaxed_heap.hpp	/^  size_type log_base_2(size_type n) \/\/ log2 is a macro on some platforms$/;"	f	class:boost::relaxed_heap	access:private	signature:(size_type n)
+boost::relaxed_heap::log_n	/usr/include/boost/pending/relaxed_heap.hpp	/^  size_type log_n;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::pair_transform	/usr/include/boost/pending/relaxed_heap.hpp	/^  void pair_transform(group* a)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a)
+boost::relaxed_heap::pop	/usr/include/boost/pending/relaxed_heap.hpp	/^  void pop()$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+boost::relaxed_heap::promote	/usr/include/boost/pending/relaxed_heap.hpp	/^  void promote(group* a)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a)
+boost::relaxed_heap::push	/usr/include/boost/pending/relaxed_heap.hpp	/^  void push(const value_type& x)$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x)
+boost::relaxed_heap::rank_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef std::size_t  rank_type;$/;"	t	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::relaxed_heap	/usr/include/boost/pending/relaxed_heap.hpp	/^  relaxed_heap(size_type n, const Compare& compare = Compare(),$/;"	f	class:boost::relaxed_heap	access:public	signature:(size_type n, const Compare& compare = Compare(), const ID& id = ID())
+boost::relaxed_heap::remove	/usr/include/boost/pending/relaxed_heap.hpp	/^  void remove(const value_type& x)$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x)
+boost::relaxed_heap::root	/usr/include/boost/pending/relaxed_heap.hpp	/^  group root;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::self_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef relaxed_heap self_type;$/;"	t	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::size_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef rank_type    size_type;$/;"	t	class:boost::relaxed_heap	access:public
+boost::relaxed_heap::smallest_key	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	e	enum:boost::relaxed_heap::group_key_kind
+boost::relaxed_heap::smallest_value	/usr/include/boost/pending/relaxed_heap.hpp	/^  mutable group* smallest_value;$/;"	m	class:boost::relaxed_heap	access:private
+boost::relaxed_heap::stored_key	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	e	enum:boost::relaxed_heap::group_key_kind
+boost::relaxed_heap::top	/usr/include/boost/pending/relaxed_heap.hpp	/^  const value_type& top() const$/;"	f	class:boost::relaxed_heap	access:public	signature:() const
+boost::relaxed_heap::top	/usr/include/boost/pending/relaxed_heap.hpp	/^  value_type& top()$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+boost::relaxed_heap::update	/usr/include/boost/pending/relaxed_heap.hpp	/^  void update(const value_type& x)$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x)
+boost::relaxed_heap::valid	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool valid()$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+boost::relaxed_heap::valid	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool valid(group* p)$/;"	f	class:boost::relaxed_heap	access:public	signature:(group* p)
+boost::relaxed_heap::value_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef IndexedType  value_type;$/;"	t	class:boost::relaxed_heap	access:public
+boost::relaxed_heap::~relaxed_heap	/usr/include/boost/pending/relaxed_heap.hpp	/^  ~relaxed_heap() { delete [] root.children; }$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+boost::serialization	/usr/include/boost/pending/property_serialize.hpp	/^  namespace serialization {$/;"	n	namespace:boost
+boost::serialization::implementation_level	/usr/include/boost/pending/property_serialize.hpp	/^  struct implementation_level<property<Tag, T, Base>  >$/;"	s	namespace:boost::serialization	inherits:mpl::int_
+boost::serialization::is_bitwise_serializable	/usr/include/boost/pending/property_serialize.hpp	/^    struct is_bitwise_serializable<property<Tag, T, Base> >$/;"	s	namespace:boost::serialization	inherits:mpl::and_
+boost::serialization::tracking_level	/usr/include/boost/pending/property_serialize.hpp	/^  struct tracking_level<property<Tag, T, Base>  >$/;"	s	namespace:boost::serialization	inherits:mpl::int_
+boost::serialize	/usr/include/boost/pending/property_serialize.hpp	/^  inline void serialize(Archive&, no_property&, const unsigned int) { }$/;"	f	namespace:boost	signature:(Archive&, no_property&, const unsigned int)
+boost::serialize	/usr/include/boost/pending/property_serialize.hpp	/^  serialize(Archive& ar, property<Tag, T, Base>& prop, $/;"	f	namespace:boost	signature:(Archive& ar, property<Tag, T, Base>& prop, const unsigned int version)
+boost::stringtok	/usr/include/boost/pending/stringtok.hpp	/^stringtok (Container &l, std::string const &s, char const * const ws = " \\t\\n")$/;"	f	namespace:boost	signature:(Container &l, std::string const &s, char const * const ws = Ó)
+boost::swap	/usr/include/boost/pending/queue.hpp	/^swap(queue<_Tp, _Sequence>& __x, queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(queue<_Tp, _Sequence>& __x, queue<_Tp, _Sequence>& __y)
+boost::trivial_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void trivial_iterator_test(const Iterator i, const Iterator j, T val)$/;"	f	namespace:boost	signature:(const Iterator i, const Iterator j, T val)
+boost::update_heap	/usr/include/boost/pending/mutable_heap.hpp	/^  inline void update_heap(TreeNode x, const Compare& comp, ExternalData& edata) {$/;"	f	namespace:boost	signature:(TreeNode x, const Compare& comp, ExternalData& edata)
+boost::up_heap	/usr/include/boost/pending/mutable_heap.hpp	/^  inline TreeNode up_heap(TreeNode x, const Compare& comp, ExternalData& edata) {$/;"	f	namespace:boost	signature:(TreeNode x, const Compare& comp, ExternalData& edata)
+BOOST_CSTDDEF_HPP	/usr/include/boost/pending/cstddef.hpp	8;"	d
+BOOST_DETAIL_DISJOINT_SETS_HPP	/usr/include/boost/pending/detail/disjoint_sets.hpp	7;"	d
+BOOST_DETAIL_PROPERTY_HPP	/usr/include/boost/pending/detail/property.hpp	7;"	d
+BOOST_DISJOINT_SETS_HPP	/usr/include/boost/pending/disjoint_sets.hpp	12;"	d
+BOOST_FENCED_PRIORITY_QUEUE_HPP	/usr/include/boost/pending/fenced_priority_queue.hpp	7;"	d
+BOOST_FIBONACCI_HEAP_HPP	/usr/include/boost/pending/fibonacci_heap.hpp	6;"	d
+BOOST_GRAPH_DETAIL_BUCKET_SORTER_HPP	/usr/include/boost/pending/bucket_sorter.hpp	17;"	d
+BOOST_GRAPH_DETAIL_CONTAINER_TRAITS_H	/usr/include/boost/pending/container_traits.hpp	7;"	d
+BOOST_GRAPH_DETAIL_MUTABLE_HEAP_H	/usr/include/boost/pending/mutable_heap.hpp	12;"	d
+BOOST_INDIRECT_CMP_HPP	/usr/include/boost/pending/indirect_cmp.hpp	13;"	d
+BOOST_INTEGER_LOG2_HPP_GP_20030301	/usr/include/boost/pending/integer_log2.hpp	16;"	d
+BOOST_INTEGER_RANGE_HPP_	/usr/include/boost/pending/integer_range.hpp	11;"	d
+BOOST_INT_ITERATOR_H	/usr/include/boost/pending/detail/int_iterator.hpp	7;"	d
+BOOST_ITERATOR_TESTS_HPP	/usr/include/boost/pending/iterator_tests.hpp	6;"	d
+BOOST_LOWEST_BIT_HPP_GP_20030301	/usr/include/boost/pending/lowest_bit.hpp	15;"	d
+BOOST_MUTABLE_QUEUE_HPP	/usr/include/boost/pending/mutable_queue.hpp	12;"	d
+BOOST_PROPERTY_HPP	/usr/include/boost/pending/property.hpp	7;"	d
+BOOST_PROPERTY_SERIALIZE_HPP	/usr/include/boost/pending/property_serialize.hpp	7;"	d
+BOOST_QUEUE_HPP	/usr/include/boost/pending/queue.hpp	7;"	d
+BOOST_RELAXED_HEAP_HEADER	/usr/include/boost/pending/relaxed_heap.hpp	10;"	d
+BOOST_STRINGTOK_HPP	/usr/include/boost/pending/stringtok.hpp	7;"	d
+bucket	/usr/include/boost/pending/bucket_sorter.hpp	/^    Bucket bucket;$/;"	m	class:boost::bucket_sorter	access:protected
+bucket_id	/usr/include/boost/pending/bucket_sorter.hpp	/^      bucket_type bucket_id;$/;"	m	class:boost::bucket_sorter::stack	access:private
+bucket_sorter	/usr/include/boost/pending/bucket_sorter.hpp	/^    bucket_sorter(size_type _length, bucket_type _max_bucket, $/;"	f	class:boost::bucket_sorter	access:public	signature:(size_type _length, bucket_type _max_bucket, const Bucket& _bucket = Bucket(), const ValueIndexMap& _id = ValueIndexMap())
+bucket_sorter	/usr/include/boost/pending/bucket_sorter.hpp	/^  class bucket_sorter {$/;"	c	namespace:boost
+bucket_type	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef BucketType bucket_type;$/;"	t	class:boost::bucket_sorter	access:public
+build_property_tag_value_alist	/usr/include/boost/pending/detail/property.hpp	/^    struct build_property_tag_value_alist$/;"	s	namespace:boost::detail
+build_property_tag_value_alist	/usr/include/boost/pending/detail/property.hpp	/^    struct build_property_tag_value_alist<no_property>$/;"	s	namespace:boost::detail
+build_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  build_tree(group& parent, size_type idx, size_type r, size_type max_rank)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group& parent, size_type idx, size_type r, size_type max_rank)
+c	/usr/include/boost/pending/integer_log2.hpp	/^      enum { c = 2*n < p };$/;"	e	enum:boost::detail::max_pow2_less::__anon3
+c	/usr/include/boost/pending/mutable_queue.hpp	/^    RandomAccessContainer c;$/;"	m	class:boost::mutable_queue	access:protected
+c	/usr/include/boost/pending/queue.hpp	/^  _Sequence c;$/;"	m	class:boost::queue	access:protected
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef front_insertion_sequence_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef list_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef map_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef multimap_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef multiset_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef set_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef typename Container::category category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+category	/usr/include/boost/pending/container_traits.hpp	/^    typedef vector_tag category;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+check	/usr/include/boost/pending/iterator_tests.hpp	/^    template <class Iterator> static void check(Iterator)$/;"	f	struct:boost::lvalue_test	access:public	signature:(Iterator)
+check	/usr/include/boost/pending/iterator_tests.hpp	/^    template <class T> static void check(T) {}$/;"	f	struct:boost::lvalue_test	access:public	signature:(T)
+children	/usr/include/boost/pending/relaxed_heap.hpp	/^    group**               children;$/;"	m	struct:boost::relaxed_heap::group	access:public
+clean	/usr/include/boost/pending/relaxed_heap.hpp	/^  void clean(group* q)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* q)
+clear	/usr/include/boost/pending/mutable_queue.hpp	/^    void clear() { c.clear(); }$/;"	f	class:boost::mutable_queue	access:public	signature:()
+cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^    Compare cmp;$/;"	m	class:boost::indirect_cmp	access:protected
+combine	/usr/include/boost/pending/relaxed_heap.hpp	/^  group* combine(group* a1, group* a2)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a1, group* a2)
+comp	/usr/include/boost/pending/mutable_queue.hpp	/^    Compare comp;$/;"	m	class:boost::mutable_queue	access:protected
+Compare	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef  adstl::compare_array_node<RandomAccessContainer,Comp> Compare;$/;"	t	class:boost::mutable_queue	access:protected
+compare	/usr/include/boost/pending/relaxed_heap.hpp	/^  Compare compare;$/;"	m	class:boost::relaxed_heap	access:private
+compress_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void compress_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets	access:public	signature:(ElementIterator first, ElementIterator last)
+compress_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void compress_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(ElementIterator first, ElementIterator last)
+const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      const_get_value(const no_property&, T*, Tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(const no_property&, T*, Tag)
+const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      const_get_value(const PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(const PropertyList& p, T* t, Tag tag)
+const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static const T& const_get_value(const PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(const PropertyList& p, T* t, Tag tag)
+const_get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static const T& const_get_value(const PropertyTag& p, T*, Tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(const PropertyTag& p, T*, Tag)
+const_iterator	/usr/include/boost/pending/integer_range.hpp	/^    typedef iterator const_iterator;$/;"	t	struct:boost::integer_range	access:public
+const_nonconst_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void const_nonconst_iterator_test(Iterator i, ConstIterator j)$/;"	f	namespace:boost	signature:(Iterator i, ConstIterator j)
+const_pointer	/usr/include/boost/pending/integer_range.hpp	/^    typedef const IntegerType* const_pointer;$/;"	t	struct:boost::integer_range	access:public
+const_reference	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType const_reference;$/;"	t	struct:boost::integer_range	access:public
+const_reference	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::const_reference const_reference;$/;"	t	class:boost::queue	access:public
+Container	/usr/include/boost/pending/container_traits.hpp	421;"	d
+Container	/usr/include/boost/pending/container_traits.hpp	44;"	d
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  front_insertion_sequence_tag container_category($/;"	f	namespace:boost::graph_detail	signature:( const BOOST_STD_EXTENSION_NAMESPACE::slist<T,Alloc>& )
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  list_tag container_category(const std::list<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::list<T,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  map_tag container_category(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  map_tag container_category(const std::map<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::map<Key,T,Cmp,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  multimap_tag container_category(const std::multimap<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multimap<Key,T,Cmp,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  multiset_tag container_category(const std::multiset<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multiset<Key,Cmp,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  set_tag container_category(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  set_tag container_category(const std::set<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::set<Key,Cmp,Alloc>&)
+container_category	/usr/include/boost/pending/container_traits.hpp	/^  vector_tag container_category(const std::vector<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::vector<T,Alloc>&)
+container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct container_tag { };$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::list<T,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::map<Key,T,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::multimap<Key,T,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::multiset<Key,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::set<Key,Cmp,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits< std::vector<T,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_traits	/usr/include/boost/pending/container_traits.hpp	/^  struct container_traits<BOOST_STD_EXTENSION_NAMESPACE::slist<T,Alloc> > {$/;"	s	namespace:boost::graph_detail
+container_type	/usr/include/boost/pending/queue.hpp	/^  typedef          _Sequence                  container_type;$/;"	t	class:boost::queue	access:public
+contains	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool contains(const value_type& x) const { return groups[get(id, x)]; }$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x) const
+count_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline std::size_t count_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets	access:public	signature:(ElementIterator first, ElementIterator last)
+count_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline std::size_t count_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(ElementIterator first, ElementIterator last)
+d	/usr/include/boost/pending/indirect_cmp.hpp	/^    ReadablePropertyMap d;$/;"	m	class:boost::indirect_cmp	access:protected
+d	/usr/include/boost/pending/indirect_cmp.hpp	/^    ReadablePropertyMap d;$/;"	m	class:boost::indirect_pmap	access:protected
+detail	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^namespace detail {$/;"	n	namespace:boost
+detail	/usr/include/boost/pending/detail/property.hpp	/^  namespace detail {$/;"	n	namespace:boost
+detail	/usr/include/boost/pending/integer_log2.hpp	/^ namespace detail {$/;"	n	namespace:boost
+detail	/usr/include/boost/pending/property.hpp	/^ namespace detail {$/;"	n	namespace:boost
+difference_type	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef std::ptrdiff_t difference_type;$/;"	t	class:boost::int_iterator	access:public
+difference_type	/usr/include/boost/pending/integer_range.hpp	/^    typedef std::ptrdiff_t difference_type;$/;"	t	struct:boost::integer_range	access:public
+disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline disjoint_sets() {}$/;"	f	class:boost::disjoint_sets	access:private	signature:()
+disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline disjoint_sets(const self& c) $/;"	f	class:boost::disjoint_sets	access:public	signature:(const self& c)
+disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline disjoint_sets(RankPA r, ParentPA p) $/;"	f	class:boost::disjoint_sets	access:public	signature:(RankPA r, ParentPA p)
+disjoint_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^  class disjoint_sets {$/;"	c	namespace:boost
+disjoint_sets_with_storage	/usr/include/boost/pending/disjoint_sets.hpp	/^    disjoint_sets_with_storage(size_type n = 0,$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(size_type n = 0, ID id_ = ID(), InverseID inv = InverseID())
+disjoint_sets_with_storage	/usr/include/boost/pending/disjoint_sets.hpp	/^  class disjoint_sets_with_storage$/;"	c	namespace:boost
+down_heap	/usr/include/boost/pending/mutable_heap.hpp	/^  inline TreeNode down_heap(TreeNode x, const Compare& comp, ExternalData& edata) {$/;"	f	namespace:boost	signature:(TreeNode x, const Compare& comp, ExternalData& edata)
+do_compare	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool do_compare(group* x, group* y) const$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* x, group* y) const
+do_swap	/usr/include/boost/pending/relaxed_heap.hpp	/^  static void do_swap(group*& x, group*& y)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group*& x, group*& y)
+dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^  dummyT() { }$/;"	f	struct:boost::dummyT	access:public	signature:()
+dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^  dummyT(detail::dummy_constructor) { }$/;"	f	struct:boost::dummyT	access:public	signature:(detail::dummy_constructor)
+dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^  dummyT(int x) : m_x(x) { }$/;"	f	struct:boost::dummyT	access:public	signature:(int x)
+dummyT	/usr/include/boost/pending/iterator_tests.hpp	/^struct dummyT { $/;"	s	namespace:boost
+dump_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  void dump_tree() { dump_tree(std::cout); }$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+dump_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  void dump_tree(std::ostream& out) { dump_tree(out, &root); }$/;"	f	class:boost::relaxed_heap	access:public	signature:(std::ostream& out)
+dump_tree	/usr/include/boost/pending/relaxed_heap.hpp	/^  void dump_tree(std::ostream& out, group* p, bool in_progress = false)$/;"	f	class:boost::relaxed_heap	access:public	signature:(std::ostream& out, group* p, bool in_progress = false)
+empty	/usr/include/boost/pending/bucket_sorter.hpp	/^      bool empty() const { return head[bucket_id] == invalid_value(); }$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:() const
+empty	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    bool empty(void) const;$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void) const
+empty	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  empty(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+empty	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline bool empty() const { return _n == 0; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:() const
+empty	/usr/include/boost/pending/integer_range.hpp	/^    bool empty() const { return m_finish == m_start; }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+empty	/usr/include/boost/pending/mutable_queue.hpp	/^    bool empty() const { return c.empty(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+empty	/usr/include/boost/pending/queue.hpp	/^  bool empty() const { return c.empty(); }$/;"	f	class:boost::queue	access:public	signature:() const
+empty	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool empty() const$/;"	f	class:boost::relaxed_heap	access:public	signature:() const
+end	/usr/include/boost/pending/integer_range.hpp	/^    iterator end() const { return iterator(m_finish); }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+end_extract	/usr/include/boost/pending/detail/property.hpp	/^    struct end_extract {$/;"	s	namespace:boost::detail
+erase	/usr/include/boost/pending/container_traits.hpp	/^  void erase(Container& c, const T& x)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& x)
+erase_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_dispatch(AssociativeContainer& c, const T& x, $/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, const T& x, associative_container_tag)
+erase_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_dispatch(Sequence& c, const T& x, $/;"	f	namespace:boost::graph_detail	signature:(Sequence& c, const T& x, sequence_tag)
+erase_if	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if(Container& c, Predicate p)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, Predicate p)
+erase_if_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if_dispatch(AssociativeContainer& c, Predicate p,$/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, Predicate p, associative_container_tag, stable_tag)
+erase_if_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if_dispatch(AssociativeContainer& c, Predicate p,$/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, Predicate p, associative_container_tag, unstable_tag)
+erase_if_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  void erase_if_dispatch(Sequence& c, Predicate p,$/;"	f	namespace:boost::graph_detail	signature:(Sequence& c, Predicate p, sequence_tag, IteratorStability)
+error_property_not_found	/usr/include/boost/pending/detail/property.hpp	/^    struct error_property_not_found { };$/;"	s	namespace:boost::detail
+ev_selector	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector { typedef recursive_extract type; };$/;"	s	namespace:boost::detail
+ev_selector	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector<no_property> { typedef end_extract type; };$/;"	s	namespace:boost::detail
+extend_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    extend_sets(Element x, Element y)$/;"	f	class:boost::disjoint_sets_with_storage	access:protected	signature:(Element x, Element y)
+Extractor	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename ev_selector<Next>::type Extractor;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+extract_value	/usr/include/boost/pending/detail/property.hpp	/^    struct extract_value {$/;"	s	namespace:boost::detail
+extract_value	/usr/include/boost/pending/detail/property.hpp	/^    struct extract_value< std::pair<std::pair<Tag,Value>,Rest>, Tag> {$/;"	s	namespace:boost::detail
+extract_value	/usr/include/boost/pending/detail/property.hpp	/^    struct extract_value< std::pair<std::pair<Tag1,Value>,Rest>, Tag2> {$/;"	s	namespace:boost::detail
+fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void fence(void) const;$/;"	p	class:boost::fenced_priority_queue	access:private	signature:(void) const
+fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void fence(void);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void)
+fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  fence(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+fence	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  fence(void) {$/;"	f	class:boost::fenced_priority_queue	signature:(void)
+fenced_priority_queue	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    fenced_priority_queue(const Compare _comp = Compare() ) $/;"	f	class:boost::fenced_priority_queue	access:public	signature:(const Compare _comp = Compare() )
+fenced_priority_queue	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  class fenced_priority_queue {$/;"	c	namespace:boost
+fibonacci_heap	/usr/include/boost/pending/fibonacci_heap.hpp	/^  fibonacci_heap(size_type n, $/;"	f	class:boost::fibonacci_heap	access:public	signature:(size_type n, const Compare& cmp, const ID& id = identity_property_map())
+fibonacci_heap	/usr/include/boost/pending/fibonacci_heap.hpp	/^class fibonacci_heap$/;"	c	namespace:boost
+find_representative_with_full_compression	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^find_representative_with_full_compression(ParentPA parent, Vertex v)$/;"	f	namespace:boost::detail	signature:(ParentPA parent, Vertex v)
+find_representative_with_path_halving	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^find_representative_with_path_halving(ParentPA p, Vertex v)$/;"	f	namespace:boost::detail	signature:(ParentPA p, Vertex v)
+find_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline Element find_set(Element x) {$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x)
+find_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline Element find_set(Element x)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x)
+find_smallest	/usr/include/boost/pending/relaxed_heap.hpp	/^  void find_smallest() const$/;"	f	class:boost::relaxed_heap	access:private	signature:() const
+find_with_full_path_compression	/usr/include/boost/pending/disjoint_sets.hpp	/^  struct find_with_full_path_compression {$/;"	s	namespace:boost
+find_with_path_halving	/usr/include/boost/pending/disjoint_sets.hpp	/^  struct find_with_path_halving {$/;"	s	namespace:boost
+first_argument_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef K first_argument_type;$/;"	t	class:boost::indirect_cmp	access:public
+foo	/usr/include/boost/pending/iterator_tests.hpp	/^  int foo() const { return m_x; } $/;"	f	struct:boost::dummyT	access:public	signature:() const
+forward_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct forward_container_tag : virtual public container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:container_tag
+forward_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void forward_iterator_test(Iterator i, T v1, T v2) $/;"	f	namespace:boost	signature:(Iterator i, T v1, T v2)
+front	/usr/include/boost/pending/mutable_queue.hpp	/^    const value_type& front() const { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+front	/usr/include/boost/pending/mutable_queue.hpp	/^    value_type& front() { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:()
+front	/usr/include/boost/pending/queue.hpp	/^  const_reference front() const { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:() const
+front	/usr/include/boost/pending/queue.hpp	/^  reference front() { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:()
+front_insertion_sequence_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct front_insertion_sequence_tag : virtual public sequence_tag { };$/;"	s	namespace:boost::graph_detail	inherits:sequence_tag
+get_property_value	/usr/include/boost/pending/property.hpp	/^  get_property_value(const no_property& p, Tag2) {$/;"	f	namespace:boost	signature:(const no_property& p, Tag2)
+get_property_value	/usr/include/boost/pending/property.hpp	/^  get_property_value(const property<Tag1,T1,Base>& p, Tag2 tag2) {$/;"	f	namespace:boost	signature:(const property<Tag1,T1,Base>& p, Tag2 tag2)
+get_property_value	/usr/include/boost/pending/property.hpp	/^  get_property_value(property<Tag1,T1,Base>& p, Tag2 tag2) {$/;"	f	namespace:boost	signature:(property<Tag1,T1,Base>& p, Tag2 tag2)
+get_value	/usr/include/boost/pending/detail/property.hpp	/^      get_value(no_property&, T*, Tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(no_property&, T*, Tag)
+get_value	/usr/include/boost/pending/detail/property.hpp	/^      get_value(PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(PropertyList& p, T* t, Tag tag)
+get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static T& get_value(PropertyList& p, T* t, Tag tag) {$/;"	f	struct:boost::detail::property_value_end	access:public	signature:(PropertyList& p, T* t, Tag tag)
+get_value	/usr/include/boost/pending/detail/property.hpp	/^      inline static T& get_value(PropertyTag& p, T*, Tag) {$/;"	f	struct:boost::detail::property_value_dispatch	access:public	signature:(PropertyTag& p, T*, Tag)
+good_sibling_transform	/usr/include/boost/pending/relaxed_heap.hpp	/^  void good_sibling_transform(group* a, group* s)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a, group* s)
+graph_detail	/usr/include/boost/pending/container_traits.hpp	/^namespace boost { namespace graph_detail {$/;"	n	namespace:boost
+group	/usr/include/boost/pending/relaxed_heap.hpp	/^    explicit group(group_key_kind kind = largest_key)$/;"	f	struct:boost::relaxed_heap::group	access:public	signature:(group_key_kind kind = largest_key)
+group	/usr/include/boost/pending/relaxed_heap.hpp	/^  struct group {$/;"	s	class:boost::relaxed_heap	access:private
+groups	/usr/include/boost/pending/relaxed_heap.hpp	/^  std::vector< ::boost::optional<value_type> > groups;$/;"	m	class:boost::relaxed_heap	access:private
+group_key_kind	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	g	class:boost::relaxed_heap	access:private
+has_property	/usr/include/boost/pending/property.hpp	/^  struct has_property : boost::mpl::true_ {};$/;"	s	namespace:boost	inherits:boost::mpl::true_
+has_property	/usr/include/boost/pending/property.hpp	/^  struct has_property<no_property> : boost::mpl::false_ {};$/;"	s	namespace:boost	inherits:boost::mpl::false_
+head	/usr/include/boost/pending/bucket_sorter.hpp	/^      Iter head;$/;"	m	class:boost::bucket_sorter::stack	access:private
+head	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<size_type>   head;$/;"	m	class:boost::bucket_sorter	access:protected
+id	/usr/include/boost/pending/bucket_sorter.hpp	/^      ValueIndexMap id;$/;"	m	class:boost::bucket_sorter::stack	access:private
+id	/usr/include/boost/pending/bucket_sorter.hpp	/^    ValueIndexMap id;$/;"	m	class:boost::bucket_sorter	access:protected
+id	/usr/include/boost/pending/disjoint_sets.hpp	/^    ID id;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+id	/usr/include/boost/pending/mutable_queue.hpp	/^    ID id;$/;"	m	class:boost::mutable_queue	access:protected
+id	/usr/include/boost/pending/relaxed_heap.hpp	/^  ID id;$/;"	m	class:boost::relaxed_heap	access:private
+id_generator	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef ID id_generator;$/;"	t	class:boost::mutable_queue	access:public
+id_to_value	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<value_type>  id_to_value;$/;"	m	class:boost::bucket_sorter	access:protected
+id_to_vertex	/usr/include/boost/pending/disjoint_sets.hpp	/^    InverseID id_to_vertex;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+implementation_level	/usr/include/boost/pending/property_serialize.hpp	/^  struct implementation_level<property<Tag, T, Base>  >$/;"	s	namespace:boost::serialization	inherits:mpl::int_
+Index	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef typename property_traits<ID>::value_type Index;$/;"	t	class:boost::disjoint_sets_with_storage	access:private
+IndexArray	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef std::vector<size_type> IndexArray;$/;"	t	class:boost::mutable_queue	access:protected
+IndexValueMap	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef typename std::vector<value_type>::iterator IndexValueMap;$/;"	t	class:boost::bucket_sorter	access:public
+index_array	/usr/include/boost/pending/mutable_queue.hpp	/^    IndexArray index_array;$/;"	m	class:boost::mutable_queue	access:protected
+index_to_group	/usr/include/boost/pending/relaxed_heap.hpp	/^  std::vector<group> index_to_group;$/;"	m	class:boost::relaxed_heap	access:private
+indirect_cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^    inline indirect_cmp(const ReadablePropertyMap& df, const Compare& c = Compare())$/;"	f	class:boost::indirect_cmp	access:public	signature:(const ReadablePropertyMap& df, const Compare& c = Compare())
+indirect_cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^  class indirect_cmp {$/;"	c	namespace:boost
+indirect_pmap	/usr/include/boost/pending/indirect_cmp.hpp	/^    inline indirect_pmap(const ReadablePropertyMap& df)$/;"	f	class:boost::indirect_pmap	access:public	signature:(const ReadablePropertyMap& df)
+indirect_pmap	/usr/include/boost/pending/indirect_cmp.hpp	/^  class indirect_pmap {$/;"	c	namespace:boost
+input_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void input_iterator_test(Iterator i, T v1, T v2) $/;"	f	namespace:boost	signature:(Iterator i, T v1, T v2)
+insert_into_forest	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void insert_into_forest(size_type v, const T& d) {$/;"	f	class:boost::fibonacci_heap	access:protected	signature:(size_type v, const T& d)
+integer_log2_impl	/usr/include/boost/pending/integer_log2.hpp	/^  int integer_log2_impl(T x, int n) {$/;"	f	namespace:boost::detail	signature:(T x, int n)
+integer_range	/usr/include/boost/pending/integer_range.hpp	/^    integer_range(IntegerType start, IntegerType finish)$/;"	f	struct:boost::integer_range	access:public	signature:(IntegerType start, IntegerType finish)
+integer_range	/usr/include/boost/pending/integer_range.hpp	/^struct integer_range {$/;"	s	namespace:boost
+int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline int_iterator() : _i(0) { }$/;"	f	class:boost::int_iterator	access:public	signature:()
+int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline int_iterator(const self& x) : _i(x._i) { }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x)
+int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline int_iterator(IntT i) : _i(i) { }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT i)
+int_iterator	/usr/include/boost/pending/detail/int_iterator.hpp	/^class int_iterator$/;"	c	namespace:boost
+invalid_value	/usr/include/boost/pending/bucket_sorter.hpp	/^    static size_type invalid_value() {$/;"	f	class:boost::bucket_sorter	access:public	signature:()
+isws	/usr/include/boost/pending/stringtok.hpp	/^    isws (char c, char const * const wstr)$/;"	f	signature:(char c, char const * const wstr)
+is_bitwise_serializable	/usr/include/boost/pending/property_serialize.hpp	/^    struct is_bitwise_serializable<property<Tag, T, Base> >$/;"	s	namespace:boost::serialization	inherits:mpl::and_
+is_heap	/usr/include/boost/pending/is_heap.hpp	/^inline bool is_heap(RandomAccessIterator first, RandomAccessIterator last)$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last)
+is_heap	/usr/include/boost/pending/is_heap.hpp	/^inline bool is_heap(RandomAccessIterator first, RandomAccessIterator last,$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp)
+is_mpi_datatype	/usr/include/boost/pending/property_serialize.hpp	/^    struct is_mpi_datatype<boost::no_property> : mpl::true_ { };$/;"	s	namespace:boost::mpi	inherits:mpl::true_
+is_mpi_datatype	/usr/include/boost/pending/property_serialize.hpp	/^    struct is_mpi_datatype<property<Tag, T, Base> >$/;"	s	namespace:boost::mpi	inherits:mpl::and_
+is_no_property	/usr/include/boost/pending/property.hpp	/^    struct is_no_property$/;"	s	namespace:boost::detail	inherits:mpl::bool_
+Iter	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef typename std::vector<size_type>::iterator Iter;$/;"	t	class:boost::bucket_sorter	access:public
+iterator	/usr/include/boost/pending/integer_range.hpp	/^    typedef counting_iterator<IntegerType> iterator;$/;"	t	struct:boost::integer_range	access:public
+iterator	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef typename RandomAccessContainer::iterator iterator;$/;"	t	class:boost::mutable_queue	access:protected
+iterator_category	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef std::random_access_iterator_tag iterator_category;$/;"	t	class:boost::int_iterator	access:public
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef stable_tag iterator_stability; \/\/ is this right?$/;"	t	struct:boost::graph_detail::container_traits	access:public
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef stable_tag iterator_stability;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef typename Container::iterator_stability iterator_stability;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^    typedef unstable_tag iterator_stability;$/;"	t	struct:boost::graph_detail::container_traits	access:public
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability($/;"	f	namespace:boost::graph_detail	signature:( const BOOST_STD_EXTENSION_NAMESPACE::slist<T,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_map<Key,T,Eq,Hash,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const BOOST_STD_EXTENSION_NAMESPACE::hash_set<Key,Eq,Hash,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::list<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::list<T,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::map<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::map<Key,T,Cmp,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::multimap<Key,T,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multimap<Key,T,Cmp,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::multiset<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::multiset<Key,Cmp,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  stable_tag iterator_stability(const std::set<Key,Cmp,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::set<Key,Cmp,Alloc>&)
+iterator_stability	/usr/include/boost/pending/container_traits.hpp	/^  unstable_tag iterator_stability(const std::vector<T,Alloc>&)$/;"	f	namespace:boost::graph_detail	signature:(const std::vector<T,Alloc>&)
+K	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::key_type K;$/;"	t	class:boost::indirect_cmp	access:public
+K	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::key_type K;$/;"	t	class:boost::indirect_pmap	access:public
+kind	/usr/include/boost/pending/property.hpp	/^    typedef void kind;$/;"	t	struct:boost::no_property	access:public
+kind	/usr/include/boost/pending/relaxed_heap.hpp	/^    group_key_kind        kind;$/;"	m	struct:boost::relaxed_heap::group	access:public
+largest_key	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	e	enum:boost::relaxed_heap::group_key_kind
+link	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void link(Element x, Element y)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x, Element y)
+link	/usr/include/boost/pending/disjoint_sets.hpp	/^    link(Element x, Element y)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x, Element y)
+LinkIter	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef typename LinkVec::iterator LinkIter;$/;"	t	class:boost::fibonacci_heap	access:protected
+LinkVec	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef std::vector<size_type> LinkVec;$/;"	t	class:boost::fibonacci_heap	access:protected
+link_sets	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^link_sets(ParentPA p, RankPA rank, Vertex i, Vertex j,$/;"	f	namespace:boost::detail	signature:(ParentPA p, RankPA rank, Vertex i, Vertex j, ComponentRepresentative comp_rep)
+list_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct list_tag :$/;"	s	namespace:boost::graph_detail	inherits:reversible_container_tag,back_insertion_sequence_tag
+log_base_2	/usr/include/boost/pending/relaxed_heap.hpp	/^  size_type log_base_2(size_type n) \/\/ log2 is a macro on some platforms$/;"	f	class:boost::relaxed_heap	access:private	signature:(size_type n)
+log_n	/usr/include/boost/pending/relaxed_heap.hpp	/^  size_type log_n;$/;"	m	class:boost::relaxed_heap	access:private
+lowest_bit	/usr/include/boost/pending/lowest_bit.hpp	/^    int lowest_bit(T x) {$/;"	f	namespace:boost	signature:(T x)
+lvalue_test	/usr/include/boost/pending/iterator_tests.hpp	/^template <> struct lvalue_test<true> {$/;"	s	namespace:boost
+lvalue_test	/usr/include/boost/pending/iterator_tests.hpp	/^template <bool is_pointer> struct lvalue_test$/;"	s	namespace:boost
+make_child	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void make_child(size_type u, size_type v, size_type r) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(size_type u, size_type v, size_type r)
+make_indirect_cmp	/usr/include/boost/pending/indirect_cmp.hpp	/^  make_indirect_cmp(const Compare& cmp, ReadablePropertyMap pmap) {$/;"	f	namespace:boost	signature:(const Compare& cmp, ReadablePropertyMap pmap)
+make_indirect_pmap	/usr/include/boost/pending/indirect_cmp.hpp	/^  make_indirect_pmap(ReadablePropertyMap pmap) {$/;"	f	namespace:boost	signature:(ReadablePropertyMap pmap)
+make_integer_range	/usr/include/boost/pending/integer_range.hpp	/^make_integer_range(IntegerType first, IntegerType last)$/;"	f	namespace:boost	signature:(IntegerType first, IntegerType last)
+make_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void make_set(Element x)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x)
+make_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    make_set(Element x) {$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x)
+map_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct map_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,pair_associative_container_tag,unique_associative_container_tag
+match	/usr/include/boost/pending/detail/property.hpp	/^        enum { match = same_property<Tag1,Tag2>::value };$/;"	e	enum:boost::detail::recursive_extract::bind_::__anon2
+max_pow2_less	/usr/include/boost/pending/integer_log2.hpp	/^  struct max_pow2_less {$/;"	s	namespace:boost::detail
+mpi	/usr/include/boost/pending/property_serialize.hpp	/^  namespace mpi {$/;"	n	namespace:boost
+mpi	/usr/include/boost/pending/property_serialize.hpp	/^namespace boost { namespace mpi {$/;"	n	namespace:boost
+multimap_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct multimap_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,pair_associative_container_tag,multiple_associative_container_tag
+multiple_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct multiple_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+multiset_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct multiset_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,simple_associative_container_tag,multiple_associative_container_tag
+mutable_queue	/usr/include/boost/pending/mutable_queue.hpp	/^    mutable_queue(ForwardIterator first, ForwardIterator last, $/;"	f	class:boost::mutable_queue	access:public	signature:(ForwardIterator first, ForwardIterator last, const Comp& x, const ID& _id)
+mutable_queue	/usr/include/boost/pending/mutable_queue.hpp	/^    mutable_queue(size_type n, const Comp& x, const ID& _id) $/;"	f	class:boost::mutable_queue	access:public	signature:(size_type n, const Comp& x, const ID& _id)
+mutable_queue	/usr/include/boost/pending/mutable_queue.hpp	/^  class mutable_queue {$/;"	c	namespace:boost
+mutable_trivial_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void mutable_trivial_iterator_test(const Iterator i, const Iterator j, T val)$/;"	f	namespace:boost	signature:(const Iterator i, const Iterator j, T val)
+m_finish	/usr/include/boost/pending/integer_range.hpp	/^    IntegerType m_start, m_finish;$/;"	m	struct:boost::integer_range	access:protected
+m_start	/usr/include/boost/pending/integer_range.hpp	/^    IntegerType m_start, m_finish;$/;"	m	struct:boost::integer_range	access:protected
+m_value	/usr/include/boost/pending/property.hpp	/^    T m_value;$/;"	m	struct:boost::property	access:public
+m_x	/usr/include/boost/pending/iterator_tests.hpp	/^  int m_x;$/;"	m	struct:boost::dummyT	access:public
+n	/usr/include/boost/pending/integer_log2.hpp	/^     const int n = detail::max_pow2_less<$/;"	e	enum:boost::detail::max_pow2_less::__anon3
+new_roots	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec new_roots;$/;"	m	class:boost::fibonacci_heap	access:protected
+next	/usr/include/boost/pending/bucket_sorter.hpp	/^      Iter next;$/;"	m	class:boost::bucket_sorter::stack	access:private
+next	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<size_type>   next;$/;"	m	class:boost::bucket_sorter	access:protected
+Next	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename TagValueAList::second_type Next;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+Next	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename build_property_tag_value_alist<NextProperty>::type Next;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+next	/usr/include/boost/pending/property.hpp	/^        typedef retag_property_list<FinalTag, Base> next;$/;"	t	struct:boost::detail::retag_property_list	access:private
+NextProperty	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename PropertyList::next_type NextProperty;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+next_type	/usr/include/boost/pending/property.hpp	/^    typedef Base next_type;$/;"	t	struct:boost::property	access:public
+next_type	/usr/include/boost/pending/property.hpp	/^    typedef no_property next_type;$/;"	t	struct:boost::no_property	access:public
+nil	/usr/include/boost/pending/fibonacci_heap.hpp	/^  size_type nil() const { return _left.size(); }$/;"	f	class:boost::fibonacci_heap	access:protected	signature:() const
+Node	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef  adstl::array_binary_tree_node<iterator, ID> Node;$/;"	t	class:boost::mutable_queue	access:protected
+Node	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef  adstl::array_binary_tree_node<iterator, value_type, ID> Node;$/;"	t	class:boost::mutable_queue	access:protected
+normalize_node	/usr/include/boost/pending/detail/disjoint_sets.hpp	/^normalize_node(ParentPA p, Vertex i)$/;"	f	namespace:boost::detail	signature:(ParentPA p, Vertex i)
+normalize_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void normalize_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets	access:public	signature:(ElementIterator first, ElementIterator last)
+normalize_sets	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void normalize_sets(ElementIterator first, ElementIterator last)$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(ElementIterator first, ElementIterator last)
+no_property	/usr/include/boost/pending/property.hpp	/^  struct no_property {$/;"	s	namespace:boost
+num	/usr/include/boost/pending/property.hpp	/^    enum { num = 0 };$/;"	e	enum:boost::no_property::__anon4
+operator !=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator!=(const self& x) const { return _i != x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator !=	/usr/include/boost/pending/queue.hpp	/^operator!=(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+operator ()	/usr/include/boost/pending/disjoint_sets.hpp	/^    Vertex operator()(ParentPA p, Vertex v) { $/;"	f	struct:boost::find_with_path_halving	access:public	signature:(ParentPA p, Vertex v)
+operator ()	/usr/include/boost/pending/disjoint_sets.hpp	/^    Vertex operator()(ParentPA p, Vertex v){$/;"	f	struct:boost::find_with_full_path_compression	access:public	signature:(ParentPA p, Vertex v)
+operator ()	/usr/include/boost/pending/indirect_cmp.hpp	/^    inline bool operator()(const K& u) const {$/;"	f	class:boost::indirect_pmap	access:public	signature:(const K& u) const
+operator ()	/usr/include/boost/pending/indirect_cmp.hpp	/^    operator()(const A& u, const B& v) const {$/;"	f	class:boost::indirect_cmp	access:public	signature:(const A& u, const B& v) const
+operator *	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline IntT operator*() { return _i; }$/;"	f	class:boost::int_iterator	access:public	signature:()
+operator +	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self operator+(IntT n) { self t = *this; t += n; return t; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+operator +	/usr/include/boost/pending/detail/int_iterator.hpp	/^operator+(IntT n, int_iterator<IntT> t) { t += n; return t; }$/;"	f	namespace:boost	signature:(IntT n, int_iterator<IntT> t)
+operator ++	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self operator++(int) { self t = *this; ++_i; return t; }$/;"	f	class:boost::int_iterator	access:public	signature:(int)
+operator ++	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator++() { ++_i; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:()
+operator +=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator+=(IntT n) { _i += n; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+operator -	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline IntT operator-(const self& x) const { return _i - x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator --	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self operator--(int) { self t = *this; --_i; return t; }$/;"	f	class:boost::int_iterator	access:public	signature:(int)
+operator --	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator--() { --_i; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:()
+operator -=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator-=(IntT n) { _i -= n; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+operator <	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator<(const self& x) const { return _i < x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator <	/usr/include/boost/pending/queue.hpp	/^  friend bool operator< (const queue<_Tp1, _Seq1>&,$/;"	p	class:boost::queue	access:friend	signature:(const queue<_Tp1, _Seq1>&, const queue<_Tp1, _Seq1>&)
+operator <	/usr/include/boost/pending/queue.hpp	/^inline bool operator<(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&);$/;"	p	namespace:boost	signature:(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)
+operator <	/usr/include/boost/pending/queue.hpp	/^operator<(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+operator <=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator<=(const self& x) const { return _i <= x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator <=	/usr/include/boost/pending/queue.hpp	/^operator<=(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+operator =	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline self& operator=(const self& x) { _i = x._i; return *this; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x)
+operator ==	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator==(const self& x) const { return _i == x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator ==	/usr/include/boost/pending/iterator_tests.hpp	/^  bool operator==(const dummyT& d) const { return m_x == d.m_x; }$/;"	f	struct:boost::dummyT	access:public	signature:(const dummyT& d) const
+operator ==	/usr/include/boost/pending/queue.hpp	/^  friend bool operator== (const queue<_Tp1, _Seq1>&,$/;"	p	class:boost::queue	access:friend	signature:(const queue<_Tp1, _Seq1>&, const queue<_Tp1, _Seq1>&)
+operator ==	/usr/include/boost/pending/queue.hpp	/^inline bool operator==(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&);$/;"	p	namespace:boost	signature:(const queue<_Tp, _Seq>&, const queue<_Tp, _Seq>&)
+operator ==	/usr/include/boost/pending/queue.hpp	/^operator==(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+operator >	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator>(const self& x) const { return _i > x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator >	/usr/include/boost/pending/queue.hpp	/^operator>(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+operator >=	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline bool operator>=(const self& x) const { return _i >= x._i; }$/;"	f	class:boost::int_iterator	access:public	signature:(const self& x) const
+operator >=	/usr/include/boost/pending/queue.hpp	/^operator>=(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(const queue<_Tp, _Sequence>& __x, const queue<_Tp, _Sequence>& __y)
+operator []	/usr/include/boost/pending/bucket_sorter.hpp	/^    stack operator[](const bucket_type& i) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const bucket_type& i)
+operator []	/usr/include/boost/pending/detail/int_iterator.hpp	/^  inline IntT operator[](IntT n) { return _i + n; }$/;"	f	class:boost::int_iterator	access:public	signature:(IntT n)
+pair_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct pair_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+pair_transform	/usr/include/boost/pending/relaxed_heap.hpp	/^  void pair_transform(group* a)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a)
+parent	/usr/include/boost/pending/disjoint_sets.hpp	/^    ParentContainer parent;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+parent	/usr/include/boost/pending/disjoint_sets.hpp	/^    ParentPA parent;$/;"	m	class:boost::disjoint_sets	access:protected
+parent	/usr/include/boost/pending/relaxed_heap.hpp	/^    group*                parent;$/;"	m	struct:boost::relaxed_heap::group	access:public
+ParentContainer	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef std::vector<Index> ParentContainer;$/;"	t	class:boost::disjoint_sets_with_storage	access:private
+parents	/usr/include/boost/pending/disjoint_sets.hpp	/^    const ParentContainer& parents() { return parent; }$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:()
+pointer	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef IntT* pointer;$/;"	t	class:boost::int_iterator	access:public
+pointer	/usr/include/boost/pending/integer_range.hpp	/^    typedef const IntegerType* pointer;$/;"	t	struct:boost::integer_range	access:public
+pop	/usr/include/boost/pending/bucket_sorter.hpp	/^      void pop() {$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:()
+pop	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void pop(void);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void)
+pop	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  pop(void) {$/;"	f	class:boost::fenced_priority_queue	signature:(void)
+pop	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void pop() {$/;"	f	class:boost::fibonacci_heap	access:public	signature:()
+pop	/usr/include/boost/pending/mutable_queue.hpp	/^    void pop() {$/;"	f	class:boost::mutable_queue	access:public	signature:()
+pop	/usr/include/boost/pending/queue.hpp	/^  void pop() { c.pop_front(); }$/;"	f	class:boost::queue	access:public	signature:()
+pop	/usr/include/boost/pending/relaxed_heap.hpp	/^  void pop()$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+PQ	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    mutable std::priority_queue<T, std::vector<T>, Compare> PQ;$/;"	m	class:boost::fenced_priority_queue	access:private
+prev	/usr/include/boost/pending/bucket_sorter.hpp	/^      Iter prev;$/;"	m	class:boost::bucket_sorter::stack	access:private
+prev	/usr/include/boost/pending/bucket_sorter.hpp	/^    std::vector<size_type>   prev;$/;"	m	class:boost::bucket_sorter	access:protected
+print	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void print(std::ostream& os) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(std::ostream& os)
+print_recur	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void print_recur(size_type x, std::ostream& os) {$/;"	f	class:boost::fibonacci_heap	access:protected	signature:(size_type x, std::ostream& os)
+promote	/usr/include/boost/pending/relaxed_heap.hpp	/^  void promote(group* a)$/;"	f	class:boost::relaxed_heap	access:private	signature:(group* a)
+property	/usr/include/boost/pending/property.hpp	/^    property() : m_value() { }$/;"	f	struct:boost::property	access:public	signature:()
+property	/usr/include/boost/pending/property.hpp	/^    property() { }$/;"	f	struct:boost::property	access:public	signature:()
+property	/usr/include/boost/pending/property.hpp	/^    property(const T& v) : m_value(v) { }$/;"	f	struct:boost::property	access:public	signature:(const T& v)
+property	/usr/include/boost/pending/property.hpp	/^    property(const T& v, const Base& b) : Base(b), m_value(v) { }$/;"	f	struct:boost::property	access:public	signature:(const T& v, const Base& b)
+property	/usr/include/boost/pending/property.hpp	/^  struct property : public Base {$/;"	s	namespace:boost	inherits:Base
+property_kind	/usr/include/boost/pending/property.hpp	/^  struct property_kind {$/;"	s	namespace:boost
+property_value	/usr/include/boost/pending/property.hpp	/^  struct property_value {$/;"	s	namespace:boost
+property_value_dispatch	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_dispatch {$/;"	s	namespace:boost::detail
+property_value_dispatch	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_dispatch<0> {$/;"	s	namespace:boost::detail
+property_value_end	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_end {$/;"	s	namespace:boost::detail
+property_value_end	/usr/include/boost/pending/detail/property.hpp	/^    struct property_value_end<no_property> {$/;"	s	namespace:boost::detail
+push	/usr/include/boost/pending/bucket_sorter.hpp	/^      void push(const value_type& x) {$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:(const value_type& x)
+push	/usr/include/boost/pending/bucket_sorter.hpp	/^    void push(const value_type& x) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const value_type& x)
+push	/usr/include/boost/pending/container_traits.hpp	/^  push(Container& c, const T& v)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& v)
+push	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    void push(const T& data);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(const T& data)
+push	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  push(const T &t) {$/;"	f	class:boost::fenced_priority_queue	signature:(const T &t)
+push	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void push(const T& d) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(const T& d)
+push	/usr/include/boost/pending/mutable_queue.hpp	/^    void push(const IndexedType& x) {$/;"	f	class:boost::mutable_queue	access:public	signature:(const IndexedType& x)
+push	/usr/include/boost/pending/queue.hpp	/^  void push(const value_type& __x) { c.push_back(__x); }$/;"	f	class:boost::queue	access:public	signature:(const value_type& __x)
+push	/usr/include/boost/pending/relaxed_heap.hpp	/^  void push(const value_type& x)$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x)
+push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(AssociativeContainer& c, const T& v, $/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, const T& v, unique_associative_container_tag)
+push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(AssociativeContainer& c, const T& v,$/;"	f	namespace:boost::graph_detail	signature:(AssociativeContainer& c, const T& v, multiple_associative_container_tag)
+push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(Container& c, const T& v, back_insertion_sequence_tag)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& v, back_insertion_sequence_tag)
+push_dispatch	/usr/include/boost/pending/container_traits.hpp	/^  push_dispatch(Container& c, const T& v, front_insertion_sequence_tag)$/;"	f	namespace:boost::graph_detail	signature:(Container& c, const T& v, front_insertion_sequence_tag)
+Q	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    mutable Buffer Q;$/;"	m	class:boost::fenced_priority_queue	access:private
+queue	/usr/include/boost/pending/queue.hpp	/^  explicit queue(const _Sequence& __c) : c(__c) {}$/;"	f	class:boost::queue	access:public	signature:(const _Sequence& __c)
+queue	/usr/include/boost/pending/queue.hpp	/^  queue() : c() {}$/;"	f	class:boost::queue	access:public	signature:()
+queue	/usr/include/boost/pending/queue.hpp	/^class queue {$/;"	c	namespace:boost
+random_access_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct random_access_container_tag$/;"	s	namespace:boost::graph_detail	inherits:reversible_container_tag
+random_access_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void random_access_iterator_test(Iterator i, int N, TrueVals vals)$/;"	f	namespace:boost	signature:(Iterator i, int N, TrueVals vals)
+rank	/usr/include/boost/pending/disjoint_sets.hpp	/^    RankContainer rank;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+rank	/usr/include/boost/pending/disjoint_sets.hpp	/^    RankPA rank;$/;"	m	class:boost::disjoint_sets	access:protected
+rank	/usr/include/boost/pending/relaxed_heap.hpp	/^    rank_type            rank;$/;"	m	struct:boost::relaxed_heap::group	access:public
+RankContainer	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef std::vector<unsigned char> RankContainer;$/;"	t	class:boost::disjoint_sets_with_storage	access:private
+rank_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef std::size_t  rank_type;$/;"	t	class:boost::relaxed_heap	access:private
+rebuild_root_list	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void rebuild_root_list(LinkIter new_roots, int& h)$/;"	f	class:boost::fibonacci_heap	access:public	signature:(LinkIter new_roots, int& h)
+recursive_extract	/usr/include/boost/pending/detail/property.hpp	/^    struct recursive_extract {$/;"	s	namespace:boost::detail
+reference	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef IntT& reference;$/;"	t	class:boost::int_iterator	access:public
+reference	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType reference;$/;"	t	struct:boost::integer_range	access:public
+reference	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::reference       reference;$/;"	t	class:boost::queue	access:public
+relaxed_heap	/usr/include/boost/pending/relaxed_heap.hpp	/^  relaxed_heap(size_type n, const Compare& compare = Compare(),$/;"	f	class:boost::relaxed_heap	access:public	signature:(size_type n, const Compare& compare = Compare(), const ID& id = ID())
+relaxed_heap	/usr/include/boost/pending/relaxed_heap.hpp	/^class relaxed_heap$/;"	c	namespace:boost
+remove	/usr/include/boost/pending/bucket_sorter.hpp	/^    void remove(const value_type& x) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const value_type& x)
+remove	/usr/include/boost/pending/relaxed_heap.hpp	/^  void remove(const value_type& x)$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x)
+remove_from_family	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline void remove_from_family(size_type v, size_type p) {$/;"	f	class:boost::fibonacci_heap	access:protected	signature:(size_type v, size_type p)
+rep	/usr/include/boost/pending/disjoint_sets.hpp	/^    FindCompress rep;$/;"	m	class:boost::disjoint_sets	access:protected
+rep	/usr/include/boost/pending/disjoint_sets.hpp	/^    FindCompress rep;$/;"	m	class:boost::disjoint_sets_with_storage	access:protected
+require_stable	/usr/include/boost/pending/container_traits.hpp	/^  inline void require_stable(stable_tag) { }$/;"	f	namespace:boost::graph_detail	signature:(stable_tag)
+result	/usr/include/boost/pending/detail/property.hpp	/^      template <class T> struct result { $/;"	s	struct:boost::detail::property_value_end	access:public
+result	/usr/include/boost/pending/detail/property.hpp	/^      template <class T> struct result { typedef T type; };$/;"	s	struct:boost::detail::property_value_end	access:public
+result_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef T result_type;$/;"	t	class:boost::indirect_cmp	access:public
+result_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef T result_type;$/;"	t	class:boost::indirect_pmap	access:public
+retagged	/usr/include/boost/pending/property.hpp	/^        typedef FinalType retagged;$/;"	t	struct:boost::detail::retag_property_list	access:public
+retagged	/usr/include/boost/pending/property.hpp	/^        typedef no_property retagged;$/;"	t	struct:boost::detail::retag_property_list	access:public
+retagged	/usr/include/boost/pending/property.hpp	/^        typedef typename next::retagged retagged;$/;"	t	struct:boost::detail::retag_property_list	access:public
+retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list$/;"	s	namespace:boost::detail
+retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list<FinalTag, no_property>$/;"	s	namespace:boost::detail
+retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list<FinalTag, property<FinalTag, FinalType> >$/;"	s	namespace:boost::detail
+retag_property_list	/usr/include/boost/pending/property.hpp	/^    struct retag_property_list<FinalTag, property<Tag, T, Base> >$/;"	s	namespace:boost::detail
+reversible_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct reversible_container_tag : virtual public forward_container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:forward_container_tag
+root	/usr/include/boost/pending/relaxed_heap.hpp	/^  group root;$/;"	m	class:boost::relaxed_heap	access:private
+same_property	/usr/include/boost/pending/detail/property.hpp	/^    struct same_property {$/;"	s	namespace:boost::detail
+second_argument_type	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef K second_argument_type;$/;"	t	class:boost::indirect_cmp	access:public
+self	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef int_iterator self;$/;"	t	class:boost::int_iterator	access:private
+self	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef disjoint_sets self;$/;"	t	class:boost::disjoint_sets	access:private
+self	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef fibonacci_heap self;$/;"	t	class:boost::fibonacci_heap	access:protected
+self_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef relaxed_heap self_type;$/;"	t	class:boost::relaxed_heap	access:private
+sequence_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct sequence_tag : virtual public forward_container_tag { };$/;"	s	namespace:boost::graph_detail	inherits:forward_container_tag
+serialization	/usr/include/boost/pending/property_serialize.hpp	/^  namespace serialization {$/;"	n	namespace:boost
+serialize	/usr/include/boost/pending/property_serialize.hpp	/^  inline void serialize(Archive&, no_property&, const unsigned int) { }$/;"	f	namespace:boost	signature:(Archive&, no_property&, const unsigned int)
+serialize	/usr/include/boost/pending/property_serialize.hpp	/^  serialize(Archive& ar, property<Tag, T, Base>& prop, $/;"	f	namespace:boost	signature:(Archive& ar, property<Tag, T, Base>& prop, const unsigned int version)
+set_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct set_tag :$/;"	s	namespace:boost::graph_detail	inherits:sorted_associative_container_tag,simple_associative_container_tag,unique_associative_container_tag
+simple_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct simple_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+size	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    size_type size(void) const;$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void) const
+size	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  size(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+size	/usr/include/boost/pending/fibonacci_heap.hpp	/^  inline size_type size() const { return _n; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:() const
+size	/usr/include/boost/pending/integer_range.hpp	/^    size_type size() const { return m_finish - m_start; }$/;"	f	struct:boost::integer_range	access:public	signature:() const
+size	/usr/include/boost/pending/mutable_queue.hpp	/^    size_type size() const { return c.size(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+size	/usr/include/boost/pending/queue.hpp	/^  size_type size() const { return c.size(); }$/;"	f	class:boost::queue	access:public	signature:() const
+size_type	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef typename std::vector<value_type>::size_type size_type;$/;"	t	class:boost::bucket_sorter	access:public
+size_type	/usr/include/boost/pending/disjoint_sets.hpp	/^    typedef typename ParentContainer::size_type size_type;$/;"	t	class:boost::disjoint_sets_with_storage	access:public
+size_type	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    typedef typename Buffer::size_type size_type;$/;"	t	class:boost::fenced_priority_queue	access:public
+size_type	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef typename boost::property_traits<ID>::value_type size_type;$/;"	t	class:boost::fibonacci_heap	access:private
+size_type	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType size_type;$/;"	t	struct:boost::integer_range	access:public
+size_type	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef typename RandomAccessContainer::size_type size_type;$/;"	t	class:boost::mutable_queue	access:public
+size_type	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::size_type       size_type;$/;"	t	class:boost::queue	access:public
+size_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef rank_type    size_type;$/;"	t	class:boost::relaxed_heap	access:public
+smallest_key	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	e	enum:boost::relaxed_heap::group_key_kind
+smallest_value	/usr/include/boost/pending/relaxed_heap.hpp	/^  mutable group* smallest_value;$/;"	m	class:boost::relaxed_heap	access:private
+sorted_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct sorted_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag,reversible_container_tag
+stable_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct stable_tag { };$/;"	s	namespace:boost::graph_detail
+stack	/usr/include/boost/pending/bucket_sorter.hpp	/^      stack(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v)$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v)
+stack	/usr/include/boost/pending/bucket_sorter.hpp	/^      stack(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v,$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:(bucket_type _bucket_id, Iter h, Iter n, Iter p, IndexValueMap v, const ValueIndexMap& _id)
+stack	/usr/include/boost/pending/bucket_sorter.hpp	/^    class stack {$/;"	c	class:boost::bucket_sorter	access:public
+std	/usr/include/boost/pending/is_heap.hpp	/^namespace std {$/;"	n
+std::is_heap	/usr/include/boost/pending/is_heap.hpp	/^inline bool is_heap(RandomAccessIterator first, RandomAccessIterator last)$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last)
+std::is_heap	/usr/include/boost/pending/is_heap.hpp	/^inline bool is_heap(RandomAccessIterator first, RandomAccessIterator last,$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp)
+std::__is_heap	/usr/include/boost/pending/is_heap.hpp	/^bool __is_heap(RandomAccessIterator first, RandomAccessIterator last,$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last, Distance*)
+std::__is_heap	/usr/include/boost/pending/is_heap.hpp	/^bool __is_heap(RandomAccessIterator first, RandomAccessIterator last,$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp, Distance*)
+stored_key	/usr/include/boost/pending/relaxed_heap.hpp	/^  enum group_key_kind { smallest_key, stored_key, largest_key };$/;"	e	enum:boost::relaxed_heap::group_key_kind
+stringtok	/usr/include/boost/pending/stringtok.hpp	/^stringtok (Container &l, std::string const &s, char const * const ws = " \\t\\n")$/;"	f	namespace:boost	signature:(Container &l, std::string const &s, char const * const ws = Ó)
+swap	/usr/include/boost/pending/integer_range.hpp	/^    void swap(integer_range& x) {$/;"	f	struct:boost::integer_range	access:public	signature:(integer_range& x)
+swap	/usr/include/boost/pending/queue.hpp	/^  void swap(queue& other)$/;"	f	class:boost::queue	access:public	signature:(queue& other)
+swap	/usr/include/boost/pending/queue.hpp	/^swap(queue<_Tp, _Sequence>& __x, queue<_Tp, _Sequence>& __y)$/;"	f	namespace:boost	signature:(queue<_Tp, _Sequence>& __x, queue<_Tp, _Sequence>& __y)
+T	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::value_type T;$/;"	t	class:boost::indirect_cmp	access:public
+T	/usr/include/boost/pending/indirect_cmp.hpp	/^    typedef typename boost::property_traits<ReadablePropertyMap>::value_type T;$/;"	t	class:boost::indirect_pmap	access:public
+Tag	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename PropertyList::tag_type Tag;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+Tag2	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename AListFirst::first_type Tag2;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+tag_type	/usr/include/boost/pending/property.hpp	/^    typedef no_property tag_type;$/;"	t	struct:boost::no_property	access:public
+tag_type	/usr/include/boost/pending/property.hpp	/^    typedef Tag tag_type;$/;"	t	struct:boost::property	access:public
+top	/usr/include/boost/pending/bucket_sorter.hpp	/^      const value_type& top() const { return value[ head[bucket_id] ]; }$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:() const
+top	/usr/include/boost/pending/bucket_sorter.hpp	/^      value_type& top() { return value[ head[bucket_id] ]; }$/;"	f	class:boost::bucket_sorter::stack	access:public	signature:()
+top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    const T& top(void) const;$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void) const
+top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    T& top(void);$/;"	p	class:boost::fenced_priority_queue	access:public	signature:(void)
+top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  top(void) const {$/;"	f	class:boost::fenced_priority_queue	signature:(void) const
+top	/usr/include/boost/pending/fenced_priority_queue.hpp	/^  top(void) {$/;"	f	class:boost::fenced_priority_queue	signature:(void)
+top	/usr/include/boost/pending/fibonacci_heap.hpp	/^  const T& top() const { return _key[_root]; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:() const
+top	/usr/include/boost/pending/fibonacci_heap.hpp	/^  T& top() { return _key[_root]; }$/;"	f	class:boost::fibonacci_heap	access:public	signature:()
+top	/usr/include/boost/pending/mutable_queue.hpp	/^    const value_type& top() const { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:() const
+top	/usr/include/boost/pending/mutable_queue.hpp	/^    value_type& top() { return c.front(); }$/;"	f	class:boost::mutable_queue	access:public	signature:()
+top	/usr/include/boost/pending/queue.hpp	/^  const_reference top() const { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:() const
+top	/usr/include/boost/pending/queue.hpp	/^  reference top() { return c.front(); }$/;"	f	class:boost::queue	access:public	signature:()
+top	/usr/include/boost/pending/relaxed_heap.hpp	/^  const value_type& top() const$/;"	f	class:boost::relaxed_heap	access:public	signature:() const
+top	/usr/include/boost/pending/relaxed_heap.hpp	/^  value_type& top()$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+tracking_level	/usr/include/boost/pending/property_serialize.hpp	/^  struct tracking_level<property<Tag, T, Base>  >$/;"	s	namespace:boost::serialization	inherits:mpl::int_
+trivial_iterator_test	/usr/include/boost/pending/iterator_tests.hpp	/^void trivial_iterator_test(const Iterator i, const Iterator j, T val)$/;"	f	namespace:boost	signature:(const Iterator i, const Iterator j, T val)
+type	/usr/include/boost/pending/detail/property.hpp	/^        >::type type;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^        typedef detail::error_property_not_found type; $/;"	t	struct:boost::detail::property_value_end::result	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^        typedef error_property_not_found type;$/;"	t	struct:boost::detail::end_extract::bind_	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^      template <class T> struct result { typedef T type; };$/;"	t	struct:boost::detail::property_value_end::result	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^      typedef error_property_not_found type;$/;"	t	struct:boost::detail::extract_value	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^      typedef no_property type;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^      typedef std::pair< std::pair<Tag,Value>, Next> type;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename extract_value<Rest,Tag2>::type type;$/;"	t	struct:boost::detail::extract_value	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^      typedef Value type;$/;"	t	struct:boost::detail::extract_value	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector { typedef recursive_extract type; };$/;"	t	struct:boost::detail::ev_selector	access:public
+type	/usr/include/boost/pending/detail/property.hpp	/^    struct ev_selector<no_property> { typedef end_extract type; };$/;"	t	struct:boost::detail::ev_selector	access:public
+type	/usr/include/boost/pending/property.hpp	/^        typedef no_property type;$/;"	t	struct:boost::detail::retag_property_list	access:public
+type	/usr/include/boost/pending/property.hpp	/^        typedef property<FinalTag, FinalType> type;$/;"	t	struct:boost::detail::retag_property_list	access:public
+type	/usr/include/boost/pending/property.hpp	/^        typedef property<Tag, T, typename next::type> type;$/;"	t	struct:boost::detail::retag_property_list	access:public
+type	/usr/include/boost/pending/property.hpp	/^    typedef typename detail::extract_value<AList,Tag>::type type;$/;"	t	struct:boost::property_value	access:public
+type	/usr/include/boost/pending/property.hpp	/^    typedef typename PropertyTag::kind type;$/;"	t	struct:boost::property_kind	access:public
+union_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    inline void union_set(Element x, Element y)$/;"	f	class:boost::disjoint_sets	access:public	signature:(Element x, Element y)
+union_set	/usr/include/boost/pending/disjoint_sets.hpp	/^    union_set(Element x, Element y) {$/;"	f	class:boost::disjoint_sets_with_storage	access:public	signature:(Element x, Element y)
+unique_associative_container_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct unique_associative_container_tag $/;"	s	namespace:boost::graph_detail	inherits:associative_container_tag
+unstable_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct unstable_tag { };$/;"	s	namespace:boost::graph_detail
+update	/usr/include/boost/pending/bucket_sorter.hpp	/^    void update(const value_type& x) {$/;"	f	class:boost::bucket_sorter	access:public	signature:(const value_type& x)
+update	/usr/include/boost/pending/fibonacci_heap.hpp	/^  void update(const T& d) {$/;"	f	class:boost::fibonacci_heap	access:public	signature:(const T& d)
+update	/usr/include/boost/pending/mutable_queue.hpp	/^    void update(const IndexedType& x) {$/;"	f	class:boost::mutable_queue	access:public	signature:(const IndexedType& x)
+update	/usr/include/boost/pending/relaxed_heap.hpp	/^  void update(const value_type& x)$/;"	f	class:boost::relaxed_heap	access:public	signature:(const value_type& x)
+update_heap	/usr/include/boost/pending/mutable_heap.hpp	/^  inline void update_heap(TreeNode x, const Compare& comp, ExternalData& edata) {$/;"	f	namespace:boost	signature:(TreeNode x, const Compare& comp, ExternalData& edata)
+up_heap	/usr/include/boost/pending/mutable_heap.hpp	/^  inline TreeNode up_heap(TreeNode x, const Compare& comp, ExternalData& edata) {$/;"	f	namespace:boost	signature:(TreeNode x, const Compare& comp, ExternalData& edata)
+valid	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool valid()$/;"	f	class:boost::relaxed_heap	access:public	signature:()
+valid	/usr/include/boost/pending/relaxed_heap.hpp	/^  bool valid(group* p)$/;"	f	class:boost::relaxed_heap	access:public	signature:(group* p)
+value	/usr/include/boost/pending/bucket_sorter.hpp	/^      IndexValueMap value;$/;"	m	class:boost::bucket_sorter::stack	access:private
+Value	/usr/include/boost/pending/detail/property.hpp	/^        typedef typename AListFirst::second_type Value;$/;"	t	struct:boost::detail::recursive_extract::bind_	access:public
+value	/usr/include/boost/pending/detail/property.hpp	/^      enum { value = is_same<PropertyTag1,PropertyTag2>::value };$/;"	e	enum:boost::detail::same_property::__anon1
+Value	/usr/include/boost/pending/detail/property.hpp	/^      typedef typename PropertyList::value_type Value;$/;"	t	struct:boost::detail::build_property_tag_value_alist	access:public
+value	/usr/include/boost/pending/relaxed_heap.hpp	/^    ::boost::optional<value_type> value;$/;"	m	struct:boost::relaxed_heap::group	access:public
+value_compare	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef Compare value_compare;$/;"	t	class:boost::mutable_queue	access:public
+value_type	/usr/include/boost/pending/bucket_sorter.hpp	/^    typedef ValueType value_type;$/;"	t	class:boost::bucket_sorter	access:public
+value_type	/usr/include/boost/pending/detail/int_iterator.hpp	/^  typedef IntT value_type;$/;"	t	class:boost::int_iterator	access:public
+value_type	/usr/include/boost/pending/fenced_priority_queue.hpp	/^    typedef T value_type;$/;"	t	class:boost::fenced_priority_queue	access:public
+value_type	/usr/include/boost/pending/fibonacci_heap.hpp	/^  typedef T value_type;$/;"	t	class:boost::fibonacci_heap	access:private
+value_type	/usr/include/boost/pending/integer_range.hpp	/^    typedef IntegerType value_type;$/;"	t	struct:boost::integer_range	access:public
+value_type	/usr/include/boost/pending/mutable_queue.hpp	/^    typedef IndexedType value_type;$/;"	t	class:boost::mutable_queue	access:public
+value_type	/usr/include/boost/pending/property.hpp	/^    typedef no_property value_type;$/;"	t	struct:boost::no_property	access:public
+value_type	/usr/include/boost/pending/property.hpp	/^    typedef T value_type;$/;"	t	struct:boost::property	access:public
+value_type	/usr/include/boost/pending/queue.hpp	/^  typedef typename _Sequence::value_type      value_type;$/;"	t	class:boost::queue	access:public
+value_type	/usr/include/boost/pending/relaxed_heap.hpp	/^  typedef IndexedType  value_type;$/;"	t	class:boost::relaxed_heap	access:public
+vector_tag	/usr/include/boost/pending/container_traits.hpp	/^  struct vector_tag :$/;"	s	namespace:boost::graph_detail	inherits:random_access_container_tag,back_insertion_sequence_tag
+_child	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _child;$/;"	m	class:boost::fibonacci_heap	access:protected
+_compare	/usr/include/boost/pending/fibonacci_heap.hpp	/^  Compare _compare;$/;"	m	class:boost::fibonacci_heap	access:protected
+_degree	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _degree;$/;"	m	class:boost::fibonacci_heap	access:protected
+_i	/usr/include/boost/pending/detail/int_iterator.hpp	/^  IntT _i;$/;"	m	class:boost::int_iterator	access:protected
+_id	/usr/include/boost/pending/fibonacci_heap.hpp	/^  ID _id;$/;"	m	class:boost::fibonacci_heap	access:protected
+_key	/usr/include/boost/pending/fibonacci_heap.hpp	/^  std::vector<T> _key;$/;"	m	class:boost::fibonacci_heap	access:protected
+_left	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _left, _right, _p;$/;"	m	class:boost::fibonacci_heap	access:protected
+_mark	/usr/include/boost/pending/fibonacci_heap.hpp	/^  std::vector<bool> _mark;$/;"	m	class:boost::fibonacci_heap	access:protected
+_n	/usr/include/boost/pending/fibonacci_heap.hpp	/^  size_type _n, _root;$/;"	m	class:boost::fibonacci_heap	access:protected
+_p	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _left, _right, _p;$/;"	m	class:boost::fibonacci_heap	access:protected
+_right	/usr/include/boost/pending/fibonacci_heap.hpp	/^  LinkVec _left, _right, _p;$/;"	m	class:boost::fibonacci_heap	access:protected
+_root	/usr/include/boost/pending/fibonacci_heap.hpp	/^  size_type _n, _root;$/;"	m	class:boost::fibonacci_heap	access:protected
+__is_heap	/usr/include/boost/pending/is_heap.hpp	/^bool __is_heap(RandomAccessIterator first, RandomAccessIterator last,$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last, Distance*)
+__is_heap	/usr/include/boost/pending/is_heap.hpp	/^bool __is_heap(RandomAccessIterator first, RandomAccessIterator last,$/;"	f	namespace:std	signature:(RandomAccessIterator first, RandomAccessIterator last, StrictWeakOrdering comp, Distance*)
+~relaxed_heap	/usr/include/boost/pending/relaxed_heap.hpp	/^  ~relaxed_heap() { delete [] root.children; }$/;"	f	class:boost::relaxed_heap	access:public	signature:()

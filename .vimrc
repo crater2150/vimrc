@@ -4,18 +4,26 @@ set number
 set tabstop=4
 set cindent
 set shiftwidth=4
-set expandtab 
-set foldmethod=marker
+" set expandtab 
+set foldmethod=syntax
 set shellcmdflag=-c
 set shell=/bin/zsh\ +f
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
     \.class
+set timeoutlen=500
+set modeline
+
+set undofile
+set undodir=~/.vim/undo/
 
 colo rdark-terminal
 
+" set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
+"    \%1*%{Tlist_Get_Tag_Prototype_By_Line()}
+"    \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P
 set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
-    \%1*%{Tlist_Get_Tag_Prototype_By_Line()}
-    \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P
+    \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P\ %y
+"
 set laststatus=2
 " tabline {{{
 if has('gui')
@@ -34,6 +42,15 @@ if exists("+showtabline")
       let s .= ' '
       let s .= i . ':'
       let s .= winnr . '/' . tabpagewinnr(i,'$')
+
+	  let bufnrlist = tabpagebuflist(i)
+	  for bufnr in bufnrlist
+	    if getbufvar(bufnr, "&modified")
+	      let s .= '+'
+	      break
+	    endif
+	  endfor
+
       let s .= ' %*'
       let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
       let bufnr = buflist[winnr - 1]
@@ -98,6 +115,7 @@ vmap <M-Up>       dd<Up><Up>p
 map <M-Down>      ddp
 imap <M-Down>     <Esc>ddpi
 
+map <C-L>         :noh<cr>:redraw!<cr>
 
 map <F1>	:mksession! Session.vim<CR>:wqall<CR>
 map <F9>	:make<CR>
@@ -287,3 +305,19 @@ let b:jcommenter_add_empty_line = 1
 
 " --- cut here (configuration) ---
 " Java }}}
+
+let g:user_zen_settings = {
+  \  'indentation' : '  ',
+  \  'perl' : {
+  \    'aliases' : {
+  \      'req' : 'require '
+  \    },
+  \    'snippets' : {
+  \      'use' : "use strict\nuse warnings\n\n",
+  \      'warn' : "warn \"|\";",
+  \    }
+  \  }
+  \}
+
+let g:user_zen_expandabbr_key = '<Leader>e'
+let g:user_zen_leader_key = '<Leader>z'

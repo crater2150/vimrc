@@ -1,0 +1,8 @@
+#!/bin/zsh
+typeset -a tags
+for i in /usr/include/boost/*(/); do
+    if [[ "${i:t}" != "typeof" ]]; then
+        tags=($tags $i)
+    fi
+done
+ctags --sort=foldcase -R --c++-kinds=+p --fields=+iaS --extra=+q -f /home/crater2150/.vim/tags/boost $tags
