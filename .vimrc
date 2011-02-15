@@ -12,6 +12,7 @@ set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
     \.class
 set timeoutlen=500
 set modeline
+set ignorecase smartcase
 
 set undofile
 set undodir=~/.vim/undo/
