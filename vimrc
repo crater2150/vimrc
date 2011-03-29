@@ -1,4 +1,7 @@
 set nocp
+
+set exrc
+
 filetype plugin on
 set t_Co=256
 set background=dark
