@@ -1,3 +1,5 @@
+set nocp
+filetype plugin on
 set t_Co=256
 set background=dark
 set number
@@ -16,12 +18,20 @@ set modeline
 set undofile
 set undodir=~/.vim/undo/
 
+set ignorecase smartcase
+set completeopt=menu,longest,preview
+
+set backupdir=~/.vim/swap,~/tmp,~/
+set wildmode=list:longest,list:full
+
 colo rdark-terminal
+
+call pathogen#runtime_append_all_bundles() 
 
 " set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
 "    \%1*%{Tlist_Get_Tag_Prototype_By_Line()}
 "    \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P
-set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
+set statusline=%0*\ %<%f%h%m%r\ \ 
     \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P\ %y
 "
 set laststatus=2
@@ -87,11 +97,6 @@ au BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
 au BufWinEnter * let w:m1=matchadd('nearLineEnd', '\%<81v.\%>78v', -1)
 au BufWinEnter * let w:m2=matchadd('atLineEnd', '\%>80v.\+', -1)
 
-map <C-M-Right>     <C-w><Right>
-map <C-M-Left>      <C-w><Left>
-map <C-M-Up>        <C-w><Up>
-map <C-M-Down>      <C-w><Down>
-map <S-Tab>         <C-w><C-w>
 
 imap <silent><C-E> <Esc>v`^me<Esc>gi<C-o>:call Ender()<CR>
 function Ender()
@@ -103,20 +108,20 @@ endfunction
 
 nnoremap <space> za
 
-map <M-Up>        dd<Up><Up>p
-imap <M-Up>       <Esc>dd<Up><Up>pi
-vmap <M-Up>       dd<Up><Up>p
+inoremap <C-Space> <C-x><C-u>
+
+map <M-l>    <C-w><l>
+map <M-h>    <C-w><h>
+map <M-k>    <C-w><k>
+map <M-j>    <C-w><j>
 
 map <M-Down>      ddp
 imap <M-Down>     <Esc>ddpi
 
 map <C-L>         :noh<cr>:redraw!<cr>
 
-map <F1>	:mksession! Session.vim<CR>:wqall<CR>
-map <F9>	:make<CR>
-map <F8>	:make test<CR>
-map ;w		i<Home>#<ESC><Down>
-map ;n		:tabnew<cr>
+map <F9>	   :make<CR>
+map <leader>m  :make<CR>
 
 map <C-Tab> <C-w><C-w>
 imap <C-Tab> <esc><C-w><C-w>
@@ -133,11 +138,6 @@ map <silent> <Leader>t   :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . &>
 
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/boost
-
-let OmniCpp_NamespaceSearch = 2
-let OmniCpp_DefaultNamespaces = ["std"]
-let OmniCpp_MayCompleteDot=0
-let OmniCpp_MayCompleteArrow=0
 
 let Tlist_Exit_OnlyWindow=1
 let Tlist_Process_File_Always=1
@@ -316,3 +316,5 @@ let g:user_zen_settings = {
 
 let g:user_zen_expandabbr_key = '<Leader>e'
 let g:user_zen_leader_key = '<Leader>z'
+
+" vi:foldmethod=marker
