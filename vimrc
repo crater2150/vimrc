@@ -166,7 +166,7 @@ nmap <Leader>gvf        :!git svn fetch<CR>
 " Java {{{
 autocmd BufNewFile *.java call InsertJavaPackage()
 function! InsertJavaPackage()
-  let filename = expand("%:t")
+  let filename = expand("%")
   let filename = substitute(filename, "\.java$", "", "")
   let dir = getcwd() . "/" . filename
   let dir = substitute(dir, "^.*\/src\/", "", "")
