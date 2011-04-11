@@ -2,12 +2,12 @@ set nocp
 
 set exrc
 
-filetype plugin on
+filetype indent plugin on
 set t_Co=256
 set background=dark
-set number
+set relativenumber
 set tabstop=4
-set cindent
+"set cindent
 set shiftwidth=4
 " set expandtab 
 set foldmethod=syntax
