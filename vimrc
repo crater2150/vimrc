@@ -1,5 +1,7 @@
 set nocp
 filetype plugin on
+
+set ex
 set t_Co=256
 set background=dark
 set number
@@ -23,6 +25,8 @@ set completeopt=menu,longest,preview
 
 set backupdir=~/.vim/swap,~/tmp,~/
 set wildmode=list:longest,list:full
+
+let mapleader = ","
 
 colo rdark-terminal
 
@@ -108,15 +112,10 @@ endfunction
 
 nnoremap <space> za
 
-inoremap <C-Space> <C-x><C-u>
-
 map <M-l>    <C-w><l>
 map <M-h>    <C-w><h>
 map <M-k>    <C-w><k>
 map <M-j>    <C-w><j>
-
-map <M-Down>      ddp
-imap <M-Down>     <Esc>ddpi
 
 map <C-L>         :noh<cr>:redraw!<cr>
 
@@ -127,10 +126,19 @@ map <C-Tab> <C-w><C-w>
 imap <C-Tab> <esc><C-w><C-w>
 
 
-command RC tabedit ~/.vimrc
+command RC edit ~/.vimrc
 command SRC source ~/.vimrc
 
 nmap <silent> <Del> :NERDTreeToggle<CR>
+
+" Fuzzyfinder {{{
+
+nnoremap <silent> <Leader>b :FufBuffer<CR>
+nnoremap <silent> <Leader>ft :FufTags<CR>
+nnoremap <silent> <Leader>o :FufCoverageFile<CR>
+nnoremap <silent> <Leader>cd :FufDir<CR>
+
+" }}}
 
 " tags and taglist {{{
 
@@ -158,17 +166,18 @@ nmap <Leader>gvf        :!git svn fetch<CR>
 " Java {{{
 autocmd BufNewFile *.java call InsertJavaPackage()
 function! InsertJavaPackage()
-    let dir = getcwd()
-    let dir = substitute(dir, "^.*\/src\/", "", "")
-    let dir = substitute(dir, "\/", ".", "g")
-    let dir = "package " . dir . ";"
-    let result = append(0, "")
-    let result = append(1, dir)
-    let filename = expand("%")
-    let filename = substitute(filename, "\.java", "", "")
-    let result = append(2, "")
-    let result = append(3, "class " . filename . " {")
-    let result = append(4, "}")
+  let filename = expand("%:t")
+  let filename = substitute(filename, "\.java$", "", "")
+  let dir = getcwd() . "/" . filename
+  let dir = substitute(dir, "^.*\/src\/", "", "")
+  let dir = substitute(dir, "\/[^\/]*$", "", "")
+  let dir = substitute(dir, "\/", ".", "g")
+  let filename = substitute(filename, "^.*\/", "", "")
+  let dir = "package " . dir . ";"
+  let result = append(0, dir)
+  let result = append(1, "")
+  let result = append(2, "class " . filename . " {")
+  let result = append(4, "}")
 endfunction
 
 " Configuration for jcommenter
