@@ -1,33 +1,39 @@
 set nocp
 set exrc
 filetype indent plugin on
+
 set t_Co=256
 set background=dark
-set relativenumber
+colo rdark-terminal
+
+set textwidth=80
+set cc=+1
+
+set number
+
 set tabstop=4
-"set cindent
 set shiftwidth=4
-" set expandtab 
+
 set foldmethod=syntax
+
 set shellcmdflag=-c
 set shell=/bin/zsh\ +f
+
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
     \.class
+
 set timeoutlen=500
 set modeline
 
 set undofile
 set undodir=~/.vim/undo/
+set backupdir=~/.vim/swap,~/tmp,~/
 
 set ignorecase smartcase
 set completeopt=menu,longest,preview
-
-set backupdir=~/.vim/swap,~/tmp,~/
 set wildmode=list:longest,list:full
 
 let mapleader = ","
-
-colo rdark-terminal
 
 call pathogen#runtime_append_all_bundles() 
 
@@ -38,6 +44,7 @@ set statusline=%0*\ %<%f%h%m%r\ \
     \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P\ %y
 "
 set laststatus=2
+
 " tabline {{{
 if has('gui')
   set guioptions-=e
@@ -96,10 +103,17 @@ endif
 
 "}}}
 
+" Autocommands {{{
+
 au BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
 au BufWinEnter * let w:m1=matchadd('nearLineEnd', '\%<81v.\%>78v', -1)
 au BufWinEnter * let w:m2=matchadd('atLineEnd', '\%>80v.\+', -1)
 
+au FileType mail setlocal spell
+
+"}}}
+
+" common mappings {{{
 
 imap <silent><C-E> <Esc>v`^me<Esc>gi<C-o>:call Ender()<CR>
 function Ender()
@@ -107,7 +121,6 @@ function Ender()
   execute "normal \<End>a".endchar
   normal `e
 endfunction
-
 
 nnoremap <space> za
 
@@ -124,9 +137,10 @@ map <leader>m  :make<CR>
 map <C-Tab> <C-w><C-w>
 imap <C-Tab> <esc><C-w><C-w>
 
+"}}}
 
-command RC edit ~/.vimrc
-command SRC source ~/.vimrc
+command RC edit ~/.vim/vimrc
+command SRC source ~/.vim/vimrc
 
 nmap <silent> <Del> :NERDTreeToggle<CR>
 
@@ -309,6 +323,8 @@ let b:jcommenter_add_empty_line = 1
 " --- cut here (configuration) ---
 " Java }}}
 
+" zencoding {{{
+"
 let g:user_zen_settings = {
   \  'indentation' : '  ',
   \  'perl' : {
@@ -324,5 +340,7 @@ let g:user_zen_settings = {
 
 let g:user_zen_expandabbr_key = '<Leader>e'
 let g:user_zen_leader_key = '<Leader>z'
+
+"}}}
 
 " vi:foldmethod=marker
