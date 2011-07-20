@@ -33,6 +33,8 @@ set ignorecase smartcase
 set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
 
+set cm=blowfish
+
 let mapleader = ","
 
 call pathogen#runtime_append_all_bundles() 
@@ -123,6 +125,7 @@ function Ender()
 endfunction
 
 nnoremap <space> za
+vnoremap <silent> . :normal .<CR>
 
 map <M-l>    <C-w><l>
 map <M-h>    <C-w><h>
