@@ -8,6 +8,4 @@ iab <buffer> syso System.out.println
 
 setlocal foldmethod=syntax
 setlocal foldenable
-syn region foldBraces start=/{/ end=/}/ transparent fold
-syn region foldJavadoc start=,/\*\*, end=,\*/, transparent fold keepend
 

@@ -1,5 +1,8 @@
 set nocp
-set exrc
+if empty(matchstr(getcwd(), "/home/crater2150"))
+	set exrc
+endif
+
 filetype indent plugin on
 
 set t_Co=256
@@ -11,8 +14,8 @@ set cc=+1
 
 set number
 
-set tabstop=4
-set shiftwidth=4
+set tabstop=8
+set shiftwidth=8
 
 set foldmethod=syntax
 
@@ -34,6 +37,13 @@ set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
 
 set cm=blowfish
+
+" conceal" Use conceal vim 7.3 feature:
+set cole=2	" conceal level
+" set cocu=n	" conceal cursor /when set to n typing is not very pleasant/
+" Conceal in tex file: "admgs", a=accents, d=delimiters, m=math symbols,
+" g=Greek, s=superscripts/subscripts:
+let g:tex_conceal="adgm"
 
 let mapleader = ","
 
@@ -108,10 +118,23 @@ endif
 " Autocommands {{{
 
 au BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
-au BufWinEnter * let w:m1=matchadd('nearLineEnd', '\%<81v.\%>78v', -1)
-au BufWinEnter * let w:m2=matchadd('atLineEnd', '\%>80v.\+', -1)
+"au BufWinEnter * let w:m1=matchadd('nearLineEnd', '\%<81v.\%>78v', -1)
+"au BufWinEnter * let w:m2=matchadd('atLineEnd', '\%>80v.\+', -1)
 
 au FileType mail setlocal spell
+au FileType man setlocal nonu
+
+" vim -b : edit binary using xxd-format!                               
+augroup Binary                                                         
+	au!                                                                  
+	au BufReadPre  *.bin let &bin=1                                      
+	au BufReadPost *.bin if &bin | %!xxd                                 
+	au BufReadPost *.bin set ft=xxd | endif                              
+	au BufWritePre *.bin if &bin | %!xxd -r                              
+	au BufWritePre *.bin endif                                           
+	au BufWritePost *.bin if &bin | %!xxd                                
+	au BufWritePost *.bin set nomod | endif                              
+augroup END  
 
 "}}}
 
