@@ -3,6 +3,7 @@ if empty(matchstr(getcwd(), "/home/crater2150"))
 	set exrc
 endif
 
+syntax on
 filetype indent plugin on
 
 set t_Co=256
