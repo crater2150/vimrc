@@ -7,6 +7,7 @@ syntax on
 filetype indent plugin on
 
 set t_Co=256
+set noerrorbells
 set background=dark
 colo rdark-terminal
 
@@ -33,32 +34,40 @@ set undofile
 set undodir=~/.vim/undo/
 set backupdir=~/.vim/swap,~/tmp,~/
 
+let mapleader = "\\"
+
 set ignorecase smartcase
 set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
 
 set cm=blowfish
 
+"{{{ latex conceal
+"
 " conceal" Use conceal vim 7.3 feature:
 set cole=2	" conceal level
-" set cocu=n	" conceal cursor /when set to n typing is not very pleasant/
 " Conceal in tex file: "admgs", a=accents, d=delimiters, m=math symbols,
 " g=Greek, s=superscripts/subscripts:
 let g:tex_conceal="adgm"
 
-let mapleader = "\\"
+"}}}
+
+"{{{ ruby
+
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete 
+let g:rubycomplete_buffer_loading = 1 
+let g:rubycomplete_classes_in_global = 1
+
+"}}}
+
 
 call pathogen#runtime_append_all_bundles() 
 
-" set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
-"    \%1*%{Tlist_Get_Tag_Prototype_By_Line()}
-"    \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P
+"{{{ status and tab line
 set statusline=%0*\ %<%f%h%m%r\ \ 
     \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P\ %y
-"
 set laststatus=2
 
-" tabline {{{
 if has('gui')
   set guioptions-=e
 endif
@@ -116,16 +125,12 @@ endif
 
 "}}}
 
-" Autocommands {{{
-
-au BufNewFile,Bufread *.php,*.php3,*.php4 set keywordprg="help"
-"au BufWinEnter * let w:m1=matchadd('nearLineEnd', '\%<81v.\%>78v', -1)
-"au BufWinEnter * let w:m2=matchadd('atLineEnd', '\%>80v.\+', -1)
+" {{{ misc Autocommands
 
 au FileType mail setlocal spell
 au FileType man setlocal nonu
 
-" vim -b : edit binary using xxd-format!                               
+"{{{ binary editing
 augroup Binary                                                         
 	au!                                                                  
 	au BufReadPre  *.bin let &bin=1                                      
@@ -136,6 +141,19 @@ augroup Binary
 	au BufWritePost *.bin if &bin | %!xxd                                
 	au BufWritePost *.bin set nomod | endif                              
 augroup END  
+"}}}
+
+"}}}
+
+"{{{ c header gates
+function! s:insert_gates()
+  let gatename = substitute(toupper(expand("%:t")), "\\.", "_", "g")
+  execute "normal! i#ifndef " . gatename
+  execute "normal! o#define " . gatename . " "
+  execute "normal! Go#endif /* " . gatename . " */"
+  normal! kk
+endfunction
+autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
 
 "}}}
 
@@ -202,26 +220,5 @@ nmap <Leader>gu         :GitPush<CR>
 nmap <Leader>gvc        :!git svn dcommit<CR>
 nmap <Leader>gvf        :!git svn fetch<CR>
 " Git }}}
-
-
-" zencoding {{{
-"
-let g:user_zen_settings = {
-  \  'indentation' : '  ',
-  \  'perl' : {
-  \    'aliases' : {
-  \      'req' : 'require '
-  \    },
-  \    'snippets' : {
-  \      'use' : "use strict\nuse warnings\n\n",
-  \      'warn' : "warn \"|\";",
-  \    }
-  \  }
-  \}
-
-let g:user_zen_expandabbr_key = '<Leader>e'
-let g:user_zen_leader_key = '<Leader>z'
-
-"}}}
 
 " vi:foldmethod=marker
