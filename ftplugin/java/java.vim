@@ -13,22 +13,6 @@ nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
 nnoremap <silent> <buffer> <leader>c :JavaCorrect<cr>
 nnoremap <silent> <buffer> <leader>o :JavaImportMissing<cr>
 
-autocmd BufNewFile *.java call InsertJavaPackage()
-function! InsertJavaPackage()
-  let filename = expand("%")
-  let filename = substitute(filename, "\.java$", "", "")
-  let dir = getcwd() . "/" . filename
-  let dir = substitute(dir, "^.*\/src\/", "", "")
-  let dir = substitute(dir, "\/[^\/]*$", "", "")
-  let dir = substitute(dir, "\/", ".", "g")
-  let filename = substitute(filename, "^.*\/", "", "")
-  let dir = "package " . dir . ";"
-  let result = append(0, dir)
-  let result = append(1, "")
-  let result = append(2, "class " . filename . " {")
-  let result = append(4, "}")
-endfunction
-
 let g:EclimProjectTreeAutoOpen=1 
 let g:EclimProjectTreeExpandPathOnOpen=1
 let g:EclimProjectTreeSharedInstance=1  "share tree instance through all tabs

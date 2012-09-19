@@ -30,6 +30,8 @@ set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
 set timeoutlen=500
 set modeline
 
+set hidden
+
 set undofile
 set undodir=~/.vim/undo/
 set backupdir=~/.vim/swap,~/tmp,~/
@@ -220,5 +222,24 @@ nmap <Leader>gu         :GitPush<CR>
 nmap <Leader>gvc        :!git svn dcommit<CR>
 nmap <Leader>gvf        :!git svn fetch<CR>
 " Git }}}
+
+"java {{{
+autocmd BufNewFile *.java call InsertJavaPackage()
+function! InsertJavaPackage()
+  let filename = expand("%")
+  let filename = substitute(filename, "\.java$", "", "")
+  let dir = getcwd() . "/" . filename
+  let dir = substitute(dir, "^.*\/src\/main\/java\/", "", "")
+  let dir = substitute(dir, "\/[^\/]*$", "", "")
+  let dir = substitute(dir, "\/", ".", "g")
+  let filename = substitute(filename, "^.*\/", "", "")
+  let dir = "package " . dir . ";"
+  let result = append(0, dir)
+  let result = append(1, "")
+  let result = append(2, "class " . filename . " {")
+  let result = append(4, "}")
+endfunction
+
+"}}}
 
 " vi:foldmethod=marker
