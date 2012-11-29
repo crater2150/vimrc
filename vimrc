@@ -21,6 +21,8 @@ set shiftwidth=8
 
 set foldmethod=syntax
 
+set vb t_vb=
+
 set shellcmdflag=-c
 set shell=/bin/zsh\ +f
 
@@ -229,7 +231,7 @@ function! InsertJavaPackage()
   let filename = expand("%")
   let filename = substitute(filename, "\.java$", "", "")
   let dir = getcwd() . "/" . filename
-  let dir = substitute(dir, "^.*\/src\/main\/java\/", "", "")
+  let dir = substitute(dir, "^.*\/src\/", "", "")
   let dir = substitute(dir, "\/[^\/]*$", "", "")
   let dir = substitute(dir, "\/", ".", "g")
   let filename = substitute(filename, "^.*\/", "", "")
@@ -239,7 +241,17 @@ function! InsertJavaPackage()
   let result = append(2, "class " . filename . " {")
   let result = append(4, "}")
 endfunction
+map <leader>jc :JavaCorrect<cr>
+map <leader>jf :%JavaFormat<cr>
+map <leader>ji :JavaImportOrganize<cr>
+map <leader>jr :JavaRename
 
 "}}}
+
+sign define error linehl=ErrorLine
+sign define warning linehl=WarnLine
+sign define hidden texthl=SignHidden
+
+au BufRead,BufNewFile *.java exe "sign place 9999 name=hidden line=1 file=" . expand("<afile>:p")
 
 " vi:foldmethod=marker

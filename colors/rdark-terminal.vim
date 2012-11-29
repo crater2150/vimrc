@@ -109,7 +109,8 @@ hi DiffAdd term=bold cterm=NONE ctermbg=0 ctermfg=113
 hi DiffChange term=bold cterm=NONE ctermbg=0 ctermfg=fg
 hi DiffDelete term=bold cterm=bold ctermbg=0 ctermfg=215
 hi DiffText term=reverse cterm=NONE ctermbg=0 ctermfg=fg
-hi SignColumn term=NONE cterm=NONE ctermbg=16 ctermfg=51
+hi SignColumn term=NONE cterm=NONE ctermbg=233 ctermfg=51
+hi SignHidden term=NONE cterm=NONE ctermbg=233 ctermfg=233
 hi SpellBad term=reverse cterm=undercurl ctermbg=NONE ctermfg=196
 hi SpellCap term=reverse cterm=undercurl ctermbg=NONE ctermfg=21
 hi SpellRare term=reverse cterm=undercurl ctermbg=NONE ctermfg=201
@@ -139,5 +140,9 @@ hi atLineEnd term=NONE cterm=NONE ctermbg=52 ctermfg=fg
 
 hi User1 term=NONE cterm=NONE ctermbg=234 ctermfg=245
 hi User2 term=NONE cterm=Bold ctermbg=237 ctermfg=33
+
+" Line background highlights
+hi ErrorLine ctermbg=52
+hi WarnLine ctermbg=233
 
 hi Conceal ctermbg=NONE
