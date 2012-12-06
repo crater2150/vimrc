@@ -1,35 +1,46 @@
 set nocp
+runtime packages 
+
+syntax on
 filetype indent plugin on
+
 set t_Co=256
+set noerrorbells
 set background=dark
-set tabstop=4
+colo rdark-terminal
+
+set textwidth=80
+set nonumber
+
+set tabstop=8
+set shiftwidth=8
+
+set foldmethod=syntax
+
+set vb t_vb=
+
 set shellcmdflag=-c
 set shell=/bin/zsh\ +f
+
 set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
     \.class
+
 set timeoutlen=500
 set modeline
 
+set hidden
+
+let mapleader = "\\"
+
 set ignorecase smartcase
 set completeopt=menu,longest,preview
-
-set backupdir=~/.vim/swap,~/tmp,~/
 set wildmode=list:longest,list:full
 
-let mapleader = ","
-
-colo rdark-terminal
-
-call pathogen#runtime_append_all_bundles() 
-
-" set statusline=%0*%{GitBranchInfoString()}\ %<%f%h%m%r\ \ 
-"    \%1*%{Tlist_Get_Tag_Prototype_By_Line()}
-"    \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P
+"{{{ status and tab line
 set statusline=%0*\ %<%f%h%m%r\ \ 
     \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P\ %y
-"
 set laststatus=2
-" tabline {{{
+
 if has('gui')
   set guioptions-=e
 endif
@@ -87,10 +98,86 @@ endif
 
 "}}}
 
+" {{{ misc Autocommands
+
+au FileType mail setlocal spell
+au FileType man setlocal nonu
+
+"{{{ binary editing
+augroup Binary                                                         
+	au!                                                                  
+	au BufReadPre  *.bin let &bin=1                                      
+	au BufReadPost *.bin if &bin | %!xxd                                 
+	au BufReadPost *.bin set ft=xxd | endif                              
+	au BufWritePre *.bin if &bin | %!xxd -r                              
+	au BufWritePre *.bin endif                                           
+	au BufWritePost *.bin if &bin | %!xxd                                
+	au BufWritePost *.bin set nomod | endif                              
+augroup END  
+"}}}
+
+"}}}
+
+" common mappings {{{
+
 nnoremap <space> za
+vnoremap <silent> . :normal .<CR>
+
+map <M-l>    <C-w><l>
+map <M-h>    <C-w><h>
+map <M-k>    <C-w><k>
+map <M-j>    <C-w><j>
 
 map <C-L>         :noh<cr>:redraw!<cr>
 
-command RC edit ~/.vim/vimpagerrc
+map <F9>	   :make<CR>
+map <silent> <F11> :TagbarToggle<cr>
+map <leader>m  :make<CR>
+
+map <C-Tab> <C-w><C-w>
+imap <C-Tab> <esc><C-w><C-w>
+
+"}}}
+
+command RC edit ~/.vim/vimrc
+command SRC source ~/.vim/vimrc
+
+nmap <silent> <Del> :NERDTreeToggle<CR>
+
+" Fuzzyfinder {{{
+
+nnoremap <silent> <Leader>b :FufBuffer<CR>
+nnoremap <silent> <Leader>ft :FufTags<CR>
+nnoremap <silent> <Leader>o :FufCoverageFile<CR>
+nnoremap <silent> <Leader>cd :FufDir<CR>
+
+" }}}
+
+" tags and taglist {{{
+
+map <silent> <Leader>t   :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . &>/dev/null<CR>:echo "tagsfile generated"<cr>
+
+set tags+=~/.vim/tags/cpp
+set tags+=~/.vim/tags/boost
+
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Process_File_Always=1
+let Tlist_Use_Right_Window=1
+let Tlist_Display_Prototype=1
+
+nmap <silent> <Insert> :TlistToggle<CR>
+
+" taglist}}}
+
+"Git {{{
+nmap <Leader>gvc        :Git svn dcommit<CR>
+nmap <Leader>gvf        :Git svn fetch<CR>
+" Git }}}
+
+
+sign define error linehl=ErrorLine
+sign define warning linehl=WarnLine
+sign define hidden texthl=SignHidden
+
 
 " vi:foldmethod=marker

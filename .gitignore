@@ -5,3 +5,4 @@ vim-l9
 .netrwhist
 .VimballRecord
 swap
+bundle

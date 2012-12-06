@@ -1,0 +1,38 @@
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/eclim
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-speeddating'
+Bundle 'depuracao/vim-rdoc'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'mattn/zencoding-vim'
+Bundle 'gregsexton/gitv'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'scrooloose/nerdtree'
+Bundle 'dkasak/manpageview'
+Bundle 'SDL-library-syntax-for-C'
+Bundle 'majutsushi/tagbar'
+Bundle 'surround.vim'
+Bundle 'Command-T'
+
+"vimscripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'ri-browser'
+Bundle 'a.vim'
+Bundle 'octave.vim'
+Bundle 'OmniCppComplete'
+Bundle 'vimomni'
+Bundle 'Super-Shell-Indent'
+
+filetype indent plugin on
+
+" vim:ft=vim foldmethod=marker

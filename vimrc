@@ -1,4 +1,6 @@
 set nocp
+runtime packages 
+
 if empty(matchstr(getcwd(), "/home/crater2150"))
 	set exrc
 endif
@@ -64,8 +66,6 @@ let g:rubycomplete_classes_in_global = 1
 
 "}}}
 
-
-call pathogen#runtime_append_all_bundles() 
 
 "{{{ status and tab line
 set statusline=%0*\ %<%f%h%m%r\ \ 
@@ -181,6 +181,7 @@ map <M-j>    <C-w><j>
 map <C-L>         :noh<cr>:redraw!<cr>
 
 map <F9>	   :make<CR>
+map <silent> <F11> :TagbarToggle<cr>
 map <leader>m  :make<CR>
 
 map <C-Tab> <C-w><C-w>
@@ -225,33 +226,10 @@ nmap <Leader>gvc        :!git svn dcommit<CR>
 nmap <Leader>gvf        :!git svn fetch<CR>
 " Git }}}
 
-"java {{{
-autocmd BufNewFile *.java call InsertJavaPackage()
-function! InsertJavaPackage()
-  let filename = expand("%")
-  let filename = substitute(filename, "\.java$", "", "")
-  let dir = getcwd() . "/" . filename
-  let dir = substitute(dir, "^.*\/src\/", "", "")
-  let dir = substitute(dir, "\/[^\/]*$", "", "")
-  let dir = substitute(dir, "\/", ".", "g")
-  let filename = substitute(filename, "^.*\/", "", "")
-  let dir = "package " . dir . ";"
-  let result = append(0, dir)
-  let result = append(1, "")
-  let result = append(2, "class " . filename . " {")
-  let result = append(4, "}")
-endfunction
-map <leader>jc :JavaCorrect<cr>
-map <leader>jf :%JavaFormat<cr>
-map <leader>ji :JavaImportOrganize<cr>
-map <leader>jr :JavaRename
-
-"}}}
 
 sign define error linehl=ErrorLine
 sign define warning linehl=WarnLine
 sign define hidden texthl=SignHidden
 
-au BufRead,BufNewFile *.java exe "sign place 9999 name=hidden line=1 file=" . expand("<afile>:p")
 
 " vi:foldmethod=marker
