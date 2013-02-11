@@ -27,7 +27,7 @@ if exists('rdark_current_line') && rdark_current_line == 1
 endif
 
 " Default Colors
-hi Normal guifg=#babdb6 guibg=#1e2426
+hi Normal guifg=#babdb6 guibg=#000000
 hi NonText guifg=#2c3032 guibg=#2c3032 gui=none
 hi Cursor guibg=#babdb6
 hi ICursor guibg=#babdb6
@@ -40,7 +40,7 @@ hi IncSearch guibg=#2e3436 guifg=#fcaf3e
 hi StatusLine guifg=#2e3436 guibg=#babdb6 gui=none
 hi StatusLineNC guifg=#2e3436 guibg=#888a85 gui=none
 hi VertSplit guifg=#555753 guibg=#888a85 gui=none
-hi Visual guibg=#000000
+hi Visual guibg=#222222
 hi MoreMsg guifg=#729fcf
 hi Question guifg=#8ae234 gui=none
 hi WildMenu guifg=#eeeeec guibg=#0e1416

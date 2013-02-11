@@ -18,8 +18,8 @@
 " background color which ist used for NonText)
 " If you're using a terminal which reads from Xdefaults (e.g. urxvt) you just
 " do this in your .Xdefaults:
-" "*color0:	rgb:1e/24/26"
-" "*color8:	rgb:2c/30/32"
+" "*color0:                                                          rgb:1e/24/26"
+" "*color8:                                                          rgb:2c/30/32"
 "
 
 hi clear
@@ -28,118 +28,120 @@ let colors_name="rdark-terminal"
 hi clear CursorLine
 hi CursorLine ctermbg=8
 
-hi Normal term=NONE cterm=NONE ctermbg=NONE ctermfg=252
-hi Underlined term=underline cterm=underline ctermbg=NONE ctermfg=111
-hi Ignore term=NONE cterm=NONE ctermbg=NONE ctermfg=16
-hi Error term=reverse cterm=NONE ctermbg=160 ctermfg=255
-hi Todo term=NONE cterm=NONE ctermbg=16 ctermfg=215
-hi Number term=NONE cterm=NONE ctermbg=NONE ctermfg=113
-hi String term=NONE cterm=NONE ctermbg=NONE ctermfg=203
-hi Function term=NONE cterm=NONE ctermbg=NONE ctermfg=215
-hi SpecialKey term=bold cterm=NONE ctermbg=NONE ctermfg=196
-hi NonText term=bold cterm=NONE ctermbg=NONE ctermfg=236
-hi MatchParen term=reverse cterm=NONE ctermbg=NONE ctermfg=160
-hi Comment term=bold cterm=NONE ctermbg=NONE ctermfg=245
-hi Constant term=underline cterm=NONE ctermbg=NONE ctermfg=113
-hi Special term=bold cterm=NONE ctermbg=NONE ctermfg=248
-hi Keyword term=NONE cterm=NONE ctermbg=NONE ctermfg=255
-hi Identifier term=underline cterm=NONE ctermbg=NONE ctermfg=252
-hi Statement term=bold cterm=NONE ctermbg=NONE ctermfg=74
-hi PreProc term=underline cterm=NONE ctermbg=NONE ctermfg=215
-hi Type term=underline cterm=Bold ctermbg=NONE ctermfg=111
-hi LineNr term=underline cterm=NONE ctermbg=233 ctermfg=59
-hi ColorColumn term=underline cterm=NONE ctermbg=234 ctermfg=NONE
-hi ExtraWhitespace term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi Visual term=reverse cterm=NONE ctermbg=236 ctermfg=255
+hi Normal              ctermbg=NONE ctermfg=252  cterm=NONE   term=NONE
+hi Underlined          ctermbg=NONE ctermfg=111  cterm=underline term=underline
+hi Ignore              ctermbg=NONE ctermfg=16   cterm=NONE   term=NONE
+hi Error               ctermbg=160  ctermfg=255  cterm=NONE   term=reverse
+hi Todo                ctermbg=16   ctermfg=215  cterm=NONE   term=NONE
+hi Number              ctermbg=NONE ctermfg=113  cterm=NONE   term=NONE
+hi String              ctermbg=NONE ctermfg=203  cterm=NONE   term=NONE
+hi Function            ctermbg=NONE ctermfg=215  cterm=NONE   term=NONE
+hi SpecialKey          ctermbg=NONE ctermfg=196  cterm=NONE   term=bold
+hi NonText             ctermbg=NONE ctermfg=236  cterm=NONE   term=bold
+hi MatchParen          ctermbg=NONE ctermfg=160  cterm=NONE   term=reverse
+hi Comment             ctermbg=NONE ctermfg=245  cterm=NONE   term=bold
+hi Constant            ctermbg=NONE ctermfg=113  cterm=NONE   term=underline
+hi Special             ctermbg=NONE ctermfg=248  cterm=NONE   term=bold
+hi Keyword             ctermbg=NONE ctermfg=255  cterm=NONE   term=NONE
+hi Identifier          ctermbg=NONE ctermfg=252  cterm=NONE   term=underline
+hi Statement           ctermbg=NONE ctermfg=74   cterm=NONE   term=bold
+hi PreProc             ctermbg=NONE ctermfg=215  cterm=NONE   term=underline
+hi Type                ctermbg=NONE ctermfg=111  cterm=Bold   term=underline
+hi LineNr              ctermbg=233  ctermfg=59   cterm=NONE   term=underline
+hi ColorColumn         ctermbg=234  ctermfg=NONE cterm=NONE   term=underline
+hi ExtraWhitespace     ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi Visual              ctermbg=236  ctermfg=255  cterm=NONE   term=reverse
 
-hi Pmenu term=NONE cterm=NONE ctermbg=16 ctermfg=250
-hi PmenuSel term=NONE cterm=NONE ctermbg=61 ctermfg=231
-hi PmenuSbar term=NONE cterm=NONE ctermbg=238 ctermfg=238
-hi PmenuThumb term=NONE cterm=NONE ctermbg=102 ctermfg=102
+hi Pmenu               ctermbg=16   ctermfg=250  cterm=NONE   term=NONE
+hi PmenuSel            ctermbg=61   ctermfg=231  cterm=NONE   term=NONE
+hi PmenuSbar           ctermbg=238  ctermfg=238  cterm=NONE   term=NONE
+hi PmenuThumb          ctermbg=102  ctermfg=102  cterm=NONE   term=NONE
 
 
-hi StatusLine term=reverse,bold cterm=bold ctermbg=236 ctermfg=69
-hi StatusLineNC term=reverse cterm=NONE ctermbg=233 ctermfg=242
-hi VertSplit term=reverse cterm=NONE ctermbg=102 ctermfg=59
-hi Directory term=bold cterm=NONE ctermbg=NONE ctermfg=231
-hi ErrorMsg term=NONE cterm=NONE ctermbg=196 ctermfg=231
-hi IncSearch term=reverse cterm=NONE ctermbg=215 ctermfg=23
-hi Search term=reverse cterm=NONE ctermbg=215 ctermfg=23
-hi MoreMsg term=bold cterm=bold ctermbg=NONE ctermfg=74
-hi ModeMsg term=bold cterm=bold ctermbg=NONE ctermfg=fg
-hi TabLine term=underline cterm=underline ctermbg=16 ctermfg=102
-hi TabLineSel term=bold cterm=NONE ctermbg=59 ctermfg=255
-hi TabLineFill term=reverse cterm=NONE ctermbg=16 ctermfg=16
-hi CursorColumn term=reverse cterm=NONE ctermbg=241 ctermfg=fg
-hi Cursor term=NONE cterm=NONE ctermbg=145 ctermfg=16
-hi cppSTLType term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cssUIProp term=NONE cterm=NONE ctermbg=NONE ctermfg=188
-hi vimAutoEvent term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cParen term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cBracket term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cNumbers term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi phpPropertySelectorInString term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi FoldeColumn term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi Question term=NONE cterm=NONE ctermbg=NONE ctermfg=113
-hi Title term=bold cterm=bold ctermbg=NONE ctermfg=215
-hi VisualNOS term=bold,underline cterm=bold,underline ctermbg=NONE ctermfg=fg
-hi WarningMsg term=NONE cterm=NONE ctermbg=NONE ctermfg=196
-hi WildMenu term=NONE cterm=NONE ctermbg=233 ctermfg=255
-hi Folded term=NONE cterm=underline ctermbg=234 ctermfg=188
-hi phpSemicolon term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpFunctions term=NONE cterm=NONE ctermbg=NONE ctermfg=188
-hi phpParent term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi javaScriptBraces term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi javaScriptOperator term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi htmlTag term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi htmlTagName term=NONE cterm=NONE ctermbg=NONE ctermfg=145
-hi cCppBracket term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cBlock term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi htmlTitle term=NONE cterm=NONE ctermbg=NONE ctermfg=113
-hi cUserCont term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi lCursor term=NONE cterm=NONE ctermbg=145 ctermfg=16
-hi cssPseudoClassId term=NONE cterm=NONE ctermbg=NONE ctermfg=255
-hi cssBraces term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi cssIdentifier term=NONE cterm=NONE ctermbg=NONE ctermfg=215
-hi cssTagName term=NONE cterm=NONE ctermbg=NONE ctermfg=215
-hi cMulti term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi ICursor term=NONE cterm=NONE ctermbg=145 ctermfg=fg
-hi FoldColumn term=NONE cterm=NONE ctermbg=16 ctermfg=61
-hi DiffAdd term=bold cterm=NONE ctermbg=0 ctermfg=113
-hi DiffChange term=bold cterm=NONE ctermbg=0 ctermfg=fg
-hi DiffDelete term=bold cterm=bold ctermbg=0 ctermfg=215
-hi DiffText term=reverse cterm=NONE ctermbg=0 ctermfg=fg
-hi SignColumn term=NONE cterm=NONE ctermbg=233 ctermfg=51
-hi SignHidden term=NONE cterm=NONE ctermbg=233 ctermfg=233
-hi SpellBad term=reverse cterm=undercurl ctermbg=NONE ctermfg=196
-hi SpellCap term=reverse cterm=undercurl ctermbg=NONE ctermfg=21
-hi SpellRare term=reverse cterm=undercurl ctermbg=NONE ctermfg=201
-hi SpellLocal term=underline cterm=undercurl ctermbg=NONE ctermfg=51
-hi htmlSpecialTagName term=NONE cterm=NONE ctermbg=NONE ctermfg=145
-hi htmlArg term=NONE cterm=NONE ctermbg=NONE ctermfg=188
-hi cBitField term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cssSelectorOp term=NONE cterm=NONE ctermbg=NONE ctermfg=255
-hi pythonFunction term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi cNumbersCom term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi vimFuncName term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi phpRegionDelimiter term=NONE cterm=NONE ctermbg=NONE ctermfg=139
-hi phpPropertySelector term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi cCppParen term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
-hi phpOperator term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpArrayPair term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpAssignByRef term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpRelation term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpMemberSelector term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpUnknownSelector term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi phpVarSelector term=NONE cterm=NONE ctermbg=NONE ctermfg=145
-hi htmlEndTag term=NONE cterm=NONE ctermbg=NONE ctermfg=102
-hi vimFold term=NONE cterm=NONE ctermbg=NONE ctermfg=fg
+hi StatusLine          ctermbg=236  ctermfg=69   cterm=bold   term=reverse,bold
+hi StatusLineNC        ctermbg=233  ctermfg=242  cterm=NONE   term=reverse
+hi VertSplit           ctermbg=102  ctermfg=59   cterm=NONE   term=reverse
+hi Directory           ctermbg=NONE ctermfg=231  cterm=NONE   term=bold
+hi ErrorMsg            ctermbg=196  ctermfg=231  cterm=NONE   term=NONE
+hi IncSearch           ctermbg=215  ctermfg=23   cterm=NONE   term=reverse
+hi Search              ctermbg=215  ctermfg=23   cterm=NONE   term=reverse
+hi MoreMsg             ctermbg=NONE ctermfg=74   cterm=bold   term=bold
+hi ModeMsg             ctermbg=NONE ctermfg=fg   cterm=bold   term=bold
+hi TabLine             ctermbg=16   ctermfg=102  cterm=underline term=underline
+hi TabLineSel          ctermbg=59   ctermfg=255  cterm=NONE   term=bold
+hi TabLineFill         ctermbg=16   ctermfg=16   cterm=NONE   term=reverse
+hi CursorColumn        ctermbg=241  ctermfg=fg   cterm=NONE   term=reverse
+hi Cursor              ctermbg=145  ctermfg=16   cterm=NONE   term=NONE
+hi cppSTLType          ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cssUIProp           ctermbg=NONE ctermfg=188  cterm=NONE   term=NONE
+hi vimAutoEvent        ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cParen              ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cBracket            ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cNumbers            ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi FoldeColumn         ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi Question            ctermbg=NONE ctermfg=113  cterm=NONE   term=NONE
+hi Title               ctermbg=NONE ctermfg=215  cterm=bold   term=bold
+hi VisualNOS           ctermbg=NONE ctermfg=fg   cterm=bold,underline term=bold,underline
+hi WarningMsg          ctermbg=NONE ctermfg=196  cterm=NONE   term=NONE
+hi WildMenu            ctermbg=233  ctermfg=255  cterm=NONE   term=NONE
+hi Folded              ctermbg=234  ctermfg=188  cterm=underline term=NONE
+hi phpSemicolon        ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpFunctions        ctermbg=NONE ctermfg=188  cterm=NONE   term=NONE
+hi phpParent           ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi javaScriptBraces    ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi javaScriptOperator  ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi htmlTag             ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi htmlTagName         ctermbg=NONE ctermfg=145  cterm=NONE   term=NONE
+hi cCppBracket         ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cBlock              ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi htmlTitle           ctermbg=NONE ctermfg=113  cterm=NONE   term=NONE
+hi cUserCont           ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi lCursor             ctermbg=145  ctermfg=16   cterm=NONE   term=NONE
+hi cssPseudoClassId    ctermbg=NONE ctermfg=255  cterm=NONE   term=NONE
+hi cssBraces           ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi cssIdentifier       ctermbg=NONE ctermfg=215  cterm=NONE   term=NONE
+hi cssTagName          ctermbg=NONE ctermfg=215  cterm=NONE   term=NONE
+hi cMulti              ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi ICursor             ctermbg=145  ctermfg=fg   cterm=NONE   term=NONE
+hi FoldColumn          ctermbg=16   ctermfg=61   cterm=NONE   term=NONE
+hi DiffAdd             ctermbg=0    ctermfg=113  cterm=NONE   term=bold
+hi DiffChange          ctermbg=0    ctermfg=fg   cterm=NONE   term=bold
+hi DiffDelete          ctermbg=0    ctermfg=215  cterm=bold   term=bold
+hi DiffText            ctermbg=0    ctermfg=fg   cterm=NONE   term=reverse
+hi SignColumn          ctermbg=233  ctermfg=51   cterm=NONE   term=NONE
+hi SignHidden          ctermbg=233  ctermfg=233  cterm=NONE   term=NONE
+hi SpellBad            ctermbg=NONE ctermfg=196  cterm=undercurl term=reverse
+hi SpellCap            ctermbg=NONE ctermfg=21   cterm=undercurl term=reverse
+hi SpellRare           ctermbg=NONE ctermfg=201  cterm=undercurl term=reverse
+hi SpellLocal          ctermbg=NONE ctermfg=51   cterm=undercurl term=underline
+hi htmlSpecialTagName  ctermbg=NONE ctermfg=145  cterm=NONE   term=NONE
+hi htmlArg             ctermbg=NONE ctermfg=188  cterm=NONE   term=NONE
+hi cBitField           ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cssSelectorOp       ctermbg=NONE ctermfg=255  cterm=NONE   term=NONE
+hi pythonFunction      ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi cNumbersCom         ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi vimFuncName         ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi phpRegionDelimiter  ctermbg=NONE ctermfg=139  cterm=NONE   term=NONE
+hi phpPropertySelector ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi cCppParen           ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+hi phpOperator         ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpArrayPair        ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpAssignByRef      ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpRelation         ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpMemberSelector   ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpUnknownSelector  ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi phpVarSelector      ctermbg=NONE ctermfg=145  cterm=NONE   term=NONE
+hi htmlEndTag          ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
+hi vimFold             ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
 
-hi nearLineEnd term=NONE cterm=NONE ctermbg=17 ctermfg=fg
-hi atLineEnd term=NONE cterm=NONE ctermbg=52 ctermfg=fg
+hi IndentGuidesOdd  ctermbg=0
+hi IndentGuidesEven ctermbg=232
 
-hi User1 term=NONE cterm=NONE ctermbg=234 ctermfg=245
-hi User2 term=NONE cterm=Bold ctermbg=237 ctermfg=33
+hi nearLineEnd         ctermbg=17   ctermfg=fg   cterm=NONE   term=NONE
+hi atLineEnd           ctermbg=52   ctermfg=fg   cterm=NONE   term=NONE
+
+hi User1               ctermbg=234  ctermfg=245  cterm=NONE   term=NONE
+hi User2               ctermbg=237  ctermfg=33   cterm=bold   term=NONE
 
 " Line background highlights
 hi ErrorLine ctermbg=52

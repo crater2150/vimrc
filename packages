@@ -1,6 +1,7 @@
 filetype off
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/eclim
+
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -22,6 +23,8 @@ Bundle 'SDL-library-syntax-for-C'
 Bundle 'majutsushi/tagbar'
 Bundle 'surround.vim'
 Bundle 'Command-T'
+Bundle 'ConradIrvin/vim-comment-object'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 "vimscripts repos
 Bundle 'L9'
@@ -32,7 +35,10 @@ Bundle 'octave.vim'
 Bundle 'OmniCppComplete'
 Bundle 'vimomni'
 Bundle 'Super-Shell-Indent'
+Bundle 'argtextobj.vim'
 
 filetype indent plugin on
+
+set rtp-=~/.vim | set rtp^=~/.vim
 
 " vim:ft=vim foldmethod=marker

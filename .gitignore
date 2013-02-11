@@ -6,3 +6,6 @@ vim-l9
 .VimballRecord
 swap
 bundle
+eclim
+plugin/eclim.vim
+cache

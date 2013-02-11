@@ -1,9 +1,9 @@
 set nocp
 runtime packages 
 
-if empty(matchstr(getcwd(), "/home/crater2150"))
+"if empty(matchstr(getcwd(), "/home/crater2150"))
 	set exrc
-endif
+"endif
 
 syntax on
 filetype indent plugin on
@@ -39,6 +39,10 @@ set hidden
 set undofile
 set undodir=~/.vim/undo/
 set backupdir=~/.vim/swap,~/tmp,~/
+silent! call mkdir("/tmp/vimswap")
+set directory=/tmp/vimswap//
+
+set spelllang=de
 
 let mapleader = "\\"
 
@@ -51,10 +55,10 @@ set cm=blowfish
 "{{{ latex conceal
 "
 " conceal" Use conceal vim 7.3 feature:
-set cole=2	" conceal level
+set cole=0	" conceal level
 " Conceal in tex file: "admgs", a=accents, d=delimiters, m=math symbols,
 " g=Greek, s=superscripts/subscripts:
-let g:tex_conceal="adgm"
+let g:tex_conceal="agm"
 
 "}}}
 
@@ -89,13 +93,13 @@ if exists("+showtabline")
       let s .= i . ':'
       let s .= winnr . '/' . tabpagewinnr(i,'$')
 
-	  let bufnrlist = tabpagebuflist(i)
-	  for bufnr in bufnrlist
-	    if getbufvar(bufnr, "&modified")
-	      let s .= '+'
-	      break
-	    endif
-	  endfor
+      let bufnrlist = tabpagebuflist(i)
+      for bufnr in bufnrlist
+	if getbufvar(bufnr, "&modified")
+	  let s .= '+'
+	  break
+	endif
+      endfor
 
       let s .= ' %*'
       let s .= (i == t ? '%#TabLineSel#' : '%#TabLine#')
@@ -103,14 +107,14 @@ if exists("+showtabline")
       let file = bufname(bufnr)
       let buftype = getbufvar(bufnr, 'buftype')
       if buftype == 'nofile'
-        if file =~ '\/.'
-          let file = substitute(file, '.*\/\ze.', '', '')
-        endif
+	if file =~ '\/.'
+	  let file = substitute(file, '.*\/\ze.', '', '')
+	endif
       else
-        let file = fnamemodify(file, ':p:t')
+	let file = fnamemodify(file, ':p:t')
       endif
       if file == ''
-        let file = '[No Name]'
+	let file = '[No Name]'
       endif
       let s .= file
       let i = i + 1
@@ -127,6 +131,10 @@ if exists("+showtabline")
   imap   <C-S-Tab>  <C-O>:tabprev<CR>
 endif
 
+let g:Powerline_cache_dir = simplify(expand("~/.vim/cache"))
+let g:Powerline_colorscheme = 'rdark'
+call Pl#Theme#InsertSegment('charcode', 'after', 'filetype')
+"
 "}}}
 
 " {{{ misc Autocommands
@@ -136,14 +144,14 @@ au FileType man setlocal nonu
 
 "{{{ binary editing
 augroup Binary                                                         
-	au!                                                                  
-	au BufReadPre  *.bin let &bin=1                                      
-	au BufReadPost *.bin if &bin | %!xxd                                 
-	au BufReadPost *.bin set ft=xxd | endif                              
-	au BufWritePre *.bin if &bin | %!xxd -r                              
-	au BufWritePre *.bin endif                                           
-	au BufWritePost *.bin if &bin | %!xxd                                
-	au BufWritePost *.bin set nomod | endif                              
+  au!                                                                  
+  au BufReadPre  *.bin let &bin=1                                      
+  au BufReadPost *.bin if &bin | %!xxd                                 
+  au BufReadPost *.bin set ft=xxd | endif                              
+  au BufWritePre *.bin if &bin | %!xxd -r                              
+  au BufWritePre *.bin endif                                           
+  au BufWritePost *.bin if &bin | %!xxd                                
+  au BufWritePost *.bin set nomod | endif                              
 augroup END  
 "}}}
 
@@ -186,6 +194,9 @@ map <leader>m  :make<CR>
 
 map <C-Tab> <C-w><C-w>
 imap <C-Tab> <esc><C-w><C-w>
+
+map <silent> gb :FufBuffer<cr>
+map <silent> gf :FufFile<cr>
 
 "}}}
 
@@ -231,5 +242,7 @@ sign define error linehl=ErrorLine
 sign define warning linehl=WarnLine
 sign define hidden texthl=SignHidden
 
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_enable_on_vim_startup = 0
 
-" vi:foldmethod=marker
+" vi:foldmethod=marker sw=2
