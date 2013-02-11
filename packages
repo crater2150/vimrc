@@ -2,6 +2,8 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/eclim
 
+if exists("*vundle#rc")
+
 call vundle#rc()
 
 " let Vundle manage Vundle
@@ -39,6 +41,9 @@ Bundle 'argtextobj.vim'
 
 filetype indent plugin on
 
-set rtp-=~/.vim | set rtp^=~/.vim
+else
+	echo "Vundle not set up. Git modules initialized?
+endif
 
+set rtp-=~/.vim | set rtp^=~/.vim
 " vim:ft=vim foldmethod=marker

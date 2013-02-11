@@ -14,7 +14,9 @@ set background=dark
 colo rdark-terminal
 
 set textwidth=80
-set cc=+1
+if exists("&cc")
+  set cc=+1
+endif
 
 set number
 
@@ -36,8 +38,11 @@ set modeline
 
 set hidden
 
-set undofile
-set undodir=~/.vim/undo/
+if exists("&undofile")
+  set undofile
+  set undodir=~/.vim/undo/
+endif
+
 set backupdir=~/.vim/swap,~/tmp,~/
 silent! call mkdir("/tmp/vimswap")
 set directory=/tmp/vimswap//
@@ -50,15 +55,19 @@ set ignorecase smartcase
 set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
 
-set cm=blowfish
+if exists("&cm")
+  set cm=blowfish
+endif
 
 "{{{ latex conceal
-"
-" conceal" Use conceal vim 7.3 feature:
-set cole=0	" conceal level
-" Conceal in tex file: "admgs", a=accents, d=delimiters, m=math symbols,
-" g=Greek, s=superscripts/subscripts:
-let g:tex_conceal="agm"
+
+if exists("&cole")
+  " conceal" Use conceal vim 7.3 feature:
+  set cole=0	" conceal level
+  " Conceal in tex file: "admgs", a=accents, d=delimiters, m=math symbols,
+  " g=Greek, s=superscripts/subscripts:
+  let g:tex_conceal="agm"
+endif
 
 "}}}
 
@@ -131,9 +140,11 @@ if exists("+showtabline")
   imap   <C-S-Tab>  <C-O>:tabprev<CR>
 endif
 
-let g:Powerline_cache_dir = simplify(expand("~/.vim/cache"))
-let g:Powerline_colorscheme = 'rdark'
-call Pl#Theme#InsertSegment('charcode', 'after', 'filetype')
+if exists("*Pl#Theme#InsertSegment")
+  let g:Powerline_cache_dir = simplify(expand("~/.vim/cache"))
+  let g:Powerline_colorscheme = 'rdark'
+  call Pl#Theme#InsertSegment('charcode', 'after', 'filetype')
+endif
 "
 "}}}
 
