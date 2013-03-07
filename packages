@@ -2,47 +2,48 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 set rtp+=~/.vim/eclim
 
-if exists("*vundle#rc")
+silent call vundle#rc()
 
-call vundle#rc()
+if exists(":Bundle")
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
+	" let Vundle manage Vundle
+	" required! 
+	Bundle 'gmarik/vundle'
 
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-speeddating'
-Bundle 'depuracao/vim-rdoc'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'mattn/zencoding-vim'
-Bundle 'gregsexton/gitv'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'scrooloose/nerdtree'
-Bundle 'dkasak/manpageview'
-Bundle 'SDL-library-syntax-for-C'
-Bundle 'majutsushi/tagbar'
-Bundle 'surround.vim'
-Bundle 'Command-T'
-Bundle 'ConradIrvin/vim-comment-object'
-Bundle 'nathanaelkane/vim-indent-guides'
+	Bundle 'tpope/vim-fugitive'
+	Bundle 'tpope/vim-markdown'
+	Bundle 'tpope/vim-repeat'
+	Bundle 'tpope/vim-speeddating'
+	Bundle 'depuracao/vim-rdoc'
+	Bundle 'vim-ruby/vim-ruby'
+	Bundle 'mattn/zencoding-vim'
+	Bundle 'gregsexton/gitv'
+	Bundle 'jistr/vim-nerdtree-tabs'
+	Bundle 'scrooloose/nerdtree'
+	Bundle 'dkasak/manpageview'
+	Bundle 'SDL-library-syntax-for-C'
+	Bundle 'majutsushi/tagbar'
+	Bundle 'surround.vim'
+	Bundle 'Command-T'
+	Bundle 'ConradIrvin/vim-comment-object'
+	Bundle 'nathanaelkane/vim-indent-guides'
+	Bundle 'mhinz/vim-signify'
 
-"vimscripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'ri-browser'
-Bundle 'a.vim'
-Bundle 'octave.vim'
-Bundle 'OmniCppComplete'
-Bundle 'vimomni'
-Bundle 'Super-Shell-Indent'
-Bundle 'argtextobj.vim'
+	"vimscripts repos
+	Bundle 'L9'
+	Bundle 'FuzzyFinder'
+	Bundle 'ri-browser'
+	Bundle 'a.vim'
+	Bundle 'octave.vim'
+	Bundle 'OmniCppComplete'
+	Bundle 'vimomni'
+	Bundle 'Super-Shell-Indent'
+	Bundle 'argtextobj.vim'
 
-filetype indent plugin on
+	filetype indent plugin on
 
 else
-	echo "Vundle not set up. Git modules initialized?
+	echo "Vundle not set up. Git modules initialized?"
 endif
 
 set rtp-=~/.vim | set rtp^=~/.vim

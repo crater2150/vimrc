@@ -59,8 +59,9 @@ if exists("&cm")
   set cm=blowfish
 endif
 
-"{{{ latex conceal
+"{{{ latex
 
+let g:tex_flavor = "latex"
 if exists("&cole")
   " conceal" Use conceal vim 7.3 feature:
   set cole=0	" conceal level
