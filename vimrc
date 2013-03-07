@@ -74,15 +74,15 @@ endif
 
 "{{{ ruby
 
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete 
-let g:rubycomplete_buffer_loading = 1 
+autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
+let g:rubycomplete_buffer_loading = 1
 let g:rubycomplete_classes_in_global = 1
 
 "}}}
 
 
 "{{{ status and tab line
-set statusline=%0*\ %<%f%h%m%r\ \ 
+set statusline=%0*\ %<%f%h%m%r\ \
     \%0*%=%b\ 0x%B\ \ %l,%c%V\ %P\ %y
 set laststatus=2
 
@@ -155,16 +155,16 @@ au FileType mail setlocal spell
 au FileType man setlocal nonu
 
 "{{{ binary editing
-augroup Binary                                                         
-  au!                                                                  
-  au BufReadPre  *.bin let &bin=1                                      
-  au BufReadPost *.bin if &bin | %!xxd                                 
-  au BufReadPost *.bin set ft=xxd | endif                              
-  au BufWritePre *.bin if &bin | %!xxd -r                              
-  au BufWritePre *.bin endif                                           
-  au BufWritePost *.bin if &bin | %!xxd                                
-  au BufWritePost *.bin set nomod | endif                              
-augroup END  
+augroup Binary
+  au!
+  au BufReadPre  *.bin let &bin=1
+  au BufReadPost *.bin if &bin | %!xxd
+  au BufReadPost *.bin set ft=xxd | endif
+  au BufWritePre *.bin if &bin | %!xxd -r
+  au BufWritePre *.bin endif
+  au BufWritePost *.bin if &bin | %!xxd
+  au BufWritePost *.bin set nomod | endif
+augroup END
 "}}}
 
 "}}}
