@@ -1,5 +1,5 @@
 set nocp
-runtime packages 
+runtime packages
 
 "if empty(matchstr(getcwd(), "/home/crater2150"))
 	set exrc
