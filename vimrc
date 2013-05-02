@@ -51,9 +51,11 @@ set spelllang=de
 
 let mapleader = "\\"
 
+set hls
 set ignorecase smartcase
 set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pdf
 
 if exists("&cm")
   set cm=blowfish
@@ -215,8 +217,6 @@ map <silent> gf :FufFile<cr>
 command RC edit ~/.vim/vimrc
 command SRC source ~/.vim/vimrc
 
-nmap <silent> <Del> :NERDTreeToggle<CR>
-
 " Fuzzyfinder {{{
 
 nnoremap <silent> <Leader>b :FufBuffer<CR>
@@ -257,4 +257,12 @@ sign define hidden texthl=SignHidden
 let g:indent_guides_auto_colors = 0
 let g:indent_guides_enable_on_vim_startup = 0
 
+" shows syntaxic group of the word under the cursor
+command! SynStack :call SynStack()
+function! SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
 " vi:foldmethod=marker sw=2
