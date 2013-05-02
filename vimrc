@@ -152,9 +152,25 @@ endif
 "}}}
 
 " {{{ misc Autocommands
+augroup Misc
 
-au FileType mail setlocal spell
-au FileType man setlocal nonu
+  au FileType mail setlocal spell
+  au FileType man setlocal nonu
+
+augroup END
+
+function s:MkNonExDir(file, buf)
+    if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+        let dir=fnamemodify(a:file, ':h')
+        if !isdirectory(dir)
+            call mkdir(dir, 'p')
+        endif
+    endif
+endfunction
+augroup BWCCreateDir
+    autocmd!
+    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
 
 "{{{ binary editing
 augroup Binary
