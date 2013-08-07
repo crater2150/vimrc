@@ -1,24 +1,33 @@
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-set rtp+=~/.vim/eclim
+set rtp+=$XDG_CONFIG_HOME/vim/bundle/vundle/
+set rtp+=$XDG_CONFIG_HOME/vim/eclim
 
-silent call vundle#rc()
+silent call vundle#rc("$XDG_CONFIG_HOME/vim/bundle")
 
 if exists(":Bundle")
 	" let Vundle manage Vundle
 	" required! 
 	Bundle 'gmarik/vundle'
 
+	" general purpose
 	Bundle 'tpope/vim-repeat'
 	Bundle 'tpope/vim-speeddating'
+	Bundle 'tpope/vim-abolish'
+	Bundle 'tpope/vim-repeat'
+	Bundle 'tpope/vim-surround'
+	Bundle 'tpope/vim-unimpaired'
+	Bundle 'tpope/vim-obsession'
+	Bundle 'tpope/vim-characterize'
+	Bundle 'tpope/vim-eunuch'
+	Bundle 'tpope/vim-commentary'
 	Bundle 'mattn/zencoding-vim'
 	Bundle 'dkasak/manpageview'
 	Bundle 'majutsushi/tagbar'
-	Bundle 'surround.vim'
 	Bundle 'Command-T'
 	Bundle 'ConradIrvin/vim-comment-object'
 	Bundle 'nathanaelkane/vim-indent-guides'
 	Bundle 'mhinz/vim-signify'
+	Bundle 'msanders/snipmate.vim'
 
 	" vimscripts repos
 	Bundle 'L9'
@@ -27,10 +36,12 @@ if exists(":Bundle")
 	Bundle 'vimomni'
 	Bundle 'Super-Shell-Indent'
 	Bundle 'argtextobj.vim'
+	Bundle 'skeleton'
 
 	" ruby
 	Bundle 'depuracao/vim-rdoc'
 	Bundle 'vim-ruby/vim-ruby'
+	Bundle 'tpope/vim-rails'
 	Bundle 'ri-browser'
 
 	" git
@@ -46,6 +57,7 @@ if exists(":Bundle")
 
 	Bundle 'tpope/vim-markdown'
 	Bundle 'octave.vim'
+	Bundle 'LaTeX-Box-Team/LaTeX-Box'
 
 	filetype indent plugin on
 

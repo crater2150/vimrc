@@ -1,4 +1,11 @@
 set nocp
+
+set directory=$XDG_CACHE_HOME/vim",~/,/tmp
+set backupdir=$XDG_CACHE_HOME/vim",~/,/tmp
+set viminfo+="$XDG_CACHE_HOME/vim/viminfo"
+set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
+let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
+
 runtime packages
 
 "if empty(matchstr(getcwd(), "/home/crater2150"))
@@ -23,6 +30,13 @@ set number
 set tabstop=8
 set shiftwidth=8
 
+set whichwrap+=<,>,h,l
+
+set notimeout
+set ttimeout
+set timeoutlen=50
+
+set nf-=octal
 set foldmethod=syntax
 
 set vb t_vb=
@@ -35,6 +49,9 @@ set suffixes=.bak,~,.o,.h,.info,.swp,.obj,.info,.aux,.log,.dvi,.bbl,.out,.o,.lo,
 
 set timeoutlen=500
 set modeline
+set showcmd
+
+set scrolloff=1
 
 set hidden
 
@@ -42,10 +59,6 @@ if exists("&undofile")
   set undofile
   set undodir=~/.vim/undo/
 endif
-
-set backupdir=~/.vim/swap,~/tmp,~/
-silent! call mkdir("/tmp/vimswap")
-set directory=/tmp/vimswap//
 
 set spelllang=de
 
@@ -56,30 +69,33 @@ set ignorecase smartcase
 set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pdf
+set wildmenu
 
 if exists("&cm")
   set cm=blowfish
 endif
 
+if &history < 1000
+  set history=1000
+endif
+
 "{{{ latex
 
+" controls filetype setting, therefore not possible to move to ftplugin
 let g:tex_flavor = "latex"
-if exists("&cole")
-  " conceal" Use conceal vim 7.3 feature:
-  set cole=0	" conceal level
-  " Conceal in tex file: "admgs", a=accents, d=delimiters, m=math symbols,
-  " g=Greek, s=superscripts/subscripts:
-  let g:tex_conceal="agm"
-endif
 
 "}}}
 
-"{{{ ruby
+"{{{ Skeletons
+augroup skeletons
 
-autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-let g:rubycomplete_buffer_loading = 1
-let g:rubycomplete_classes_in_global = 1
+  autocmd User plugin-skeleton-detect
+	\ if expand('%') =~# 'gemspec$'
+	\ | SkeletonLoad ruby-gemspec
+	\ | endif
 
+
+augroup END
 "}}}
 
 
@@ -201,13 +217,6 @@ autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
 
 " common mappings {{{
 
-imap <silent><C-E> <Esc>v`^me<Esc>gi<C-o>:call Ender()<CR>
-function Ender()
-  let endchar = nr2char(getchar())
-  execute "normal \<End>a".endchar
-  normal `e
-endfunction
-
 nnoremap <space> za
 vnoremap <silent> . :normal .<CR>
 
@@ -215,6 +224,11 @@ map <M-l>    <C-w><l>
 map <M-h>    <C-w><h>
 map <M-k>    <C-w><k>
 map <M-j>    <C-w><j>
+
+inoremap <C-U> <C-G>u<C-U>
+nnoremap & :&&<CR>
+xnoremap & :&&<CR>
+nnoremap Y y$
 
 map <C-L>         :noh<cr>:redraw!<cr>
 
@@ -227,6 +241,13 @@ imap <C-Tab> <esc><C-w><C-w>
 
 map <silent> gb :FufBuffer<cr>
 map <silent> gf :FufFile<cr>
+
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
+vnoremap < <gv
+vnoremap > >gv
 
 "}}}
 
@@ -264,6 +285,16 @@ nmap <Leader>gu         :GitPush<CR>
 nmap <Leader>gvc        :!git svn dcommit<CR>
 nmap <Leader>gvf        :!git svn fetch<CR>
 " Git }}}
+
+" GPG {{{
+augroup GPG                                                         
+  au!                                                                  
+  au BufReadPost *.gpg %!gpg -d
+  au BufReadPost *.gpg set ft=text
+  au BufWritePre *.gpg %!gpg -e
+  au BufWritePost *.gpg %!gpg -d
+augroup END                                                            
+" }}}
 
 
 sign define error linehl=ErrorLine
