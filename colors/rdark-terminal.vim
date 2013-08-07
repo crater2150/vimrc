@@ -35,6 +35,7 @@ hi Error               ctermbg=160  ctermfg=255  cterm=NONE   term=reverse
 hi Todo                ctermbg=16   ctermfg=215  cterm=NONE   term=NONE
 hi Number              ctermbg=NONE ctermfg=113  cterm=NONE   term=NONE
 hi String              ctermbg=NONE ctermfg=203  cterm=NONE   term=NONE
+hi Symbol              ctermbg=NONE ctermfg=222  cterm=standout term=standout
 hi Function            ctermbg=NONE ctermfg=215  cterm=NONE   term=NONE
 hi SpecialKey          ctermbg=NONE ctermfg=196  cterm=NONE   term=bold
 hi NonText             ctermbg=NONE ctermfg=236  cterm=NONE   term=bold
@@ -85,9 +86,6 @@ hi VisualNOS           ctermbg=NONE ctermfg=fg   cterm=bold,underline term=bold,
 hi WarningMsg          ctermbg=NONE ctermfg=196  cterm=NONE   term=NONE
 hi WildMenu            ctermbg=233  ctermfg=255  cterm=NONE   term=NONE
 hi Folded              ctermbg=234  ctermfg=188  cterm=underline term=NONE
-hi phpSemicolon        ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpFunctions        ctermbg=NONE ctermfg=188  cterm=NONE   term=NONE
-hi phpParent           ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
 hi javaScriptBraces    ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
 hi javaScriptOperator  ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
 hi htmlTag             ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
@@ -121,18 +119,10 @@ hi cssSelectorOp       ctermbg=NONE ctermfg=255  cterm=NONE   term=NONE
 hi pythonFunction      ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
 hi cNumbersCom         ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
 hi vimFuncName         ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
-hi phpRegionDelimiter  ctermbg=NONE ctermfg=139  cterm=NONE   term=NONE
-hi phpPropertySelector ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
 hi cCppParen           ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
-hi phpOperator         ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpArrayPair        ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpAssignByRef      ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpRelation         ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpMemberSelector   ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpUnknownSelector  ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
-hi phpVarSelector      ctermbg=NONE ctermfg=145  cterm=NONE   term=NONE
 hi htmlEndTag          ctermbg=NONE ctermfg=102  cterm=NONE   term=NONE
 hi vimFold             ctermbg=NONE ctermfg=fg   cterm=NONE   term=NONE
+
 
 hi IndentGuidesOdd  ctermbg=0
 hi IndentGuidesEven ctermbg=232
@@ -148,3 +138,8 @@ hi ErrorLine ctermbg=52
 hi WarnLine ctermbg=233
 
 hi Conceal ctermbg=NONE
+
+" Ruby {{{
+hi link rubySymbol Symbol
+
+" }}}
