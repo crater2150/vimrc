@@ -1284,18 +1284,20 @@ highlight link l3_macros Statement
 " }}}
 
 " Variables {{{
-syn match bool_vars   "\\[lgc]_[A-Za-z_]*_bool"
-syn match box_vars    "\\[lgc]_[A-Za-z_]*_box"
-syn match clist_vars  "\\[lgc]_[A-Za-z_]*_clist"
-syn match coffin_vars "\\[lgc]_[A-Za-z_]*_coffin"
-syn match dim_vars    "\\[lgc]_[A-Za-z_]*_dim"
-syn match fp_vars     "\\[lgc]_[A-Za-z_]*_fp"
-syn match int_vars    "\\[lgc]_[A-Za-z_]*_int"
-syn match prop_vars   "\\[lgc]_[A-Za-z_]*_prop"
-syn match seq_vars    "\\[lgc]_[A-Za-z_]*_seq"
-syn match skip_vars   "\\[lgc]_[A-Za-z_]*_skip"
-syn match stream_vars "\\[lgc]_[A-Za-z_]*_stream"
-syn match tl_vars     "\\[lgc]_[A-Za-z_]*_tl"
+syn match bool_vars   "\\\?[lgc]_[A-Za-z_]*_bool"
+syn match box_vars    "\\\?[lgc]_[A-Za-z_]*_box"
+syn match clist_vars  "\\\?[lgc]_[A-Za-z_]*_clist"
+syn match coffin_vars "\\\?[lgc]_[A-Za-z_]*_coffin"
+syn match dim_vars    "\\\?[lgc]_[A-Za-z_]*_dim"
+syn match fp_vars     "\\\?[lgc]_[A-Za-z_]*_fp"
+syn match int_vars    "\\\?[lgc]_[A-Za-z_]*_int"
+syn match prop_vars   "\\\?[lgc]_[A-Za-z_]*_prop"
+syn match seq_vars    "\\\?[lgc]_[A-Za-z_]*_seq"
+syn match skip_vars   "\\\?[lgc]_[A-Za-z_]*_skip"
+syn match stream_vars "\\\?[lgc]_[A-Za-z_]*_stream"
+syn match stream_vars "\\\?[lgc]_[A-Za-z_]*_iow"
+syn match stream_vars "\\\?[lgc]_[A-Za-z_]*_ior"
+syn match tl_vars     "\\\?[lgc]_[A-Za-z_]*_tl"
 
 highlight link bool_vars   Identifier
 highlight link box_vars    Identifier
