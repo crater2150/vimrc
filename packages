@@ -1,4 +1,5 @@
 filetype off
+set rtp+=/usr/share/vim/vimfiles/
 set rtp+=$XDG_CONFIG_HOME/vim/bundle/vundle/
 set rtp+=$XDG_CONFIG_HOME/vim/eclim
 
@@ -27,7 +28,8 @@ if exists(":Bundle")
 	Bundle 'ConradIrvin/vim-comment-object'
 	Bundle 'nathanaelkane/vim-indent-guides'
 	Bundle 'mhinz/vim-signify'
-	Bundle 'msanders/snipmate.vim'
+	Bundle 'SirVer/ultisnips'
+	Bundle 'scrooloose/syntastic'
 
 	" vimscripts repos
 	Bundle 'L9'
@@ -37,11 +39,13 @@ if exists(":Bundle")
 	Bundle 'Super-Shell-Indent'
 	Bundle 'argtextobj.vim'
 	Bundle 'skeleton'
+	Bundle 'vim-gnupg'
 
 	" ruby
 	Bundle 'depuracao/vim-rdoc'
 	Bundle 'vim-ruby/vim-ruby'
 	Bundle 'tpope/vim-rails'
+	Bundle 'tpope/vim-rake'
 	Bundle 'ri-browser'
 
 	" git

@@ -15,7 +15,7 @@ runtime packages
 syntax on
 filetype indent plugin on
 
-set t_Co=256
+" set t_Co=256
 set noerrorbells
 set background=dark
 colo rdark-terminal
@@ -51,7 +51,7 @@ set timeoutlen=500
 set modeline
 set showcmd
 
-set scrolloff=1
+set scrolloff=99999
 
 set hidden
 
@@ -68,7 +68,7 @@ set hls
 set ignorecase smartcase
 set completeopt=menu,longest,preview
 set wildmode=list:longest,list:full
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pdf
+set wildignore+=*.so,*.swp,*.zip,*.pdf,*.o
 set wildmenu
 
 if exists("&cm")
@@ -159,11 +159,6 @@ if exists("+showtabline")
   imap   <C-S-Tab>  <C-O>:tabprev<CR>
 endif
 
-if exists("*Pl#Theme#InsertSegment")
-  let g:Powerline_cache_dir = simplify(expand("~/.vim/cache"))
-  let g:Powerline_colorscheme = 'rdark'
-  call Pl#Theme#InsertSegment('charcode', 'after', 'filetype')
-endif
 "
 "}}}
 
@@ -270,12 +265,7 @@ map <silent> <Leader>t   :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q . &>
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/boost
 
-let Tlist_Exit_OnlyWindow=1
-let Tlist_Process_File_Always=1
-let Tlist_Use_Right_Window=1
-let Tlist_Display_Prototype=1
-
-nmap <silent> <Insert> :TlistToggle<CR>
+nmap <silent> <Insert> :TagbarToggle<CR>
 
 " taglist}}}
 
@@ -295,7 +285,6 @@ augroup GPG
   au BufWritePost *.gpg %!gpg -d
 augroup END                                                            
 " }}}
-
 
 sign define error linehl=ErrorLine
 sign define warning linehl=WarnLine
