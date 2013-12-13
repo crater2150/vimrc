@@ -2,9 +2,12 @@ iab <buffer> syso System.out.println
 
 setlocal foldmethod=syntax
 setlocal foldenable
+setlocal textwidth=120
 
 nnoremap <silent> <buffer> <leader>jc :JavaCorrect<cr>
 nnoremap <silent> <buffer> <leader>jd :JavaDocComment<cr>
+nnoremap <silent> <buffer> <F2>       :JavaDocPreview<cr>
+nnoremap <silent> <buffer> <F3>       :JavaSearchContext<cr>
 nnoremap <silent> <buffer> <leader>jf :%JavaFormat<cr>
 nnoremap <silent> <buffer> <leader>ji :JavaImportOrganize<cr>
 nnoremap          <buffer> <leader>jr :JavaRename<space>
