@@ -1,0 +1,16 @@
+# -*- encoding: utf-8 -*-
+Gem::Specification.new do |s|
+  s.name        = ''
+  s.version     = '0.0.0'
+  s.date        = ''
+  s.summary     = ''
+  s.description = ''
+  s.authors     = ['crater2150']
+  s.email       = 'crater@qwertyuiop.de'
+  s.homepage    = ''
+
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths = ["lib"]
+end
