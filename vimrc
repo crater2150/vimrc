@@ -6,6 +6,7 @@ set viminfo+="$XDG_CACHE_HOME/vim/viminfo"
 set runtimepath=$XDG_CONFIG_HOME/vim,$XDG_CONFIG_HOME/vim/after,$VIM,$VIMRUNTIME
 let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc"
 
+filetype off
 runtime packages
 
 "if empty(matchstr(getcwd(), "/home/crater2150"))
@@ -16,6 +17,14 @@ syntax on
 filetype indent plugin on
 
 " set t_Co=256
+if &term =~ '^screen'
+    " tmux will send xterm-style keys when its xterm-keys option is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
 set noerrorbells
 set background=dark
 colo rdark-terminal
@@ -29,6 +38,7 @@ set number
 
 set tabstop=8
 set shiftwidth=8
+set smarttab
 
 set whichwrap+=<,>,h,l
 
@@ -57,7 +67,7 @@ set hidden
 
 if exists("&undofile")
   set undofile
-  set undodir=~/.vim/undo/
+  set undodir=~/.local/vim/undo/
 endif
 
 set spelllang=de
@@ -215,10 +225,17 @@ autocmd BufNewFile *.{h,hpp} call <SID>insert_gates()
 nnoremap <space> za
 vnoremap <silent> . :normal .<CR>
 
-map <M-l>    <C-w><l>
-map <M-h>    <C-w><h>
-map <M-k>    <C-w><k>
-map <M-j>    <C-w><j>
+map <Left>  <C-w>h
+map <Down>  <C-w>j
+map <Up>    <C-w>k
+map <Right> <C-w>l
+
+map <S-Left>  <C-w><
+map <S-Right> <C-w>>
+map <S-Down>  <C-w>-
+map <S-Up>    <C-w>+
+
+
 
 inoremap <C-U> <C-G>u<C-U>
 nnoremap & :&&<CR>
@@ -302,3 +319,10 @@ function! SynStack()
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
 " vi:foldmethod=marker sw=2
+
+let g:signify_vcs_list = [ 'git', 'hg' ]
+let g:signify_disable_by_default = 1
+
+let g:syntastic_tex_chktex_showmsg = 0
+let g:syntastic_tex_chktex_args = '-n 1 -n 11'
+let g:syntastic_tex_checkers = ['chktex']
