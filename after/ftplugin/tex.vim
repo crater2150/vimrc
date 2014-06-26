@@ -1,4 +1,12 @@
-set makeprg=latexmk
+" set makeprg=latexmk
+
+setlocal errorformat=%f:%l:\ %m,%f:%l-%\\d%\\+:\ %m
+if filereadable('Makefile')
+  setlocal makeprg=make
+else
+  exec "setlocal makeprg=make\\ -f\\ ~/.config/makefiles/latex.mk\\ " . substitute(bufname("%"),"tex$","pdf", "")
+endif
+
 let g:LatexBox_completion_environments += [
 	\ {'word': 'frame',       'menu': 'beamer frame'},
 	\ {'word': 'block',       'menu': 'beamer block'},
