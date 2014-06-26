@@ -11,7 +11,6 @@ if exists(":Bundle")
 	Bundle 'gmarik/vundle'
 
 	" general purpose
-	Bundle 'tpope/vim-repeat'
 	Bundle 'tpope/vim-speeddating'
 	Bundle 'tpope/vim-abolish'
 	Bundle 'tpope/vim-repeat'
@@ -24,17 +23,19 @@ if exists(":Bundle")
 	Bundle 'mattn/zencoding-vim'
 	Bundle 'dkasak/manpageview'
 	Bundle 'majutsushi/tagbar'
-	Bundle 'Command-T'
 	Bundle 'ConradIrvin/vim-comment-object'
 	Bundle 'nathanaelkane/vim-indent-guides'
 	Bundle 'mhinz/vim-signify'
 	Bundle 'SirVer/ultisnips'
 	Bundle 'scrooloose/syntastic'
+	Bundle 'Lokaltog/vim-easymotion'
+	Bundle 'Shougo/vimproc.vim'
+	Bundle 'Shougo/unite.vim'
 
 	" vimscripts repos
 	Bundle 'L9'
+	Bundle 'Command-T'
 	Bundle 'FuzzyFinder'
-	Bundle 'a.vim'
 	Bundle 'vimomni'
 	Bundle 'Super-Shell-Indent'
 	Bundle 'argtextobj.vim'
@@ -69,5 +70,5 @@ else
 	echo "Vundle not set up. Git modules initialized?"
 endif
 
-set rtp-=~/.vim | set rtp^=~/.vim
+set rtp-=~/.vim | set rtp^=~/.config/vim
 " vim:ft=vim foldmethod=marker
