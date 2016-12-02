@@ -1,68 +1,78 @@
 filetype off
 set rtp+=/usr/share/vim/vimfiles/
 set rtp+=$XDG_CONFIG_HOME/vim/bundle/vundle/
-set rtp+=$XDG_CONFIG_HOME/vim/eclim
 
 silent call vundle#rc("$XDG_CONFIG_HOME/vim/bundle")
 
-if exists(":Bundle")
+if exists(":Plugin")
 	" let Vundle manage Vundle
 	" required! 
-	Bundle 'gmarik/vundle'
+	Plugin 'gmarik/vundle'
 
 	" general purpose
-	Bundle 'tpope/vim-speeddating'
-	Bundle 'tpope/vim-abolish'
-	Bundle 'tpope/vim-repeat'
-	Bundle 'tpope/vim-surround'
-	Bundle 'tpope/vim-unimpaired'
-	Bundle 'tpope/vim-obsession'
-	Bundle 'tpope/vim-characterize'
-	Bundle 'tpope/vim-eunuch'
-	Bundle 'tpope/vim-commentary'
-	Bundle 'mattn/zencoding-vim'
-	Bundle 'dkasak/manpageview'
-	Bundle 'majutsushi/tagbar'
-	Bundle 'ConradIrvin/vim-comment-object'
-	Bundle 'nathanaelkane/vim-indent-guides'
-	Bundle 'mhinz/vim-signify'
-	Bundle 'SirVer/ultisnips'
-	Bundle 'scrooloose/syntastic'
-	Bundle 'Lokaltog/vim-easymotion'
-	Bundle 'Shougo/vimproc.vim'
-	Bundle 'Shougo/unite.vim'
+	"Plugin 'tpope/vim-speeddating'
+	Plugin 'tpope/vim-abolish'
+	Plugin 'tpope/vim-repeat'
+	Plugin 'tpope/vim-surround'
+	Plugin 'tpope/vim-unimpaired'
+	Plugin 'tpope/vim-obsession'
+	Plugin 'tpope/vim-characterize'
+	Plugin 'tpope/vim-eunuch'
+	Plugin 'tpope/vim-commentary'
+	Plugin 'tpope/vim-sleuth'
+	Plugin 'dkasak/manpageview'
+	Plugin 'majutsushi/tagbar'
+	Plugin 'kana/vim-textobj-user'
+	Plugin 'glts/vim-textobj-comment'
+	Plugin 'nathanaelkane/vim-indent-guides'
+	Plugin 'mhinz/vim-signify'
+	"Plugin 'SirVer/ultisnips'
+	Plugin 'scrooloose/syntastic'
+	Plugin 'Lokaltog/vim-easymotion'
+	Plugin 'Shougo/vimproc.vim'
+	Plugin 'powerman/vim-plugin-AnsiEsc'
+	Plugin 'bling/vim-airline'
+	Plugin 'thinca/vim-localrc'
+	Plugin 'Soares/smarttab.vim'
+
+	Plugin 'Shougo/unite.vim'
+	Plugin 'tsukkee/unite-tag'
+
+	Plugin 'embear/vim-localvimrc'
 
 	" vimscripts repos
-	Bundle 'L9'
-	Bundle 'Command-T'
-	Bundle 'FuzzyFinder'
-	Bundle 'vimomni'
-	Bundle 'Super-Shell-Indent'
-	Bundle 'argtextobj.vim'
-	Bundle 'skeleton'
-	Bundle 'vim-gnupg'
+	Plugin 'L9'
+	Plugin 'Command-T'
+	Plugin 'vimomni'
+	Plugin 'Super-Shell-Indent'
+	Plugin 'argtextobj.vim'
+	Plugin 'skeleton'
 
 	" ruby
-	Bundle 'depuracao/vim-rdoc'
-	Bundle 'vim-ruby/vim-ruby'
-	Bundle 'tpope/vim-rails'
-	Bundle 'tpope/vim-rake'
-	Bundle 'ri-browser'
+	Plugin 'depuracao/vim-rdoc'
+	Plugin 'vim-ruby/vim-ruby'
+	Plugin 'tpope/vim-rails'
+	Plugin 'tpope/vim-rake'
+	Plugin 'ri-browser'
 
 	" git
-	Bundle 'tpope/vim-fugitive'
-	Bundle 'gregsexton/gitv'
+	Plugin 'tpope/vim-fugitive'
+	Plugin 'gregsexton/gitv'
 
 	" C
-	Bundle 'SDL-library-syntax-for-C'
-	Bundle 'OmniCppComplete'
+	Plugin 'derekwyatt/vim-fswitch'
+	Plugin 'OmniCppComplete'
+
+	" scala
+	Plugin 'derekwyatt/vim-scala'
 
 
 	" other filetype specific plugins
 
-	Bundle 'tpope/vim-markdown'
-	Bundle 'octave.vim'
-	Bundle 'LaTeX-Box-Team/LaTeX-Box'
+	Plugin 'tpope/vim-markdown'
+	Plugin 'octave.vim'
+	Plugin 'LaTeX-Box-Team/LaTeX-Box'
+	Plugin 'ledger/vim-ledger'
 
 	filetype indent plugin on
 
