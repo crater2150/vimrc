@@ -17,7 +17,9 @@ let g:LatexBox_completion_environments += [
 	\ {'word': 'matrix',      'menu': 'matrix'},
 	\ {'word': 'pmatrix',     'menu': '(matrix)'},
 	\ {'word': 'bmatrix',     'menu': '[matrix]'},
-	\ {'word': 'Bmatrix',     'menu': '{matrix}'}
+	\ {'word': 'Bmatrix',     'menu': '{matrix}'},
+	\ {'word': 'subfigure',   'menu': 'subfigure'},
+	\ {'word': 'split',       'menu': 'math split'},
 \]
 
 let g:LatexBox_completion_commands += [
@@ -38,8 +40,13 @@ endif
 
 imap <buffer> [[         \begin{<C-x><C-o>
 imap <buffer> ]]         <Plug>LatexCloseCurEnv
-
+imap <buffer> [(         \left(
 
 nmap <buffer> <F5>		<Plug>LatexChangeEnv
-vmap <buffer> <F7>		<Plug>LatexWrapSelection
-vmap <buffer> <S-F7>		<Plug>LatexEnvWrapSelection
+vmap <buffer> <leader>tw	<Plug>LatexWrapSelection
+vmap <buffer> <leader>tW	<Plug>LatexEnvWrapSelection
+
+map <silent> <buffer> <F10>      :exec "silent !xdg-open" expand("%:t:r") . ".pdf &>/dev/null"<cr><C-l>
+map <silent> <buffer> <expr> <F9>       vimproc#system_bg("latexmk " . expand("%") . " &")
+
+setlocal tw=100

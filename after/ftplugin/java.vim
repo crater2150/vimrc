@@ -12,11 +12,12 @@ nnoremap <silent> <buffer> <leader>jf :%JavaFormat<cr>
 nnoremap <silent> <buffer> <leader>ji :JavaImportOrganize<cr>
 nnoremap          <buffer> <leader>jr :JavaRename<space>
 
-let g:EclimProjectTreeAutoOpen=1 
-let g:EclimProjectTreeExpandPathOnOpen=1
-let g:EclimProjectTreeSharedInstance=1  "share tree instance through all tabs
-" use tabnew instead of split for new action
-let g:EclimProjectTreeActions = [ {'pattern': '.*', 'name': 'Tab', 'action': 'tabnew'} ]
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+\ "\<lt>C-n>" :
+\ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+\ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+\ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>map <silent> <buffer>     <C-Space>  <C-x><C-o>
 
 function! InsertJavaPackage()
   let filename = expand("%")
@@ -34,9 +35,9 @@ function! InsertJavaPackage()
 endfunction
 
 "java {{{
-if filereadable(bufname("%")) == 0
-	call InsertJavaPackage()
-endif
+"if filereadable(bufname("%")) == 0
+"	call InsertJavaPackage()
+"endif
 
 exe "sign place 9999 name=hidden line=1 file=" . expand("%:p")
 "}}}
